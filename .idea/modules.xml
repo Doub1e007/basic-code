@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/StudentSystem/StudentSystem.iml" filepath="$PROJECT_DIR$/StudentSystem/StudentSystem.iml" />
+      <module fileurl="file://$PROJECT_DIR$/basic-code.iml" filepath="$PROJECT_DIR$/basic-code.iml" />
+      <module fileurl="file://$PROJECT_DIR$/day01-code/day01-code.iml" filepath="$PROJECT_DIR$/day01-code/day01-code.iml" />
+      <module fileurl="file://$PROJECT_DIR$/day02-code/day02-code.iml" filepath="$PROJECT_DIR$/day02-code/day02-code.iml" />
+      <module fileurl="file://$PROJECT_DIR$/day03-code/day03-code.iml" filepath="$PROJECT_DIR$/day03-code/day03-code.iml" />
+      <module fileurl="file://$PROJECT_DIR$/day04-code/day04-code.iml" filepath="$PROJECT_DIR$/day04-code/day04-code.iml" />
+      <module fileurl="file://$PROJECT_DIR$/day05-code/day05-code.iml" filepath="$PROJECT_DIR$/day05-code/day05-code.iml" />
+      <module fileurl="file://$PROJECT_DIR$/day06-code/day06-code.iml" filepath="$PROJECT_DIR$/day06-code/day06-code.iml" />
+      <module fileurl="file://$PROJECT_DIR$/day07-code/day07-code.iml" filepath="$PROJECT_DIR$/day07-code/day07-code.iml" />
+      <module fileurl="file://$PROJECT_DIR$/oop-abstract/oop-abstract.iml" filepath="$PROJECT_DIR$/oop-abstract/oop-abstract.iml" />
+      <module fileurl="file://$PROJECT_DIR$/oop-extends/oop-extends.iml" filepath="$PROJECT_DIR$/oop-extends/oop-extends.iml" />
+      <module fileurl="file://$PROJECT_DIR$/oop-final/oop-final.iml" filepath="$PROJECT_DIR$/oop-final/oop-final.iml" />
+      <module fileurl="file://$PROJECT_DIR$/oop-interface/oop-interface.iml" filepath="$PROJECT_DIR$/oop-interface/oop-interface.iml" />
+      <module fileurl="file://$PROJECT_DIR$/oop-package/oop-package.iml" filepath="$PROJECT_DIR$/oop-package/oop-package.iml" />
+      <module fileurl="file://$PROJECT_DIR$/oop-polymorphism/oop-polymorphism.iml" filepath="$PROJECT_DIR$/oop-polymorphism/oop-polymorphism.iml" />
+      <module fileurl="file://$PROJECT_DIR$/oop-test/oop-test.iml" filepath="$PROJECT_DIR$/oop-test/oop-test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/test/test.iml" filepath="$PROJECT_DIR$/test/test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/test01/test01.iml" filepath="$PROJECT_DIR$/test01/test01.iml" />
+      <module fileurl="file://$PROJECT_DIR$/web1/web1.iml" filepath="$PROJECT_DIR$/web1/web1.iml" />
+    </modules>
+  </component>
+</project>
