@@ -1,0 +1,32 @@
+package com.iweb.chapter01;
+
+import com.alibaba.druid.pool.DruidDataSourceFactory;
+
+import javax.sql.DataSource;
+import java.io.IOException;
+import java.io.InputStream;
+import java.util.Properties;
+
+//DataSource:连接池称连接数据库的基本信息
+public class DruidUtil {
+    private static DataSource dataSource;
+    static {
+
+        //把db.properties文件读入到输入字节流
+        InputStream inputStream =
+                DruidUtil.class.getClassLoader().getResourceAsStream("db.properties");
+        Properties p = new Properties();
+        try {
+
+            //把流数据封装在p
+            p.load(inputStream);
+            dataSource = DruidDataSourceFactory.createDataSource(p);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+    // 获取数据源
+    public static DataSource getDataSource() {
+        return dataSource;
+    }
+}

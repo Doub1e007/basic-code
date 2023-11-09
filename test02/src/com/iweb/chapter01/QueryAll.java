@@ -1,6 +1,8 @@
-package com.iweb.oop.chapter03;
+package com.iweb.chapter01;
 
 import java.sql.*;
+import java.util.ArrayList;
+import java.util.List;
 
 public class QueryAll {
     public static void main(String[] args) {
@@ -21,15 +23,28 @@ public class QueryAll {
 
 
             rs = ps.executeQuery();
+            List<Student> students = new ArrayList<>();
+
             while (rs.next()) {
 
-                int uid = rs.getInt("uid");
+                String uid = rs.getString("uid");
                 String user = rs.getString("username");
                 String pass = rs.getString("password");
                 String gender = rs.getString("gender");
                 String hobby = rs.getString("hobby");
                 String description = rs.getString("description");
-                System.out.println(uid + " " + user + " " + pass + " " + gender + " " + hobby + " " + description);
+                //alt + 回车
+                Student student = new Student();
+                student.setUid(uid);
+                student.setUsername(user);
+                student.setPassword(pass);
+                student.setGender(gender);
+                student.setHobby(hobby);
+                student.setDescription(description);
+
+                students.add(student);
+                System.out.println(student);
+
             }
         } catch (Exception e) {
             e.printStackTrace();
