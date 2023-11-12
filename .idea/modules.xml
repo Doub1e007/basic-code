@@ -12,6 +12,7 @@
       <module fileurl="file://$PROJECT_DIR$/day05-code/day05-code.iml" filepath="$PROJECT_DIR$/day05-code/day05-code.iml" />
       <module fileurl="file://$PROJECT_DIR$/day06-code/day06-code.iml" filepath="$PROJECT_DIR$/day06-code/day06-code.iml" />
       <module fileurl="file://$PROJECT_DIR$/day07-code/day07-code.iml" filepath="$PROJECT_DIR$/day07-code/day07-code.iml" />
+      <module fileurl="file://$PROJECT_DIR$/employee/employee.iml" filepath="$PROJECT_DIR$/employee/employee.iml" />
       <module fileurl="file://$PROJECT_DIR$/oop-abstract/oop-abstract.iml" filepath="$PROJECT_DIR$/oop-abstract/oop-abstract.iml" />
       <module fileurl="file://$PROJECT_DIR$/oop-extends/oop-extends.iml" filepath="$PROJECT_DIR$/oop-extends/oop-extends.iml" />
       <module fileurl="file://$PROJECT_DIR$/oop-final/oop-final.iml" filepath="$PROJECT_DIR$/oop-final/oop-final.iml" />

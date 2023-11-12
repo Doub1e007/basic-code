@@ -4,6 +4,7 @@ import com.iweb.dao.UserDao;
 import com.iweb.pojo.User;
 import com.iweb.util.DruidUtil;
 import org.apache.commons.dbutils.QueryRunner;
+import org.apache.commons.dbutils.handlers.ScalarHandler;
 
 import java.sql.SQLException;
 import java.util.Arrays;
@@ -24,6 +25,19 @@ public class UserDaoImpl implements UserDao {
             e.printStackTrace();
         }
 
+        return false;
+    }
+
+    @Override
+    public boolean login(User user) {
+        String sql = "select count(*) from t_user where username = ? and password = ?";
+        try {
+            Long count =
+                    qr.query(sql, new ScalarHandler<>(), user.getUsername(), user.getPassword());
+            return count.intValue() > 0;
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
         return false;
     }
 }

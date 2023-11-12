@@ -38,24 +38,18 @@ public class RegisterServlet extends HttpServlet {
         User user =
                 FormToBean.FormToBean(User.class, request.getParameterMap());
 
-        boolean loginok = userService.register(user);
-        if(loginok){
+        boolean registerok = userService.register(user);
+        if(registerok){
             //注册成功 跳转到注册成功页面
 
             //1 重定向
            // response.sendRedirect("/JMY/success.html");
-
+            
             //2 转发
             request.getRequestDispatcher("/success.html")
                     .forward(request,response);
-
-
-
         }
-
         //解决中文乱码
         request.setCharacterEncoding("UTF-8");
-
-
     }
 }
