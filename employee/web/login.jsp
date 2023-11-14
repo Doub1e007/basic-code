@@ -50,7 +50,7 @@
 									</div>
 								</div>
 								<div class="checkbox">
-									<label style="font-family: 宋体;font-weight: bold;color: gray;">
+									<label style="font-family: 宋体;font-weight: bold;color: grey;">
 										<input style="vertical-align: middle;" type="checkbox" value="">
 										两周内自动登录
 									</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;

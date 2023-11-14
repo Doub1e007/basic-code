@@ -16,7 +16,7 @@
 <div class="panel admin-panel">
   <div class="panel-head"><strong><span class="icon-key"></span> 修改密码</strong></div>
   <div class="body-content">
-    <form method="post" class="form-x" action="user?method = updatePwd">
+    <form method="post" class="form-x" action="/employee/user?method=updatePwd">
 
       <div class="form-group">
         <div class="label">

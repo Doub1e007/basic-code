@@ -40,7 +40,7 @@ public class UserServlet extends BasicServlet {
                 //设置session有效期 单位 秒
                 session.setMaxInactiveInterval(10);
                 //重定向到系统首页
-                resp.sendRedirect("/employee");
+                resp.sendRedirect("/employee/index.jsp");
 
             } else {
                 //登录不成功
@@ -62,7 +62,7 @@ public class UserServlet extends BasicServlet {
         session.removeAttribute("user");
         session.invalidate();
         //跳转到登录界面
-        resp.sendRedirect("employee//login.jsp");
+        resp.sendRedirect("/employee/login.jsp");
     }
 
 //异步校验用户输入的原始密码是否正确

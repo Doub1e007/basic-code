@@ -5,6 +5,7 @@
       <map>
         <entry key="file://$PROJECT_DIR$/employee/web/index.jsp" value="file://$PROJECT_DIR$/employee/web" />
         <entry key="file://$PROJECT_DIR$/employee/web/login.html" value="file://$PROJECT_DIR$/employee/web" />
+        <entry key="file://$PROJECT_DIR$/employee/web/login.jsp" value="file://$PROJECT_DIR$/employee/web" />
         <entry key="file://$PROJECT_DIR$/employee/web/pass.jsp" value="file://$PROJECT_DIR$/employee/web" />
       </map>
     </option>
