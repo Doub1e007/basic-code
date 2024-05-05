@@ -16,7 +16,7 @@
 <body style="background-color:#f2f9fd;">
 	<div class="header bg-main">
 		<div class="logo margin-big-left fadein-top">
-			<h1><img src="images/y.jpg" class="radius-circle rotate-hover" height="50" alt="" />后台管理中心</h1>
+			<h1><img src="${user.img}" class="radius-circle rotate-hover" height="50" alt="" />后台管理中心</h1>
 		</div>
 		<div class="head-l"><a class="button button-little bg-green" href="" target="_blank"><span class="icon-home"></span>
 				后台主页</a> &nbsp;&nbsp;
@@ -34,13 +34,13 @@
 		<div class="leftnav-title"><strong><span class="icon-list"></span>菜单列表</strong></div>
 		<h2><span class="icon-user"></span>基础数据</h2>
 		<ul style="display:block">
-			<li><a href="employee.html" target="right"><span class="icon-magic"></span>员工管理</a></li>
+			<li><a href="/employee/employee.jsp" target="right"><span class="icon-magic"></span>员工管理</a></li>
 			<li><a href="dept.html" target="right"><span class="icon-foursquare"></span>部门管理</a></li>
 		</ul>
 		<h2><span class="icon-pencil-square-o"></span>用户管理</h2>
 		<ul>
 			<li><a href="/employee/pass.jsp" target="right"><span class="icon-key"></span>修改密码</a></li>
-			<li><a href="personal.html" target="right"><span class="icon-pencil"></span>个人信息</a></li>
+			<li><a href="/employee/personal.jsp" target="right"><span class="icon-pencil"></span>个人信息</a></li>
 		</ul>
 	</div>
 	<script type="text/javascript">

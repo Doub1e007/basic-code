@@ -8,7 +8,7 @@ import com.iweb.employee.service.UserService;
 public class UserServiceImpl implements UserService {
     private UserDao userDao = new UserDaoImpl();
     @Override
-    public boolean login(User user) {
+    public User login(User user) {
         return userDao.login(user);
     }
 
