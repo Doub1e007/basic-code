@@ -26,7 +26,6 @@ public class StringDemo4 {
 
         }
 
-
     }
     public static String login(String loginName,String password){
         //1.先拿到正确的登录名和密码
@@ -47,6 +46,5 @@ public class StringDemo4 {
         }else {
             return "用户名错误,请检查";
         }
-
     }
 }
