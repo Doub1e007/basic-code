@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Myjavaseproject.iml" filepath="$PROJECT_DIR$/Myjavaseproject.iml" />
+      <module fileurl="file://$PROJECT_DIR$/day01-helloworld/day01-helloworld.iml" filepath="$PROJECT_DIR$/day01-helloworld/day01-helloworld.iml" />
+      <module fileurl="file://$PROJECT_DIR$/day02-basic/day02-basic.iml" filepath="$PROJECT_DIR$/day02-basic/day02-basic.iml" />
+      <module fileurl="file://$PROJECT_DIR$/day03-control/day03-control.iml" filepath="$PROJECT_DIR$/day03-control/day03-control.iml" />
+      <module fileurl="file://$PROJECT_DIR$/day04-array/day04-array.iml" filepath="$PROJECT_DIR$/day04-array/day04-array.iml" />
+      <module fileurl="file://$PROJECT_DIR$/day05-method/day05-method.iml" filepath="$PROJECT_DIR$/day05-method/day05-method.iml" />
+      <module fileurl="file://$PROJECT_DIR$/day06-case/day06-case.iml" filepath="$PROJECT_DIR$/day06-case/day06-case.iml" />
+      <module fileurl="file://$PROJECT_DIR$/day07-oop/day07-oop.iml" filepath="$PROJECT_DIR$/day07-oop/day07-oop.iml" />
+      <module fileurl="file://$PROJECT_DIR$/day08-api/day08-api.iml" filepath="$PROJECT_DIR$/day08-api/day08-api.iml" />
+    </modules>
+  </component>
+</project>
