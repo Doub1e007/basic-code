@@ -25,7 +25,6 @@ public class StringDemo4 {
             }
 
         }
-
     }
     public static String login(String loginName,String password){
         //1.先拿到正确的登录名和密码
@@ -48,3 +47,5 @@ public class StringDemo4 {
         }
     }
 }
+//b1分支下进行测试
+
