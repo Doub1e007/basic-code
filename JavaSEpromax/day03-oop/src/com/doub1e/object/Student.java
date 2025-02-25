@@ -54,8 +54,9 @@ public class Student {
 * */
     @Override
     public boolean equals(Object o) {
-        //1.判断两个对象是否是同一个对象在比较 如果是 直接返回true
+        //1.判断o如果是null 直接返回false 或者两个对象的类型不一样也直接返回false
         if (o == null || getClass() != o.getClass()) return false;
+        //2.说明两个对象都是学生类型 且是不同对象 开始对比内容
         Student student = (Student) o;
         return age == student.age && Double.compare(score, student.score) == 0 && Objects.equals(name, student.name);
     }
