@@ -1,6 +1,7 @@
 package com.doub1e.bigdecimal;
 
 import java.math.BigDecimal;
+import java.math.RoundingMode;
 
 public class BigDecimal1 {
     public static void main(String[] args) {
@@ -20,10 +21,25 @@ public class BigDecimal1 {
         BigDecimal b11 = BigDecimal.valueOf(b);
 
         //2.调用方法进行精度计算
-        BigDecimal c11 = a11.add(b11);
+//        BigDecimal c11 = a11.add(b11);//加
+//        BigDecimal c12 = a11.subtract(b11);//减
+//        BigDecimal c13 = a11.multiply(b11);//乘
+        BigDecimal c11 = a11.divide(b11);//除
 
+        //3.BigDecimal是处理精度问题的手段，结果必须还是基本类型
         double result = c11.doubleValue();
         System.out.println(result);
+
+        System.out.println("--------------------------------------");
+        BigDecimal i = BigDecimal.valueOf(0.1);
+        BigDecimal j = BigDecimal.valueOf(0.3);
+        /*
+        * 参数一：除数
+        * 参数二：保留位数
+        * 参数三：舍入模式
+        * */
+        BigDecimal k = i.divide(j,2, RoundingMode.HALF_UP);
+        System.out.println(k);
 
     }
 }
