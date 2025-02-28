@@ -1,5 +1,6 @@
 package com.doub1e.jdk8_time;
 
+import java.time.Clock;
 import java.time.ZoneId;
 import java.time.ZonedDateTime;
 import java.util.Set;
@@ -30,6 +31,8 @@ public class ZoneId_ZoneDateTime {
         System.out.println(zdt);
 
         //世界标准时间 很多服务器需要世界时间
-        
+        ZonedDateTime utcNow = ZonedDateTime.now(Clock.systemUTC());
+        System.out.println(utcNow);
+
     }
 }
