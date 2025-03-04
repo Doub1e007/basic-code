@@ -9,6 +9,7 @@
       <module fileurl="file://$PROJECT_DIR$/day04-api/day04-api.iml" filepath="$PROJECT_DIR$/day04-api/day04-api.iml" />
       <module fileurl="file://$PROJECT_DIR$/day05-api_plus/day05-api_plus.iml" filepath="$PROJECT_DIR$/day05-api_plus/day05-api_plus.iml" />
       <module fileurl="file://$PROJECT_DIR$/day06-exception-collection/day06-exception-collection.iml" filepath="$PROJECT_DIR$/day06-exception-collection/day06-exception-collection.iml" />
+      <module fileurl="file://$PROJECT_DIR$/day07-collections_map/day07-collections_map.iml" filepath="$PROJECT_DIR$/day07-collections_map/day07-collections_map.iml" />
     </modules>
   </component>
 </project>
