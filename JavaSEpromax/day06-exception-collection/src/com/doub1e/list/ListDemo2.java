@@ -27,5 +27,13 @@ public class ListDemo2 {
             String ele = it.next();
             System.out.println(ele);
         }
+
+        //增强for循环
+        for(String str : list) {
+            System.out.println(str);
+        }
+
+        //lambda
+        list.forEach(s -> System.out.println(s));
     }
 }
