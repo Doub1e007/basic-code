@@ -1,15 +1,17 @@
-package com.doub1e.collection;
-
-public class Student implements Comparable<Student>{
+package com.doub1e.set;
+//法一 让类实现Comparable接口 重写compareTo方法
+public class Girl implements Comparable<Girl> {
     private String name;
+    private char sex;
     private int age;
     private double height;
 
-    public Student() {
+    public Girl() {
     }
 
-    public Student(String name, int age, double height) {
+    public Girl(String name, char sex, int age, double height) {
         this.name = name;
+        this.sex = sex;
         this.age = age;
         this.height = height;
     }
@@ -20,6 +22,14 @@ public class Student implements Comparable<Student>{
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public char getSex() {
+        return sex;
+    }
+
+    public void setSex(char sex) {
+        this.sex = sex;
     }
 
     public int getAge() {
@@ -40,26 +50,16 @@ public class Student implements Comparable<Student>{
 
     @Override
     public String toString() {
-        return "Student{" +
+        return "Girl{" +
                 "name='" + name + '\'' +
+                ", sex=" + sex +
                 ", age=" + age +
                 ", height=" + height +
-                '}';
+                '}' + "\n";
     }
 
-    //重写compare比较方法
-    //s1.compareTo(s2)
-    //左边对象 s1 == this
-    //右边对象 s2 == o
     @Override
-    public int compareTo(Student o) {
-//        if (this.age > o.age){
-//            return 1;
-//        }else if (this.age < o.age){
-//            return -1;
-//        }
-//        return 0;
-//        //return this.age - o.age //升序
-        return o.age - this.age; //降序
+    public int compareTo(Girl o) {
+        return o.age - this.age >= 0 ? 1 : -1;
     }
 }

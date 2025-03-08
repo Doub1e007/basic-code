@@ -1,5 +1,7 @@
 package com.doub1e.list;
 
+import java.util.StringJoiner;
+
 /*
 * 单链表
 * */
@@ -23,6 +25,7 @@ public class MyLinkedList<E> {
         //维护单链表
         //第一个节点 或者是后面的节点
         //创建一个节点对象 封装这个数据
+
         Node<E> newNode = new Node<E>(e, null);
 
         //判断这个节点是否是第一个节点
@@ -31,12 +34,45 @@ public class MyLinkedList<E> {
         }else {
             //把这个节点加入到当前最后一个节点的下一个位置
             //如何找到最后一个节点对象
-            newNode.next = first;
+            Node<E> tmep = first;
+            while(tmep.next != null) {
+                tmep = tmep.next;
+            }
+            tmep.next = newNode;
         }
-
+        size++;
         return true;
     }
+
+    @Override
+    public String toString() {
+        StringJoiner sb = new StringJoiner(",","[","]");
+        Node<E> tmep = first;
+        while(tmep != null) {
+            sb.add(tmep.item + "");
+            tmep = tmep.next;
+        }
+        return sb.toString();
+    }
+
     public int size(){
         return size;
+    }
+}
+
+class Test{
+    public static void main(String[] args) {
+        MyLinkedList<String> list = new MyLinkedList<>();
+        list.add("1");
+        list.add("2");
+        list.add("3");
+        list.add("4");
+        list.add("5");
+        list.add("6");
+        list.add("7");
+        list.add("8");
+        list.add("9");
+        list.add("10");
+        System.out.println(list);
     }
 }
