@@ -1,6 +1,5 @@
 package com.doub1e.byte_stream;
 
-import java.io.File;
 import java.io.FileInputStream;
 import java.io.InputStream;
 
@@ -11,15 +10,19 @@ public class FileInputStreamDemo3 {
         InputStream is = new FileInputStream("day09-io-code\\src\\diaomao3.txt");
 
         //2.定义一个字节数组与源文件一样大小
-        File f = new File("day09-io-code\\src\\diaomao3.txt");
-        long size = f.length();
-        System.out.println("文件的大小是：" + size);
-        byte[] buffer = new byte[(int)size];
+//        File f = new File("day09-io-code\\src\\diaomao3.txt");
+//        long size = f.length();
+//        System.out.println("文件的大小是：" + size);
+//        byte[] buffer = new byte[(int)size];
+//
+//        int len = is.read(buffer);
+//        System.out.println("读取的字节：" + len );
+//
+//        System.out.print(new String(buffer));
 
-        int len = is.read(buffer);
-        System.out.println("读取的字节：" + len );
-
-        System.out.println(new String(buffer));
+        byte[] buffer = is.readAllBytes();
+        System.out.print(new String(buffer));
+        is.close();
 
     }
 }

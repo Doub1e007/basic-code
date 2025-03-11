@@ -31,6 +31,7 @@ public class FileInputStreamDemo2 {
             String rs = new String(buffer, 0, len);
             System.out.print(rs);
         }
+        is.close();
         //拓展
         //性能较好 但是还是无法避免读取汉字输出乱码的问题
     }

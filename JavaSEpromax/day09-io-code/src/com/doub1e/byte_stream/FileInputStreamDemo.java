@@ -26,6 +26,7 @@ public class FileInputStreamDemo {
         while ((b = is.read()) != -1) {
             System.out.print((char) b);
         }
+        is.close();
 
         //拓展
         // 性能差 每次一个一个读取
