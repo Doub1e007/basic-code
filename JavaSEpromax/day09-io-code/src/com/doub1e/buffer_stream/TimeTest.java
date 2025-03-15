@@ -3,7 +3,7 @@ package com.doub1e.buffer_stream;
 import java.io.*;
 
 public class TimeTest {
-    public static final String SRC_VIDEO = "D:\\C++教程\\02\\C高级编程day02\\视频\\11-字符串强化训练以及拷贝字符串三种方式_.avi";
+    public static final String SRC_VIDEO = "";
     public static final String DEST_PATH = "D:\\repo\\";
     public static void main(String[] args) {
         //原始流和缓冲流性能测试
