@@ -12,6 +12,7 @@
       <module fileurl="file://$PROJECT_DIR$/day07-collections_map/day07-collections_map.iml" filepath="$PROJECT_DIR$/day07-collections_map/day07-collections_map.iml" />
       <module fileurl="file://$PROJECT_DIR$/day08-stream-file-io/day08-stream-file-io.iml" filepath="$PROJECT_DIR$/day08-stream-file-io/day08-stream-file-io.iml" />
       <module fileurl="file://$PROJECT_DIR$/day09-io-code/day09-io-code.iml" filepath="$PROJECT_DIR$/day09-io-code/day09-io-code.iml" />
+      <module fileurl="file://$PROJECT_DIR$/day10-special-file-log/day10-special-file-log.iml" filepath="$PROJECT_DIR$/day10-special-file-log/day10-special-file-log.iml" />
     </modules>
   </component>
 </project>
