@@ -21,7 +21,7 @@ public class PropertiesDemo {
         Set<String> keys = properties.stringPropertyNames();
         for (String key : keys) {
             String value = properties.getProperty(key);
-            System.out.println(key + "=" + value);
+            System.out.println(key + "==>" + value);
         }
 
         // 3.遍历数据
