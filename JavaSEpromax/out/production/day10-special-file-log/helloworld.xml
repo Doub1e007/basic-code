@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--以下是xml的内容-->
+<users>
+    <user id="1">
+        <name>张全蛋</name>
+        <sex>男</sex>
+        <age>32</age>
+        <hobby>炸机</hobby>
+        <sql>
+            select *from tb_student where age &gt;= 18 &amp;&amp; age &lt;= 35
+        </sql>
+    </user>
+    <user id="2" desc="脱口秀演员">
+        <name>何广智</name>
+        <sex>男</sex>
+        <age>28</age>
+        <hobby>脱口秀</hobby>
+        <sql>
+            <![CDATA[
+                select *from tb_student where age >= 18 && age <= 35
+            ]]>
+        </sql>
+    </user>
+</users>
