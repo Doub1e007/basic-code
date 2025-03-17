@@ -51,7 +51,7 @@ class MyCallable implements Callable<String> {
     @Override
     public String call() throws Exception {
         int sum = 0;
-        for (int i = 1; i < n; i++) {
+        for (int i = 1; i <= n; i++) {
             sum += i;
         }
         return "子线程求和1-" + n + "的结果是：" + sum;
