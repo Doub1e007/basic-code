@@ -1,0 +1,9 @@
+==========Student==========
+name=江南普信男
+age=45
+sex=男
+height=185.5
+hobby=篮球，唱跳rap
+==========Teacher==========
+name=河北老师
+salary=999.9
