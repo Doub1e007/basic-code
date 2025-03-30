@@ -1,7 +1,7 @@
 package com.doub1e;
 
 public class Account {
-    private String id;
+    private String CardId;
     private String userName;
     private char sex;
     private String password;
@@ -11,8 +11,8 @@ public class Account {
     public Account() {
     }
 
-    public Account(String id, String userName, char sex, String password, double money, double limit) {
-        this.id = id;
+    public Account(String CardId, String userName, char sex, String password, double money, double limit) {
+        this.CardId = CardId;
         this.userName = userName;
         this.sex = sex;
         this.password = password;
@@ -20,12 +20,12 @@ public class Account {
         this.limit = limit;
     }
 
-    public String getId() {
-        return id;
+    public String getCardId() {
+        return CardId;
     }
 
-    public void setId(String id) {
-        this.id = id;
+    public void setCardId(String CardId) {
+        this.CardId = CardId;
     }
 
     public String getUserName() {

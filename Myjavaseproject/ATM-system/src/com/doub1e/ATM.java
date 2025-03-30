@@ -1,6 +1,7 @@
 package com.doub1e;
 
 import java.util.ArrayList;
+import java.util.Random;
 import java.util.Scanner;
 
 public class ATM {
@@ -69,9 +70,44 @@ public class ATM {
         acc.setLimit(limit);
 
         //key point 需要每次为这个账户生成一个卡号(系统自动生成8位卡号 且不能重复
+        String newCardId = creatCardId();
+        acc.setCardId(newCardId);
 
         // 3.把账户对象存入到账户集合中去
         accounts.add(acc);
-        System.out.println("恭喜" + acc.getUserName() + "开户成功！您的卡号是：");
+        System.out.println("恭喜" + acc.getUserName() + "开户成功！您的卡号是：" + acc.getCardId());
     }
+    /** 返回一个8位数字的卡号 且卡号不能重复 */
+    private String creatCardId(){
+        while (true) {
+            // 1.定义一个String类型变量记住8位卡号
+            String cardId = "";
+            // 2.使用循环 每次产生一个随机数给cardId连接起来
+            Random r = new Random();
+            for (int i = 0; i < 8; i++) {
+                int data = r.nextInt(10); //0~9
+                cardId += data ;
+            }
+            // 3.判断CardId中记住的卡号是否与其他账户的卡号重复
+            Account acc = getAccountByCardId(cardId);
+            //
+            if (acc == null) {
+                //cardId没有和其他账户卡号重复
+                return cardId;
+            }
+        }
+    }
+    /** 根据卡号查找账户对象返回 accounts = [c1,c2,c3...]*/
+    private Account getAccountByCardId(String cardId){
+        // 遍历全部的账户对象
+        for (int i = 0; i < accounts.size(); i++) {
+            Account acc = accounts.get(i);
+            //判断这个账户对象acc的卡号是否是要找的卡号
+            if(acc.getCardId().equals(cardId)){
+                return acc;
+            }
+        }
+        return null; //卡号不存在
+    }
+
 }
