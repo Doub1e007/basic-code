@@ -19,6 +19,7 @@ public class ATM {
             switch (command){
                 case 1:
                     //用户登录
+                    login();
                     break;
                 case 2:
                     //用户开户
@@ -26,6 +27,41 @@ public class ATM {
                     break;
                 default:
                     System.out.println("没有该操作");
+            }
+        }
+    }
+
+    /** 完成用户的登录操作 */
+    private void login(){
+        System.out.println("==系统登录==");
+        // 1.判断系统中是否存在账户对象 存在才可以登录；如果不存在 结束登录操作
+        if(accounts.size() == 0){
+            System.out.println("当前系统中无账户，请先开户");
+            return;//跳出登录
+        }
+        //2.系统中存在账户对象 进行登录操作
+        while (true) {
+            System.out.println("请您输入你的登录卡号：");
+            String cardId = sc.next();
+            //3.判断这个卡号是否存在
+            Account acc = getAccountByCardId(cardId);
+            if(acc == null){
+                //卡号不存在
+                System.out.println("您输入的登录卡号不存在，请确认");
+            }else {
+                while (true) {
+                    //卡号存在
+                    System.out.println("请您输入登录密码：");
+                    String passWord = sc.next();
+                    // 4.判断密码是否正确
+                    if(acc.getPassword().equals(passWord)){
+                        //密码正确 登录成功了
+                        System.out.println("恭喜你：" + acc.getUserName() + "成功登录了，您的卡号是：" + acc.getCardId());
+                        //....
+                    }else {
+                        System.out.println("您输入的密码错误，请重新输入");
+                    }
+                }
             }
         }
     }
