@@ -109,12 +109,42 @@ public class ATM {
                     return;//退出并结束当前方法
                 case 7:
                     //注销账户
+                    if(deleteAccount()){
+                        // 销户成功了 回到欢迎页面
+                        return;
+                    }
                     break;
                 default:
                     System.out.println("您当前选择的操作不存在 请确认");
             }
         }
     }
+    /** 注销账户 */
+    private boolean deleteAccount() {
+        System.out.println("===进行销户操作===");
+        // 1.询问用户是否确定销户
+        System.out.println("请问您是否确定销户吗？ y/n");
+        String command = sc.next();
+        switch (command){
+            case "y":
+                //用户确定销户
+                // 2.判断用户账户中是否还有余额
+                if(loginAcc.getMoney() == 0){
+                    accounts.remove(loginAcc);
+                    System.out.println("您好，您的账户已注销");
+                    return true;
+                }else{
+                    System.out.println("对不起，您的账户存在金额。无法销户");
+                    return false;
+                }
+
+            default:
+                System.out.println("好的，将为您保留账户~");
+                return false;
+
+        }
+    }
+
     /** 转账 */
     private void transferMoney() {
         System.out.println("===用户转账===");
