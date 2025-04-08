@@ -90,9 +90,11 @@ public class ATM {
                     break;
                 case 2:
                     //存款操作
+                    depositMoney();
                     break;
                 case 3:
                     //取款操作
+                    drawMoney();
                     break;
                 case 4:
                     //转账操作
@@ -112,6 +114,48 @@ public class ATM {
             }
         }
     }
+    /** 取钱 */
+    private void drawMoney() {
+        System.out.println("===取钱操作===");
+        // 1.判断账户余额是否达到100 小于100不让取钱
+        if(loginAcc.getMoney() < 100){
+            System.out.println("账户金额不足100，无法取钱");
+            return;
+        }
+        // 2.让用户输入取钱金额
+        while (true) {
+            System.out.println("请您输入取钱金额：");
+            double money = sc.nextDouble();
+
+            // 3.判断账户余额是否足够
+            if(loginAcc.getMoney() >= money){
+                // 账户余额足够
+                // 4.判断当前取款金额是否超过每次限额
+                if(money > loginAcc.getLimit()){
+                    System.out.println("您当前取款金额超过了每次限额，您每次最多可取：" + loginAcc.getLimit());
+                }else {
+                    // 代表可以取钱 更新当前账户余额即可
+                    loginAcc.setMoney(loginAcc.getMoney() - money);
+                    System.out.println("您取款" + money + "成功,账户余额为：" + loginAcc.getMoney());
+                    break;
+                }
+            }else {
+                System.out.println("余额不足，您的账户余额是："  + loginAcc.getMoney());
+            }
+        }
+    }
+
+    /** 存钱 */
+    private void depositMoney() {
+        System.out.println("===存钱操作===");
+        System.out.println("请您输入存款金额：");
+        double money = sc.nextDouble();
+
+        // 更新当前登录账户的余额
+        loginAcc.setMoney(loginAcc.getMoney() + money);
+        System.out.println("恭喜您，已存钱" + money + "账户余额：" + loginAcc.getMoney());
+    }
+
     /**
      * 展示当前登录的账户信息
      */
