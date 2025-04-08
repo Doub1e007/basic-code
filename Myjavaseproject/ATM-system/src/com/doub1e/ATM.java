@@ -102,7 +102,8 @@ public class ATM {
                     break;
                 case 5:
                     //密码修改
-                    break;
+                    updatePassWord();
+                    return;
                 case 6:
                     //退出
                     System.out.println(loginAcc.getUserName() + "您成功退出系统！");
@@ -119,6 +120,43 @@ public class ATM {
             }
         }
     }
+    /** 账户密码修改 */
+    private void updatePassWord() {
+        System.out.println("===账户密码修改操作===");
+        while (true) {
+            // 1.提醒用户认证当前密码
+            System.out.println("请您输入当前账户密码：");
+            String passWord = sc.next();
+
+            // 2.认证当前密码是否正确
+            if(loginAcc.getPassword().equals(passWord)){
+                // 认证通过
+                while (true) {
+                    // 3.开始修改密码
+                    System.out.println("请您输入新密码：");
+                    String newPassWord = sc.next();
+
+                    System.out.println("请您再次确认新密码：");
+                    String okPassWord = sc.next();
+
+                    // 4.判断两次密码是否一致
+                    if(okPassWord.equals(newPassWord)){
+                        // 密码一致 真正开始修改密码
+                        loginAcc.setPassword(newPassWord);
+                        System.out.println("恭喜您，你的密码修改成功~");
+                        return;
+                    }else {
+                        //两次密码不一致
+                        System.out.println("您输入的两次密码不一致");
+                    }
+                }
+
+            }else {
+                System.out.println("您输入的密码错误");
+            }
+        }
+    }
+
     /** 注销账户 */
     private boolean deleteAccount() {
         System.out.println("===进行销户操作===");
