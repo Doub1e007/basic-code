@@ -9,38 +9,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a346d524-07cc-418e-bc14-cf590e5d1189" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/java-maven.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/servlet-demo/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/servlet-demo/src/main/java/com/example/HelloServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/servlet-demo/src/main/java/com/example/RequestServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/servlet-demo/src/main/java/com/example/ResponseServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/maven-project01/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/maven-pre/maven-project01/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/maven-project01/src/main/java/com/example/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/maven-pre/maven-project01/src/main/java/com/example/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/maven-project01/src/test/java/com/doub1e/Demo1Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/maven-pre/maven-project01/src/test/java/com/doub1e/Demo1Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/maven-project01/src/test/java/com/doub1e/UserService2Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/maven-pre/maven-project01/src/test/java/com/doub1e/UserService2Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/maven-project01/src/test/java/com/doub1e/UserService3Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/maven-pre/maven-project01/src/test/java/com/doub1e/UserService3Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/maven-project01/src/test/java/com/doub1e/UserServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/maven-pre/maven-project01/src/test/java/com/doub1e/UserServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/maven-project01/target/classes/com/example/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/maven-pre/maven-project01/target/classes/com/example/UserService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/maven-project01/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/maven-pre/maven-project01/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/maven-project01/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/maven-pre/maven-project01/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/maven-project01/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/maven-pre/maven-project01/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/maven-project01/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/maven-pre/maven-project01/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/maven-project01/target/surefire-reports/TEST-com.doub1e.UserServiceTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/maven-pre/maven-project01/target/surefire-reports/TEST-com.doub1e.UserServiceTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/maven-project01/target/surefire-reports/com.doub1e.UserServiceTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/maven-pre/maven-project01/target/surefire-reports/com.doub1e.UserServiceTest.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/maven-project01/target/test-classes/com/doub1e/Demo1Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/maven-pre/maven-project01/target/test-classes/com/doub1e/Demo1Test.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/maven-project01/target/test-classes/com/doub1e/UserService2Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/maven-pre/maven-project01/target/test-classes/com/doub1e/UserService2Test.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/maven-project01/target/test-classes/com/doub1e/UserServiceTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/maven-pre/maven-project01/target/test-classes/com/doub1e/UserServiceTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/maven-project02/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/maven-pre/maven-project02/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/maven-project02/src/main/java/com/itheima/HelloMaven.java" beforeDir="false" afterPath="$PROJECT_DIR$/maven-pre/maven-project02/src/main/java/com/itheima/HelloMaven.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/maven-projectA/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/maven-pre/maven-projectA/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/maven-projectB/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/maven-pre/maven-projectB/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/maven-projectC/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/maven-pre/maven-projectC/pom.xml" afterDir="false" />
+    <list default="true" id="a346d524-07cc-418e-bc14-cf590e5d1189" name="Changes" comment="Http和Servlet">
+      <change beforePath="$PROJECT_DIR$/maven-pre/maven-projectC/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/maven-pre/maven-projectC/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -236,11 +206,24 @@
       <option name="presentableId" value="Default" />
       <updated>1748411288698</updated>
       <workItem from="1748411290438" duration="1422000" />
-      <workItem from="1748412726782" duration="4273000" />
+      <workItem from="1748412726782" duration="4616000" />
     </task>
+    <task id="LOCAL-00001" summary="Http和Servlet">
+      <option name="closed" value="true" />
+      <created>1748417531827</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1748417531827</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Http和Servlet" />
+    <option name="LAST_COMMIT_MESSAGE" value="Http和Servlet" />
   </component>
 </project>
