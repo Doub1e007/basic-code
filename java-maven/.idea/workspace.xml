@@ -9,8 +9,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a346d524-07cc-418e-bc14-cf590e5d1189" name="Changes" comment="Http和Servlet">
-      <change beforePath="$PROJECT_DIR$/maven-pre/maven-projectC/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/maven-pre/maven-projectC/pom.xml" afterDir="false" />
+    <list default="true" id="a346d524-07cc-418e-bc14-cf590e5d1189" name="Changes" comment="Apache Commons IO升级避免资源消耗漏洞">
+      <change afterPath="$PROJECT_DIR$/springboot-web-quickstart01/src/main/java/com/doub1e/HelloController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-web-quickstart02/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-web-quickstart02/src/main/java/com/doub1e/HelloController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-web-quickstart02/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,6 +64,7 @@
   </component>
   <component name="MavenRunner">
     <option name="jreName" value="21" />
+    <option name="skipTests" value="true" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
@@ -74,10 +82,19 @@
   "keyToString": {
     "Maven.servlet-demo [clean].executor": "Run",
     "Maven.servlet-demo [compile].executor": "Run",
+    "Maven.springboot-web-quickstart01 [clean].executor": "Run",
+    "Maven.springboot-web-quickstart01 [install].executor": "Run",
+    "Maven.springboot-web-quickstart01 [package].executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Spring Boot.Main.executor": "Run",
+    "Spring Boot.SpringbootWebQuickstart01Application.executor": "Debug",
     "Tomcat Server.Tomcat 9.0.89.executor": "Run",
     "Tomcat Server.servlet-code.executor": "Run",
     "git-widget-placeholder": "master",
@@ -87,7 +104,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "onboarding.tips.debug.path": "C:/Code/IDEA-code/java-maven/servlet-demo/src/main/java/com/example/Main.java",
+    "onboarding.tips.debug.path": "C:/Code/IDEA-code/java-maven/springboot-web-quickstart02/src/main/java/com/doub1e/Main.java",
     "settings.editor.selected.configurable": "preferences.keymap",
     "vue.rearranger.settings.migration": "true"
   }
@@ -100,7 +117,27 @@
       <recent name="com.example" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Spring Boot.SpringbootWebQuickstart01Application">
+    <configuration name="Main" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="springboot-web-quickstart02" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.doub1e.Main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.doub1e.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringbootWebQuickstart01Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="springboot-web-quickstart01" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.doub1e.SpringbootWebQuickstart01Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="servlet-code" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.89" ALTERNATIVE_JRE_ENABLED="false">
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
@@ -189,6 +226,16 @@
         </option>
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Spring Boot.SpringbootWebQuickstart01Application" />
+      <item itemvalue="Spring Boot.Main" />
+      <item itemvalue="Tomcat Server.servlet-code" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.Main" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -198,6 +245,9 @@
       </set>
     </attachedChunks>
   </component>
+  <component name="StructureViewState">
+    <option name="selectedTab" value="Logical" />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="a346d524-07cc-418e-bc14-cf590e5d1189" name="Changes" comment="" />
@@ -206,7 +256,7 @@
       <option name="presentableId" value="Default" />
       <updated>1748411288698</updated>
       <workItem from="1748411290438" duration="1422000" />
-      <workItem from="1748412726782" duration="4616000" />
+      <workItem from="1748412726782" duration="9988000" />
     </task>
     <task id="LOCAL-00001" summary="Http和Servlet">
       <option name="closed" value="true" />
@@ -216,7 +266,15 @@
       <option name="project" value="LOCAL" />
       <updated>1748417531827</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Apache Commons IO升级避免资源消耗漏洞">
+      <option name="closed" value="true" />
+      <created>1748417758964</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1748417758964</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -224,6 +282,18 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Http和Servlet" />
-    <option name="LAST_COMMIT_MESSAGE" value="Http和Servlet" />
+    <MESSAGE value="Apache Commons IO升级避免资源消耗漏洞" />
+    <option name="LAST_COMMIT_MESSAGE" value="Apache Commons IO升级避免资源消耗漏洞" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$PROJECT_DIR$/../../../Environment/apache-maven-3.9.9/repo/org/springframework/spring-webmvc/6.1.5/spring-webmvc-6.1.5.jar!/org/springframework/web/servlet/DispatcherServlet.class</url>
+          <line>516</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

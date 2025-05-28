@@ -10,6 +10,8 @@
         <option value="$PROJECT_DIR$/maven-project01/pom.xml" />
         <option value="$PROJECT_DIR$/maven-project02/pom.xml" />
         <option value="$PROJECT_DIR$/servlet-demo/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot-web-quickstart01/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot-web-quickstart02/pom.xml" />
       </list>
     </option>
   </component>
