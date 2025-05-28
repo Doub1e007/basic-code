@@ -21,7 +21,7 @@ public class UserService {
      * @param idcard 身份证号
      */
     public String getGender(String idcard){
-        return Integer.parseInt(idcard.substring(16,17)) % 2 == 1 ? "男" : "女";
+        return Integer.parseInt(idcard.substring(16,17)) % 2 == 1 ? "女" : "男";
     }
 
 }

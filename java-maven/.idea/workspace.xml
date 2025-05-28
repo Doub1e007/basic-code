@@ -4,21 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4148f295-c45a-4f8f-96a4-9755961b9651" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/maven-project01/src/main/java/com/example/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/maven-project01/src/test/java/com/doub1e/UserServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="4148f295-c45a-4f8f-96a4-9755961b9651" name="Changes" comment="maven初始化">
+      <change afterPath="$PROJECT_DIR$/maven-project01/src/test/java/com/doub1e/Demo1Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/maven-project01/src/test/java/com/doub1e/UserService2Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/maven-project01/src/test/java/com/doub1e/UserService3Test.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/maven-project01/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/maven-project01/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/maven-project01/target/classes/com/example/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/maven-project01/target/classes/com/example/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/maven-projectA/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/maven-projectA/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/maven-projectB/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/maven-projectB/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/maven-projectC/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/maven-projectC/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maven-project01/src/main/java/com/example/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/maven-project01/src/main/java/com/example/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maven-project01/target/classes/com/example/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/maven-project01/target/classes/com/example/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/maven-project01/target/classes/com/example/UserService.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,6 +56,9 @@
   &quot;associatedIndex&quot;: 4
 }</component>
   <component name="ProjectId" id="2xgS4a0e0Tx1816grOKq4DWix66" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -70,6 +66,12 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.Main.executor": "Run",
+    "JUnit.Demo1Test.executor": "Run",
+    "JUnit.UserService2Test.executor": "Run",
+    "JUnit.UserService2Test.testGetAge.executor": "Run",
+    "JUnit.UserService2Test.testGetGender.executor": "Run",
+    "JUnit.UserService3Test.executor": "Run",
+    "JUnit.UserService3Test.testGetGender.executor": "Run",
     "JUnit.UserServiceTest.executor": "Run",
     "JUnit.UserServiceTest.testGetAge.executor": "Run",
     "JUnit.UserServiceTest.testGetGender.executor": "Run",
@@ -99,22 +101,12 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Code\IDEA-code\java-maven\maven-project01\src\main\java\com\example" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.doub1e" />
+    </key>
   </component>
-  <component name="RunManager" selected="JUnit.UserServiceTest">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.example.Main" />
-      <module name="maven-project01" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UserServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.UserService3Test.testGetGender">
+    <configuration name="UserService2Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="maven-project01" />
       <extension name="coverage">
         <pattern>
@@ -123,13 +115,13 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.doub1e" />
-      <option name="MAIN_CLASS_NAME" value="com.doub1e.UserServiceTest" />
+      <option name="MAIN_CLASS_NAME" value="com.doub1e.UserService2Test" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserServiceTest.testGetAge" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="UserService2Test.testGetAge" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="maven-project01" />
       <extension name="coverage">
         <pattern>
@@ -138,14 +130,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.doub1e" />
-      <option name="MAIN_CLASS_NAME" value="com.doub1e.UserServiceTest" />
-      <option name="METHOD_NAME" value="testGetAge" />
+      <option name="MAIN_CLASS_NAME" value="com.doub1e.UserService2Test" />
+      <option name="METHOD_NAME" value="testGetAge(java.lang.String)" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserServiceTest.testGetGender" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="UserService2Test.testGetGender" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="maven-project01" />
       <extension name="coverage">
         <pattern>
@@ -154,7 +146,38 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.doub1e" />
-      <option name="MAIN_CLASS_NAME" value="com.doub1e.UserServiceTest" />
+      <option name="MAIN_CLASS_NAME" value="com.doub1e.UserService2Test" />
+      <option name="METHOD_NAME" value="testGetGender(java.lang.String)" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserService3Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="maven-project01" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.doub1e.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.doub1e" />
+      <option name="MAIN_CLASS_NAME" value="com.doub1e.UserService3Test" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserService3Test.testGetGender" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="maven-project01" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.doub1e.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.doub1e" />
+      <option name="MAIN_CLASS_NAME" value="com.doub1e.UserService3Test" />
       <option name="METHOD_NAME" value="testGetGender" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -163,10 +186,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.UserServiceTest" />
-        <item itemvalue="JUnit.UserServiceTest.testGetGender" />
-        <item itemvalue="JUnit.UserServiceTest.testGetAge" />
-        <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.UserService3Test.testGetGender" />
+        <item itemvalue="JUnit.UserService3Test" />
+        <item itemvalue="JUnit.UserService2Test" />
+        <item itemvalue="JUnit.UserService2Test.testGetAge" />
+        <item itemvalue="JUnit.UserService2Test.testGetGender" />
       </list>
     </recent_temporary>
   </component>
@@ -187,21 +211,24 @@
       <updated>1748358033714</updated>
       <workItem from="1748358035295" duration="727000" />
       <workItem from="1748358777070" duration="3416000" />
+      <workItem from="1748396855212" duration="3349000" />
     </task>
+    <task id="LOCAL-00001" summary="maven初始化">
+      <option name="closed" value="true" />
+      <created>1748397001704</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1748397001704</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/maven-project01/src/main/java/com/example/Main.java</url>
-          <line>13</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="maven初始化" />
+    <option name="LAST_COMMIT_MESSAGE" value="maven初始化" />
   </component>
 </project>
