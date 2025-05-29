@@ -45,7 +45,7 @@ public class DeptController {
 //    }
 
 //    @RequestMapping(value = "/depts",method = RequestMethod.GET)
-    @GetMapping("/depts") //限制请求方式为Get
+    @GetMapping(value = "/depts", produces = "application/json") //限制请求方式为Get
     public Result getAll(){
         //1.加载并读取dept.txt文件
         //通过类加载器获取到类路径下面的所有资源
