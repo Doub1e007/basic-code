@@ -9,11 +9,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a346d524-07cc-418e-bc14-cf590e5d1189" name="Changes" comment="Apache Commons IO升级避免资源消耗漏洞">
-      <change afterPath="$PROJECT_DIR$/springboot-web-quickstart01/src/main/java/com/doub1e/HelloController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot-web-quickstart02/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot-web-quickstart02/src/main/java/com/doub1e/HelloController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot-web-quickstart02/src/main/resources/application.properties" afterDir="false" />
+    <list default="true" id="a346d524-07cc-418e-bc14-cf590e5d1189" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/tlias-web-manager/src/main/java/com/doub1e/controller/DeptController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tlias-web-manager/src/main/java/com/doub1e/entity/Dept.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tlias-web-manager/src/main/java/com/doub1e/entity/Result.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tlias-web-manager/src/main/resources/dept.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
@@ -94,30 +94,47 @@
     "RunOnceActivity.git.unshallow": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "Spring Boot.Main.executor": "Run",
-    "Spring Boot.SpringbootWebQuickstart01Application.executor": "Debug",
+    "Spring Boot.SpringbootWebQuickstart01Application.executor": "Run",
+    "Spring Boot.TliasWebManagerApplication.executor": "Run",
     "Tomcat Server.Tomcat 9.0.89.executor": "Run",
     "Tomcat Server.servlet-code.executor": "Run",
     "git-widget-placeholder": "master",
-    "last_opened_file_path": "D:/tutorial",
+    "last_opened_file_path": "C:/Code/IDEA-code/java-maven/tlias-web-manager/src/main/java/com/doub1e/entity",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "onboarding.tips.debug.path": "C:/Code/IDEA-code/java-maven/springboot-web-quickstart02/src/main/java/com/doub1e/Main.java",
+    "run.configurations.included.in.services": "true",
     "settings.editor.selected.configurable": "preferences.keymap",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Code\IDEA-code\java-maven\tlias-web-manager\src\main\java\com\doub1e\entity" />
+      <recent name="C:\Code\IDEA-code\java-maven\tlias-web-manager\src\main\resources" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Code\IDEA-code\java-maven\maven-init" />
       <recent name="C:\Code\IDEA-code\java-maven\maven-pre" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.example" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.SpringbootWebQuickstart01Application">
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="KtorApplicationConfigurationType" />
+        <option value="MicronautRunConfigurationType" />
+        <option value="QuarkusRunConfigurationType" />
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.TliasWebManagerApplication">
     <configuration name="Main" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="springboot-web-quickstart02" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.doub1e.Main" />
@@ -134,6 +151,13 @@
     <configuration name="SpringbootWebQuickstart01Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="springboot-web-quickstart01" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.doub1e.SpringbootWebQuickstart01Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TliasWebManagerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="tlias-web-manager" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.doub1e.TliasWebManagerApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -228,6 +252,7 @@
     </configuration>
     <list>
       <item itemvalue="Spring Boot.SpringbootWebQuickstart01Application" />
+      <item itemvalue="Spring Boot.TliasWebManagerApplication" />
       <item itemvalue="Spring Boot.Main" />
       <item itemvalue="Tomcat Server.servlet-code" />
     </list>
@@ -256,7 +281,8 @@
       <option name="presentableId" value="Default" />
       <updated>1748411288698</updated>
       <workItem from="1748411290438" duration="1422000" />
-      <workItem from="1748412726782" duration="9988000" />
+      <workItem from="1748412726782" duration="16882000" />
+      <workItem from="1748485169066" duration="5789000" />
     </task>
     <task id="LOCAL-00001" summary="Http和Servlet">
       <option name="closed" value="true" />
@@ -274,7 +300,15 @@
       <option name="project" value="LOCAL" />
       <updated>1748417758964</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="springboot初始化">
+      <option name="closed" value="true" />
+      <created>1748438471430</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1748438471430</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -283,7 +317,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Http和Servlet" />
     <MESSAGE value="Apache Commons IO升级避免资源消耗漏洞" />
-    <option name="LAST_COMMIT_MESSAGE" value="Apache Commons IO升级避免资源消耗漏洞" />
+    <MESSAGE value="springboot初始化" />
+    <option name="LAST_COMMIT_MESSAGE" value="springboot初始化" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
