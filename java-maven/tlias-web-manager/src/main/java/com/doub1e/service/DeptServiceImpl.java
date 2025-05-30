@@ -4,6 +4,7 @@ import com.doub1e.dao.DeptDao;
 import com.doub1e.dao.DeptDaoImpl;
 import com.doub1e.entity.Dept;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDateTime;
@@ -13,9 +14,11 @@ import java.util.List;
 /**
  * 业务逻辑处理层
  */
-@Service
+@Component //程序启动时，自动创建该类对象并交由IOC容器管理
 public class DeptServiceImpl implements DeptService {
-    private DeptDao deptDao = new DeptDaoImpl();
+//    private DeptDao deptDao = new DeptDaoImpl();
+    @Autowired //从IOC容器中自动寻找bean对象，为该变量赋值 -- 依赖注入DI的实现
+    private DeptDao deptDao;
 
     public List<Dept> list(){
         //1.获取原始数据

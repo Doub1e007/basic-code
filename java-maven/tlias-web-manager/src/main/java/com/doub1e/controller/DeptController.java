@@ -22,8 +22,10 @@ import java.util.stream.Collectors;
 //@Controller
 //@ResponseBody  //将返回的对象或集合自动转换成json格式返回
 public class DeptController {
-    @Autowired
-    private DeptService deptService = new DeptServiceImpl();
+
+//    private DeptService deptService = new DeptServiceImpl();
+    @Autowired //从IOC容器中自动寻找bean对象，为该变量赋值
+    private DeptService deptService;
 
     /**
      * 部门列表查询
