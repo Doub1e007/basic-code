@@ -1,5 +1,6 @@
 package com.doub1e.service;
 
+import com.doub1e.dao.DeptDao;
 import com.doub1e.dao.DeptDaoImpl;
 import com.doub1e.entity.Dept;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -13,8 +14,8 @@ import java.util.List;
  * 业务逻辑处理层
  */
 @Service
-public class DeptServiceImpl {
-    private DeptDaoImpl deptDao = new DeptDaoImpl();
+public class DeptServiceImpl implements DeptService {
+    private DeptDao deptDao = new DeptDaoImpl();
 
     public List<Dept> list(){
         //1.获取原始数据

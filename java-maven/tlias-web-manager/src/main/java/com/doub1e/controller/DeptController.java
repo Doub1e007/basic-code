@@ -2,6 +2,7 @@ package com.doub1e.controller;
 
 import com.doub1e.entity.Dept;
 import com.doub1e.entity.Result;
+import com.doub1e.service.DeptService;
 import com.doub1e.service.DeptServiceImpl;
 import org.apache.commons.io.IOUtils;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -22,7 +23,7 @@ import java.util.stream.Collectors;
 //@ResponseBody  //将返回的对象或集合自动转换成json格式返回
 public class DeptController {
     @Autowired
-    private DeptServiceImpl deptService;
+    private DeptService deptService = new DeptServiceImpl();
 
     /**
      * 部门列表查询
