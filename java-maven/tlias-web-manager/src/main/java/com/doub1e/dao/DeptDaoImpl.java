@@ -10,7 +10,8 @@ import java.util.List;
 /**
  * 数据访问层
  */
-@Component //程序启动时，自动创建该类对象并交由IOC容器管理
+//@Component //程序启动时，自动创建该类对象并交由IOC容器管理
+@Repository //用来标识当前类是一个数据访问层类 -- 效果等价于@Component
 public class DeptDaoImpl implements DeptDao {
     public List<String> list(){
         //1.加载并读取dept.txt文件 获取原始数据

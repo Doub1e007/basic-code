@@ -9,13 +9,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a346d524-07cc-418e-bc14-cf590e5d1189" name="Changes" comment="使用接口技术提高可扩展性">
+    <list default="true" id="a346d524-07cc-418e-bc14-cf590e5d1189" name="Changes" comment="IOC（控制反转）和DI（依赖注入">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tlias-web-manager/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/tlias-web-manager/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tlias-web-manager/src/main/java/com/doub1e/TliasWebManagerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/tlias-web-manager/src/main/java/com/doub1e/TliasWebManagerApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tlias-web-manager/src/main/java/com/doub1e/controller/DeptController.java" beforeDir="false" afterPath="$PROJECT_DIR$/tlias-web-manager/src/main/java/com/doub1e/controller/DeptController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tlias-web-manager/src/main/java/com/doub1e/dao/DeptDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/tlias-web-manager/src/main/java/com/doub1e/dao/DeptDaoImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tlias-web-manager/src/main/java/com/doub1e/service/DeptServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/tlias-web-manager/src/main/java/com/doub1e/service/DeptServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tlias-web-manager/target/classes/com/doub1e/TliasWebManagerApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/tlias-web-manager/target/classes/com/doub1e/TliasWebManagerApplication.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tlias-web-manager/target/classes/com/doub1e/controller/DeptController.class" beforeDir="false" afterPath="$PROJECT_DIR$/tlias-web-manager/target/classes/com/doub1e/controller/DeptController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tlias-web-manager/target/classes/com/doub1e/dao/DeptDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/tlias-web-manager/target/classes/com/doub1e/dao/DeptDaoImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tlias-web-manager/target/classes/com/doub1e/entity/Dept.class" beforeDir="false" afterPath="$PROJECT_DIR$/tlias-web-manager/target/classes/com/doub1e/entity/Dept.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tlias-web-manager/target/classes/com/doub1e/entity/Result.class" beforeDir="false" afterPath="$PROJECT_DIR$/tlias-web-manager/target/classes/com/doub1e/entity/Result.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tlias-web-manager/target/classes/com/doub1e/service/DeptServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/tlias-web-manager/target/classes/com/doub1e/service/DeptServiceImpl.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -121,6 +126,7 @@
       <recent name="C:\Code\IDEA-code\java-maven\maven-pre" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.doub1e.service" />
       <recent name="com.example" />
     </key>
   </component>
@@ -285,7 +291,7 @@
       <workItem from="1748485169066" duration="11962000" />
       <workItem from="1748512381745" duration="2221000" />
       <workItem from="1748570610469" duration="1676000" />
-      <workItem from="1748573580888" duration="2390000" />
+      <workItem from="1748573580888" duration="4533000" />
     </task>
     <task id="LOCAL-00001" summary="Http和Servlet">
       <option name="closed" value="true" />
@@ -351,7 +357,15 @@
       <option name="project" value="LOCAL" />
       <updated>1748574444302</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="IOC（控制反转）和DI（依赖注入">
+      <option name="closed" value="true" />
+      <created>1748583416805</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1748583416805</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -366,17 +380,7 @@
     <MESSAGE value="统一响应结果" />
     <MESSAGE value="三层架构controller service dao" />
     <MESSAGE value="使用接口技术提高可扩展性" />
-    <option name="LAST_COMMIT_MESSAGE" value="使用接口技术提高可扩展性" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/tlias-web-manager/src/main/java/com/doub1e/controller/DeptController.java</url>
-          <line>77</line>
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="IOC（控制反转）和DI（依赖注入" />
+    <option name="LAST_COMMIT_MESSAGE" value="IOC（控制反转）和DI（依赖注入" />
   </component>
 </project>
