@@ -16,6 +16,7 @@
             <name qname="db01" />
             <name qname="java147_db01" />
             <name qname="java_mavendb01" />
+            <name qname="java147_db02" />
           </node>
         </introspection-scope>
       </schema-mapping>
