@@ -9,15 +9,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a346d524-07cc-418e-bc14-cf590e5d1189" name="Changes" comment="Update">
-      <change afterPath="$PROJECT_DIR$/jdbc-demo/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jdbc-demo/src/test/java/com/doub1e/JDBCTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/4164a20f-4116-40e7-980a-40b3cf3d885a.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/4164a20f-4116-40e7-980a-40b3cf3d885a.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="a346d524-07cc-418e-bc14-cf590e5d1189" name="Changes" comment="JDBC">
+      <change afterPath="$PROJECT_DIR$/jdbc-demo/src/test/java/com/doub1e/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jdbc-demo/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/jdbc-demo/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jdbc-demo/src/test/java/com/doub1e/JDBCTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/jdbc-demo/src/test/java/com/doub1e/JDBCTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jdbc-demo/target/test-classes/com/doub1e/JDBCTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/jdbc-demo/target/test-classes/com/doub1e/JDBCTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,6 +78,9 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "JUnit.JDBCTest.executor": "Run",
+    "JUnit.JDBCTest.testSelect (1).executor": "Run",
+    "JUnit.JDBCTest.testSelect.executor": "Run",
     "JUnit.JDBCTest.testUpdate.executor": "Run",
     "Maven.servlet-demo [clean].executor": "Run",
     "Maven.servlet-demo [compile].executor": "Run",
@@ -101,7 +101,7 @@
     "Tomcat Server.Tomcat 9.0.89.executor": "Run",
     "Tomcat Server.servlet-code.executor": "Run",
     "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/Code/IDEA-code/java-maven/tlias-web-manager/src/main/java/com/doub1e/entity",
+    "last_opened_file_path": "C:/Code/IDEA-code/java-maven/jdbc-demo/src/test/java/com/doub1e",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -120,6 +120,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Code\IDEA-code\java-maven\jdbc-demo\src\test\java\com\doub1e" />
       <recent name="C:\Code\IDEA-code\java-maven\tlias-web-manager\src\main\java\com\doub1e\entity" />
       <recent name="C:\Code\IDEA-code\java-maven\tlias-web-manager\src\main\resources" />
     </key>
@@ -142,7 +143,54 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.JDBCTest.testUpdate">
+  <component name="RunManager" selected="JUnit.JDBCTest.testSelect (1)">
+    <configuration name="JDBCTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="jdbc-demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.doub1e.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.doub1e" />
+      <option name="MAIN_CLASS_NAME" value="com.doub1e.JDBCTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JDBCTest.testSelect (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="jdbc-demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.doub1e.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.doub1e" />
+      <option name="MAIN_CLASS_NAME" value="com.doub1e.JDBCTest" />
+      <option name="METHOD_NAME" value="testSelect(java.lang.String,java.lang.String)" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JDBCTest.testSelect" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="jdbc-demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.doub1e.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.doub1e" />
+      <option name="MAIN_CLASS_NAME" value="com.doub1e.JDBCTest" />
+      <option name="METHOD_NAME" value="testSelect" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="JDBCTest.testUpdate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="jdbc-demo" />
       <extension name="coverage">
@@ -275,6 +323,9 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="JUnit.JDBCTest" />
+      <item itemvalue="JUnit.JDBCTest.testSelect" />
+      <item itemvalue="JUnit.JDBCTest.testSelect (1)" />
       <item itemvalue="JUnit.JDBCTest.testUpdate" />
       <item itemvalue="Spring Boot.SpringbootWebQuickstart01Application" />
       <item itemvalue="Spring Boot.TliasWebManagerApplication" />
@@ -283,6 +334,9 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.JDBCTest.testSelect (1)" />
+        <item itemvalue="JUnit.JDBCTest.testSelect" />
+        <item itemvalue="JUnit.JDBCTest" />
         <item itemvalue="JUnit.JDBCTest.testUpdate" />
         <item itemvalue="Spring Boot.Main" />
       </list>
@@ -312,7 +366,8 @@
       <workItem from="1748512381745" duration="2221000" />
       <workItem from="1748570610469" duration="1676000" />
       <workItem from="1748573580888" duration="11282000" />
-      <workItem from="1748655894437" duration="12717000" />
+      <workItem from="1748655894437" duration="13816000" />
+      <workItem from="1748763099045" duration="3353000" />
     </task>
     <task id="LOCAL-00001" summary="Http和Servlet">
       <option name="closed" value="true" />
@@ -402,7 +457,15 @@
       <option name="project" value="LOCAL" />
       <updated>1748674002366</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="JDBC">
+      <option name="closed" value="true" />
+      <created>1748681772137</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1748681772137</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -419,7 +482,8 @@
     <MESSAGE value="使用接口技术提高可扩展性" />
     <MESSAGE value="IOC（控制反转）和DI（依赖注入" />
     <MESSAGE value="Update" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update" />
+    <MESSAGE value="JDBC" />
+    <option name="LAST_COMMIT_MESSAGE" value="JDBC" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
