@@ -8,15 +8,14 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="jdbc-demo" />
-        <module name="servlet-demo" />
-        <module name="springboot-web-quickstart01" />
-        <module name="springboot-web-quickstart02" />
+        <module name="springboot-mybatis-quickstart" />
       </profile>
       <profile name="Annotation profile for tlias-web-manager" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="false">
+          <entry name="$PROJECT_DIR$/../../../Environment/apache-maven-3.9.9/repo/org/projectlombok/lombok/unknown/lombok-unknown.jar" />
           <entry name="$PROJECT_DIR$/../../../Environment/apache-maven-3.9.9/repo/org/projectlombok/lombok/unknown/lombok-unknown.jar" />
         </processorPath>
         <module name="tlias-web-manager" />
@@ -28,10 +27,14 @@
       <module name="maven-projectA" target="21" />
       <module name="maven-projectB" target="21" />
       <module name="maven-projectC" target="21" />
+      <module name="servlet-demo" target="21" />
+      <module name="springboot-web-quickstart01" target="21" />
+      <module name="springboot-web-quickstart02" target="17" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="springboot-mybatis-quickstart" options="-parameters" />
       <module name="springboot-web-quickstart01" options="-parameters" />
       <module name="springboot-web-quickstart02" options="-parameters" />
       <module name="tlias-web-manager" options="-parameters" />

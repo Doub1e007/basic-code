@@ -9,10 +9,53 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a346d524-07cc-418e-bc14-cf590e5d1189" name="Changes" comment="存在sql注入的xx">
+    <list default="true" id="a346d524-07cc-418e-bc14-cf590e5d1189" name="Changes" comment="预编译sql解决sql注入问题">
+      <change afterPath="$PROJECT_DIR$/springboot-mybatis-quickstart/src/main/java/com/doub1e/entity/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-mybatis-quickstart/src/main/java/com/doub1e/mapper/UserMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-mybatis-quickstart/src/test/java/com/doub1e/UserMapperTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/4164a20f-4116-40e7-980a-40b3cf3d885a.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/4164a20f-4116-40e7-980a-40b3cf3d885a.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jdbc-demo/src/test/java/com/doub1e/JDBCTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/jdbc-demo/src/test/java/com/doub1e/JDBCTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jdbc-demo/target/test-classes/com/doub1e/JDBCTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/jdbc-demo/target/test-classes/com/doub1e/JDBCTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/servlet-demo/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/servlet-demo/src/main/java/com/example/HelloServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/servlet-demo/src/main/java/com/example/RequestServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/servlet-demo/src/main/java/com/example/ResponseServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/servlet-demo/target/classes/com/example/HelloServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/servlet-demo/target/classes/com/example/RequestServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/servlet-demo/target/classes/com/example/ResponseServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/servlet-demo/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/servlet-demo/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/servlet-demo/target/servlet-demo-1.0-SNAPSHOT.war" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/servlet-demo/target/servlet-demo-1.0-SNAPSHOT/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/servlet-demo/target/servlet-demo-1.0-SNAPSHOT/WEB-INF/classes/com/example/HelloServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/servlet-demo/target/servlet-demo-1.0-SNAPSHOT/WEB-INF/classes/com/example/RequestServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/servlet-demo/target/servlet-demo-1.0-SNAPSHOT/WEB-INF/classes/com/example/ResponseServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-web-quickstart01/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-web-quickstart01/src/main/java/com/doub1e/HelloController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-web-quickstart01/src/main/java/com/doub1e/SpringbootWebQuickstart01Application.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-web-quickstart01/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-web-quickstart01/src/test/java/com/doub1e/SpringbootWebQuickstart01ApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-web-quickstart01/target/classes/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-web-quickstart01/target/classes/com/doub1e/HelloController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-web-quickstart01/target/classes/com/doub1e/SpringbootWebQuickstart01Application.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-web-quickstart01/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-web-quickstart01/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-web-quickstart01/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-web-quickstart01/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-web-quickstart01/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-web-quickstart01/target/springboot-web-quickstart01-0.0.1-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-web-quickstart01/target/springboot-web-quickstart01-0.0.1-SNAPSHOT.jar.original" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-web-quickstart01/target/test-classes/com/doub1e/SpringbootWebQuickstart01ApplicationTests.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-web-quickstart02/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-web-quickstart02/src/main/java/com/doub1e/HelloController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-web-quickstart02/src/main/java/com/doub1e/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-web-quickstart02/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-web-quickstart02/target/classes/com/doub1e/HelloController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-web-quickstart02/target/classes/com/doub1e/Main.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,51 +117,54 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "JUnit.JDBCTest.executor": "Run",
-    "JUnit.JDBCTest.testSelect (1).executor": "Run",
-    "JUnit.JDBCTest.testSelect.executor": "Run",
-    "JUnit.JDBCTest.testSelect2.executor": "Run",
-    "JUnit.JDBCTest.testUpdate.executor": "Run",
-    "Maven.servlet-demo [clean].executor": "Run",
-    "Maven.servlet-demo [compile].executor": "Run",
-    "Maven.springboot-web-quickstart01 [clean].executor": "Run",
-    "Maven.springboot-web-quickstart01 [install].executor": "Run",
-    "Maven.springboot-web-quickstart01 [package].executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "Spring Boot.Main.executor": "Run",
-    "Spring Boot.SpringbootWebQuickstart01Application.executor": "Run",
-    "Spring Boot.TliasWebManagerApplication.executor": "Run",
-    "Tomcat Server.Tomcat 9.0.89.executor": "Run",
-    "Tomcat Server.servlet-code.executor": "Run",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/Code/IDEA-code/java-maven/jdbc-demo/src/test/java/com/doub1e",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "onboarding.tips.debug.path": "C:/Code/IDEA-code/java-maven/jdbc-demo/src/main/java/com/doub1e/Main.java",
-    "run.configurations.included.in.services": "true",
-    "settings.editor.selected.configurable": "reference.settings.ide.settings.web.browsers",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;JUnit.JDBCTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.JDBCTest.testSelect (1).executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.JDBCTest.testSelect.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.JDBCTest.testSelect2.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.JDBCTest.testUpdate.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserMapperTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserMapperTest.testList.executor&quot;: &quot;Run&quot;,
+    &quot;Maven.servlet-demo [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.servlet-demo [compile].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.springboot-web-quickstart01 [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.springboot-web-quickstart01 [install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.springboot-web-quickstart01 [package].executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Spring Boot.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.SpringbootWebQuickstart01Application.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.TliasWebManagerApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Tomcat Server.Tomcat 9.0.89.executor&quot;: &quot;Run&quot;,
+    &quot;Tomcat Server.servlet-code.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Code/IDEA-code/java-maven/springboot-mybatis-quickstart/src/main/java/com/doub1e/entity&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Code/IDEA-code/java-maven/jdbc-demo/src/main/java/com/doub1e/Main.java&quot;,
+    &quot;run.configurations.included.in.services&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Code\IDEA-code\java-maven\springboot-mybatis-quickstart\src\main\java\com\doub1e\entity" />
       <recent name="C:\Code\IDEA-code\java-maven\jdbc-demo\src\test\java\com\doub1e" />
       <recent name="C:\Code\IDEA-code\java-maven\tlias-web-manager\src\main\java\com\doub1e\entity" />
       <recent name="C:\Code\IDEA-code\java-maven\tlias-web-manager\src\main\resources" />
@@ -142,22 +188,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.JDBCTest.testSelect2">
-    <configuration name="JDBCTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="jdbc-demo" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.doub1e.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.doub1e" />
-      <option name="MAIN_CLASS_NAME" value="com.doub1e.JDBCTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.UserMapperTest.testList">
     <configuration name="JDBCTest.testSelect (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="jdbc-demo" />
       <extension name="coverage">
@@ -206,8 +237,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="JDBCTest.testUpdate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="jdbc-demo" />
+    <configuration name="UserMapperTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="springboot-mybatis-quickstart" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.doub1e.*" />
@@ -215,9 +246,31 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.doub1e" />
-      <option name="MAIN_CLASS_NAME" value="com.doub1e.JDBCTest" />
-      <option name="METHOD_NAME" value="testUpdate" />
+      <option name="MAIN_CLASS_NAME" value="com.doub1e.UserMapperTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserMapperTest.testList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="springboot-mybatis-quickstart" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.doub1e.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.doub1e" />
+      <option name="MAIN_CLASS_NAME" value="com.doub1e.UserMapperTest" />
+      <option name="METHOD_NAME" value="testList" />
       <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringbootMybatisQuickstartApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="springboot-mybatis-quickstart" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.doub1e.SpringbootMybatisQuickstartApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -325,22 +378,23 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.JDBCTest" />
+      <item itemvalue="JUnit.UserMapperTest" />
       <item itemvalue="JUnit.JDBCTest.testSelect" />
       <item itemvalue="JUnit.JDBCTest.testSelect (1)" />
       <item itemvalue="JUnit.JDBCTest.testSelect2" />
-      <item itemvalue="JUnit.JDBCTest.testUpdate" />
+      <item itemvalue="JUnit.UserMapperTest.testList" />
+      <item itemvalue="Spring Boot.SpringbootMybatisQuickstartApplication" />
       <item itemvalue="Spring Boot.SpringbootWebQuickstart01Application" />
       <item itemvalue="Spring Boot.TliasWebManagerApplication" />
       <item itemvalue="Tomcat Server.servlet-code" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.UserMapperTest.testList" />
+        <item itemvalue="JUnit.UserMapperTest" />
         <item itemvalue="JUnit.JDBCTest.testSelect2" />
         <item itemvalue="JUnit.JDBCTest.testSelect (1)" />
         <item itemvalue="JUnit.JDBCTest.testSelect" />
-        <item itemvalue="JUnit.JDBCTest" />
-        <item itemvalue="JUnit.JDBCTest.testUpdate" />
       </list>
     </recent_temporary>
   </component>
@@ -369,7 +423,10 @@
       <workItem from="1748570610469" duration="1676000" />
       <workItem from="1748573580888" duration="11282000" />
       <workItem from="1748655894437" duration="13816000" />
-      <workItem from="1748763099045" duration="4344000" />
+      <workItem from="1748763099045" duration="5884000" />
+      <workItem from="1748769014648" duration="631000" />
+      <workItem from="1748769661672" duration="2185000" />
+      <workItem from="1748828590534" duration="552000" />
     </task>
     <task id="LOCAL-00001" summary="Http和Servlet">
       <option name="closed" value="true" />
@@ -475,11 +532,30 @@
       <option name="project" value="LOCAL" />
       <updated>1748766753815</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="预编译sql解决sql注入问题">
+      <option name="closed" value="true" />
+      <created>1748767476151</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1748767476151</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Http和Servlet" />
@@ -494,7 +570,8 @@
     <MESSAGE value="Update" />
     <MESSAGE value="JDBC" />
     <MESSAGE value="存在sql注入的xx" />
-    <option name="LAST_COMMIT_MESSAGE" value="存在sql注入的xx" />
+    <MESSAGE value="预编译sql解决sql注入问题" />
+    <option name="LAST_COMMIT_MESSAGE" value="预编译sql解决sql注入问题" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
