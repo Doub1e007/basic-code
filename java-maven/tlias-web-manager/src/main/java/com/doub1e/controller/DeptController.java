@@ -3,12 +3,8 @@ package com.doub1e.controller;
 import com.doub1e.entity.Dept;
 import com.doub1e.entity.Result;
 import com.doub1e.service.DeptService;
-import com.doub1e.service.DeptServiceImpl;
-import jakarta.annotation.Resource;
 import org.apache.commons.io.IOUtils;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
-import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
@@ -21,17 +17,11 @@ import java.util.stream.Collectors;
 /**
  * 请求处理类
  */
-//@Component //注意：controller不能用1@Component代替
 @RestController
 //@Controller
 //@ResponseBody  //将返回的对象或集合自动转换成json格式返回
 public class DeptController {
-
-//    private DeptService deptService = new DeptServiceImpl();
-    @Autowired //从IOC容器中自动寻找bean对象，为该变量赋值
-    //@Qualifier("service") //根据bean名字注入
-
-    //@Resource(name = "deptServiceImpl") //根据bean名字注入对象，等价于@Autowired + @Qualifier
+    @Autowired
     private DeptService deptService;
 
     /**
