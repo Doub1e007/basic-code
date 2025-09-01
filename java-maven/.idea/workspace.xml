@@ -4,19 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e65c3d5b-aa61-4703-bb2e-d71c17c77e50" name="Changes" comment="增强可扩展性，引入接口编程">
-      <change afterPath="$PROJECT_DIR$/tlias-web-manager/src/main/java/com/doub1e/service/DeptServiceImpl2.java" afterDir="false" />
+    <list default="true" id="e65c3d5b-aa61-4703-bb2e-d71c17c77e50" name="Changes" comment="IOC + DI">
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JDBC-demo/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JDBC-demo/src/test/java/com/doub1e/JDBCTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JDBC-demo/src/test/java/com/doub1e/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tlias-web-manager/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/tlias-web-manager/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tlias-web-manager/src/main/java/com/doub1e/TliasWebManagerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/tlias-web-manager/src/main/java/com/doub1e/TliasWebManagerApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tlias-web-manager/src/main/java/com/doub1e/controller/DeptController.java" beforeDir="false" afterPath="$PROJECT_DIR$/tlias-web-manager/src/main/java/com/doub1e/controller/DeptController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tlias-web-manager/src/main/java/com/doub1e/dao/DeptDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/tlias-web-manager/src/main/java/com/doub1e/dao/DeptDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tlias-web-manager/src/main/java/com/doub1e/service/DeptServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/tlias-web-manager/src/main/java/com/doub1e/service/DeptServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tlias-web-manager/target/classes/com/doub1e/TliasWebManagerApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/tlias-web-manager/target/classes/com/doub1e/TliasWebManagerApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tlias-web-manager/target/classes/com/doub1e/controller/DeptController.class" beforeDir="false" afterPath="$PROJECT_DIR$/tlias-web-manager/target/classes/com/doub1e/controller/DeptController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tlias-web-manager/target/classes/com/doub1e/dao/DeptDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/tlias-web-manager/target/classes/com/doub1e/dao/DeptDaoImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tlias-web-manager/target/classes/com/doub1e/service/DeptServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/tlias-web-manager/target/classes/com/doub1e/service/DeptServiceImpl.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,8 +22,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -74,6 +70,10 @@
   "keyToString": {
     "Application.Main.executor": "Run",
     "JUnit.Demo1Test.executor": "Run",
+    "JUnit.JDBCTest.executor": "Run",
+    "JUnit.JDBCTest.testSelect (1).executor": "Run",
+    "JUnit.JDBCTest.testSelect.executor": "Run",
+    "JUnit.JDBCTest.testUpdate.executor": "Run",
     "JUnit.UserService2Test.executor": "Run",
     "JUnit.UserService2Test.testGetGender.executor": "Run",
     "JUnit.UserServiceTest.executor": "Run",
@@ -95,23 +95,29 @@
     "Spring Boot.SpringbootWebQuickerstart01Application.executor": "Run",
     "Spring Boot.TliasWebManagerApplication.executor": "Run",
     "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/Code/IDEA-code/java-maven/tlias-web-manager/src/main/java/com/doub1e/entity",
+    "last_opened_file_path": "C:/Code/IDEA-code/java-maven/JDBC-demo/src/test/java/com/doub1e",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "onboarding.tips.debug.path": "C:/Code/IDEA-code/java-maven/springboot-web-quickerstart02/src/main/java/com/doub1e/Main.java",
+    "onboarding.tips.debug.path": "C:/Code/IDEA-code/java-maven/JDBC-demo/src/main/java/com/doub1e/Main.java",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "run.configurations.included.in.services": "true",
     "settings.editor.selected.configurable": "reference.projectsettings.compiler.javacompiler",
     "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
+    ]
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Code\IDEA-code\java-maven\JDBC-demo\src\test\java\com\doub1e" />
       <recent name="C:\Code\IDEA-code\java-maven\tlias-web-manager\src\main\java\com\doub1e\entity" />
       <recent name="C:\Code\IDEA-code\java-maven\tlias-web-manager\src\main\resources" />
       <recent name="C:\Code\IDEA-code\java-maven\maven-project01\src\main\java\com\doub1e" />
@@ -131,9 +137,9 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.TliasWebManagerApplication">
-    <configuration name="Demo1Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="maven-project01" />
+  <component name="RunManager" selected="JUnit.JDBCTest.testSelect2">
+    <configuration name="JDBCTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="JDBC-demo" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.doub1e.*" />
@@ -141,14 +147,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.doub1e" />
-      <option name="MAIN_CLASS_NAME" value="com.doub1e.Demo1Test" />
+      <option name="MAIN_CLASS_NAME" value="com.doub1e.JDBCTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserService2Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="maven-project01" />
+    <configuration name="JDBCTest.testSelect (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="JDBC-demo" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.doub1e.*" />
@@ -156,30 +162,15 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.doub1e" />
-      <option name="MAIN_CLASS_NAME" value="com.doub1e.UserService2Test" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UserService2Test.testGetGender" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="maven-project01" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.doub1e.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.doub1e" />
-      <option name="MAIN_CLASS_NAME" value="com.doub1e.UserService2Test" />
-      <option name="METHOD_NAME" value="testGetGender(java.lang.String)" />
+      <option name="MAIN_CLASS_NAME" value="com.doub1e.JDBCTest" />
+      <option name="METHOD_NAME" value="testSelect(java.lang.String,java.lang.String)" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="maven-project01" />
+    <configuration name="JDBCTest.testSelect" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="JDBC-demo" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.doub1e.*" />
@@ -187,21 +178,41 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.doub1e" />
-      <option name="MAIN_CLASS_NAME" value="com.doub1e.UserServiceTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="MAIN_CLASS_NAME" value="com.doub1e.JDBCTest" />
+      <option name="METHOD_NAME" value="testSelect" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="springboot-web-quickerstart02" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.doub1e.Main" />
+    <configuration name="JDBCTest.testSelect2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="JDBC-demo" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.doub1e.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="com.doub1e" />
+      <option name="MAIN_CLASS_NAME" value="com.doub1e.JDBCTest" />
+      <option name="METHOD_NAME" value="testSelect2(java.lang.String,java.lang.String)" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JDBCTest.testUpdate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="JDBC-demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.doub1e.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.doub1e" />
+      <option name="MAIN_CLASS_NAME" value="com.doub1e.JDBCTest" />
+      <option name="METHOD_NAME" value="testUpdate" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -222,11 +233,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.Main" />
-        <item itemvalue="JUnit.UserService2Test" />
-        <item itemvalue="JUnit.UserService2Test.testGetGender" />
-        <item itemvalue="JUnit.Demo1Test" />
-        <item itemvalue="JUnit.UserServiceTest" />
+        <item itemvalue="JUnit.JDBCTest.testSelect2" />
+        <item itemvalue="JUnit.JDBCTest.testSelect (1)" />
+        <item itemvalue="JUnit.JDBCTest.testUpdate" />
+        <item itemvalue="JUnit.JDBCTest.testSelect" />
+        <item itemvalue="JUnit.JDBCTest" />
       </list>
     </recent_temporary>
   </component>
@@ -250,7 +261,7 @@
       <workItem from="1756598142054" duration="44000" />
       <workItem from="1756598763600" duration="7702000" />
       <workItem from="1756633142399" duration="5846000" />
-      <workItem from="1756687937775" duration="14303000" />
+      <workItem from="1756687937775" duration="21436000" />
     </task>
     <task id="LOCAL-00001" summary="maven init">
       <option name="closed" value="true" />
@@ -300,7 +311,15 @@
       <option name="project" value="LOCAL" />
       <updated>1756701028105</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="IOC + DI">
+      <option name="closed" value="true" />
+      <created>1756717801249</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1756717801249</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -324,6 +343,18 @@
     <MESSAGE value="修复后" />
     <MESSAGE value="分层解耦" />
     <MESSAGE value="增强可扩展性，引入接口编程" />
-    <option name="LAST_COMMIT_MESSAGE" value="增强可扩展性，引入接口编程" />
+    <MESSAGE value="IOC + DI" />
+    <option name="LAST_COMMIT_MESSAGE" value="IOC + DI" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/JDBC-demo/src/main/java/com/doub1e/Main.java</url>
+          <line>13</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
