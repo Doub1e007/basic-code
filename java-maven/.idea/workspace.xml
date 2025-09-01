@@ -4,15 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e65c3d5b-aa61-4703-bb2e-d71c17c77e50" name="Changes" comment="springboot web init">
-      <change afterPath="$PROJECT_DIR$/tlias-web-manager/src/main/java/com/doub1e/controller/DeptController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tlias-web-manager/src/main/java/com/doub1e/entity/Dept.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tlias-web-manager/src/main/resources/dept.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="e65c3d5b-aa61-4703-bb2e-d71c17c77e50" name="Changes" comment="something wrong">
+      <change afterPath="$PROJECT_DIR$/tlias-web-manager/src/main/java/com/doub1e/entity/Result.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot-web-quickerstart01/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-web-quickerstart01/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tlias-web-manager/src/main/java/com/doub1e/controller/DeptController.java" beforeDir="false" afterPath="$PROJECT_DIR$/tlias-web-manager/src/main/java/com/doub1e/controller/DeptController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tlias-web-manager/target/classes/com/doub1e/TliasWebManagerApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/tlias-web-manager/target/classes/com/doub1e/TliasWebManagerApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tlias-web-manager/target/classes/com/doub1e/controller/DeptController.class" beforeDir="false" afterPath="$PROJECT_DIR$/tlias-web-manager/target/classes/com/doub1e/controller/DeptController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tlias-web-manager/target/classes/com/doub1e/entity/Dept.class" beforeDir="false" afterPath="$PROJECT_DIR$/tlias-web-manager/target/classes/com/doub1e/entity/Dept.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tlias-web-manager/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tlias-web-manager/target/test-classes/com/doub1e/TliasWebManagerApplicationTests.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,6 +77,7 @@
     "Maven.maven-project01 [clean].executor": "Run",
     "Maven.springboot-web-quickerstart01 [clean].executor": "Run",
     "Maven.springboot-web-quickerstart01 [package].executor": "Run",
+    "Maven.tlias-web-manager [clean].executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RequestMappingsPanelOrder0": "0",
     "RequestMappingsPanelOrder1": "1",
@@ -87,8 +88,9 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "Spring Boot.Main.executor": "Run",
     "Spring Boot.SpringbootWebQuickerstart01Application.executor": "Run",
+    "Spring Boot.TliasWebManagerApplication.executor": "Run",
     "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/Code/IDEA-code/java-maven/tlias-web-manager/src/main/resources",
+    "last_opened_file_path": "C:/Code/IDEA-code/java-maven/tlias-web-manager/src/main/java/com/doub1e/entity",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -105,6 +107,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Code\IDEA-code\java-maven\tlias-web-manager\src\main\java\com\doub1e\entity" />
       <recent name="C:\Code\IDEA-code\java-maven\tlias-web-manager\src\main\resources" />
       <recent name="C:\Code\IDEA-code\java-maven\maven-project01\src\main\java\com\doub1e" />
     </key>
@@ -122,7 +125,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.SpringbootWebQuickerstart01Application">
+  <component name="RunManager" selected="Spring Boot.TliasWebManagerApplication">
     <configuration name="Demo1Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="maven-project01" />
       <extension name="coverage">
@@ -240,7 +243,8 @@
       <workItem from="1756516508997" duration="9339000" />
       <workItem from="1756598142054" duration="44000" />
       <workItem from="1756598763600" duration="7702000" />
-      <workItem from="1756633142399" duration="5103000" />
+      <workItem from="1756633142399" duration="5846000" />
+      <workItem from="1756687937775" duration="3254000" />
     </task>
     <task id="LOCAL-00001" summary="maven init">
       <option name="closed" value="true" />
@@ -258,7 +262,15 @@
       <option name="project" value="LOCAL" />
       <updated>1756630227142</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="something wrong">
+      <option name="closed" value="true" />
+      <created>1756655080315</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1756655080315</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -278,6 +290,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="maven init" />
     <MESSAGE value="springboot web init" />
-    <option name="LAST_COMMIT_MESSAGE" value="springboot web init" />
+    <MESSAGE value="something wrong" />
+    <option name="LAST_COMMIT_MESSAGE" value="something wrong" />
   </component>
 </project>
