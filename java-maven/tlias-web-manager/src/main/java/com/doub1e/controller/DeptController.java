@@ -2,6 +2,7 @@ package com.doub1e.controller;
 
 import com.doub1e.entity.Dept;
 import com.doub1e.entity.Result;
+import com.doub1e.service.DeptService;
 import com.doub1e.service.DeptServiceImpl;
 import org.apache.commons.io.IOUtils;
 import org.springframework.web.bind.annotation.*;
@@ -66,7 +67,7 @@ public class DeptController  {
 //        // 3.响应数据 (json
 //        return Result.success(depts);
 //    }
-    private DeptServiceImpl deptServiceImpl = new DeptServiceImpl();
+    private DeptService deptServiceImpl = new DeptServiceImpl();
 
     @GetMapping("/depts")
     public Result list(){

@@ -1,5 +1,6 @@
 package com.doub1e.service;
 
+import com.doub1e.dao.DeptDao;
 import com.doub1e.dao.DeptDaoImpl;
 import com.doub1e.entity.Dept;
 
@@ -11,9 +12,9 @@ import java.util.stream.Collectors;
 /**
  * 业务逻辑处理层
  */
-public class DeptServiceImpl {
+public class DeptServiceImpl implements DeptService{
 
-    private DeptDaoImpl deptDao = new DeptDaoImpl();
+    private DeptDao deptDao = new DeptDaoImpl();
 
     public List<Dept> list(){
         // 1.获取原始数据
