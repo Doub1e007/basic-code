@@ -4,7 +4,10 @@ import com.doub1e.entity.Dept;
 import com.doub1e.entity.Result;
 import com.doub1e.service.DeptService;
 import com.doub1e.service.DeptServiceImpl;
+import jakarta.annotation.Resource;
 import org.apache.commons.io.IOUtils;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.web.bind.annotation.*;
 
 import java.io.InputStream;
@@ -67,12 +70,17 @@ public class DeptController  {
 //        // 3.响应数据 (json
 //        return Result.success(depts);
 //    }
-    private DeptService deptServiceImpl = new DeptServiceImpl();
+//    private DeptService deptServiceImpl = new DeptServiceImpl();
+//    @Autowired // 从IOC容器中自动寻找bean对象 为该变量赋值 -- 依赖注入DI的实现【根据类型注入】
+//    @Qualifier("service2")  // 根据Bean的名字注入
+
+    @Resource(name = "deptServiceImpl")  // 根据Bean的名字注入 等价于 Autowired + Qulifier
+    private DeptService deptService;
 
     @GetMapping("/depts")
     public Result list(){
         // 1.调用service获取数据
-        List<Dept> depts = deptServiceImpl.list();
+        List<Dept> depts = deptService.list();
 
 
         // 3.响应数据 (json

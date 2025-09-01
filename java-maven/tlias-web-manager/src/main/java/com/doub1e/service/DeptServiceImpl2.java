@@ -1,11 +1,10 @@
 package com.doub1e.service;
 
 import com.doub1e.dao.DeptDao;
-import com.doub1e.dao.DeptDaoImpl;
 import com.doub1e.entity.Dept;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
@@ -15,9 +14,10 @@ import java.util.stream.Collectors;
 /**
  * 业务逻辑处理层
  */
-//@Primary  // 指定该bean优先级最高
-@Component //程序启动时 会自动创建该类对象 并交由IOC容器管理
-public class DeptServiceImpl implements DeptService{
+//@Component //程序启动时 会自动创建该类对象 并交由IOC容器管理
+@Service("service2")  // 用来标识当前类属于逻辑处理类 -- 效果也是将该类交由IOD容器管理
+// 可通过value属性设置Bean的名字 默认是类名首字母小写
+public class DeptServiceImpl2 implements DeptService{
 
 //    private DeptDao deptDao = new DeptDaoImpl();
     @Autowired // 从IOC容器中自动寻找bean对象 为该变量赋值 -- 依赖注入DI的实现
