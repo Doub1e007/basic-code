@@ -4,15 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e65c3d5b-aa61-4703-bb2e-d71c17c77e50" name="Changes" comment="something wrong">
-      <change afterPath="$PROJECT_DIR$/tlias-web-manager/src/main/java/com/doub1e/entity/Result.java" afterDir="false" />
+    <list default="true" id="e65c3d5b-aa61-4703-bb2e-d71c17c77e50" name="Changes" comment="修复后">
+      <change afterPath="$PROJECT_DIR$/tlias-web-manager/src/main/java/com/doub1e/dao/DeptDaoImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tlias-web-manager/src/main/java/com/doub1e/service/DeptServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tlias-web-manager/src/main/java/com/doub1e/controller/DeptController.java" beforeDir="false" afterPath="$PROJECT_DIR$/tlias-web-manager/src/main/java/com/doub1e/controller/DeptController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tlias-web-manager/target/classes/com/doub1e/TliasWebManagerApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/tlias-web-manager/target/classes/com/doub1e/TliasWebManagerApplication.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tlias-web-manager/target/classes/com/doub1e/controller/DeptController.class" beforeDir="false" afterPath="$PROJECT_DIR$/tlias-web-manager/target/classes/com/doub1e/controller/DeptController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tlias-web-manager/target/classes/com/doub1e/entity/Dept.class" beforeDir="false" afterPath="$PROJECT_DIR$/tlias-web-manager/target/classes/com/doub1e/entity/Dept.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tlias-web-manager/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tlias-web-manager/target/test-classes/com/doub1e/TliasWebManagerApplicationTests.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -244,7 +241,7 @@
       <workItem from="1756598142054" duration="44000" />
       <workItem from="1756598763600" duration="7702000" />
       <workItem from="1756633142399" duration="5846000" />
-      <workItem from="1756687937775" duration="3254000" />
+      <workItem from="1756687937775" duration="5107000" />
     </task>
     <task id="LOCAL-00001" summary="maven init">
       <option name="closed" value="true" />
@@ -270,7 +267,15 @@
       <option name="project" value="LOCAL" />
       <updated>1756655080315</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="修复后">
+      <option name="closed" value="true" />
+      <created>1756692188000</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1756692188000</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -291,6 +296,7 @@
     <MESSAGE value="maven init" />
     <MESSAGE value="springboot web init" />
     <MESSAGE value="something wrong" />
-    <option name="LAST_COMMIT_MESSAGE" value="something wrong" />
+    <MESSAGE value="修复后" />
+    <option name="LAST_COMMIT_MESSAGE" value="修复后" />
   </component>
 </project>
