@@ -17,22 +17,8 @@ public class DeptServiceImpl implements DeptService {
     @Autowired
     private DeptMapper deptMapper;
 
-    /**
-     * 查询部门列表
-     * @return
-     */
     public List<Dept> list(){
         // 1.调用mapper的方法，获取列表数据并返回
         return deptMapper.list();
-    }
-
-    /**
-     * 根据id删除部门
-     * @param id
-     */
-    @Override
-    public void delete(Integer id) {
-        // 调用mapper的删除方法
-        deptMapper.delete(id);
     }
 }

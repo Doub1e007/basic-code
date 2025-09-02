@@ -7,7 +7,6 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="springboot-mybatis-quickstart" />
       </profile>
       <profile name="Annotation profile for tlias-web-manager" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
@@ -25,6 +24,7 @@
       <module name="maven-projectA" target="21" />
       <module name="maven-projectB" target="21" />
       <module name="maven-projectC" target="21" />
+      <module name="springboot-mybatis-quickstart" target="21" />
       <module name="springboot-web-quickerstart01" target="21" />
       <module name="springboot-web-quickerstart02" target="17" />
     </bytecodeTargetLevel>

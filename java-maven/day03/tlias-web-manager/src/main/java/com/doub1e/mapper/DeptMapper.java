@@ -1,7 +1,10 @@
 package com.doub1e.mapper;
 
 import com.doub1e.entity.Dept;
-import org.apache.ibatis.annotations.*;
+import org.apache.ibatis.annotations.Mapper;
+import org.apache.ibatis.annotations.Result;
+import org.apache.ibatis.annotations.Results;
+import org.apache.ibatis.annotations.Select;
 
 import java.util.List;
 
@@ -24,11 +27,4 @@ public interface DeptMapper  {
     //数据封装方式三：全局配置 开启驼峰命名规则映射
     @Select("select * from dept ")
     public List<Dept> list();
-
-    /**
-     * 根据id删除部门
-     * @param id
-     */
-    @Delete("delete from dept where id = #{id}")
-    void delete(Integer id);
 }

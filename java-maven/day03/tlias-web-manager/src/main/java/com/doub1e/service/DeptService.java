@@ -5,15 +5,5 @@ import com.doub1e.entity.Dept;
 import java.util.List;
 
 public interface DeptService {
-    /**
-     * 查询部门列表
-     * @return
-     */
     public List<Dept> list();
-
-    /**
-     * 根据id删除
-     * @param id
-     */
-    void delete(Integer id);
 }
