@@ -4,12 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e65c3d5b-aa61-4703-bb2e-d71c17c77e50" name="Changes" comment="IOC + DI">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JDBC-demo/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JDBC-demo/src/test/java/com/doub1e/JDBCTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JDBC-demo/src/test/java/com/doub1e/User.java" afterDir="false" />
+    <list default="true" id="e65c3d5b-aa61-4703-bb2e-d71c17c77e50" name="Changes" comment="预编译sql 防止sql注入 提升效率">
+      <change afterPath="$PROJECT_DIR$/springboot-mybatis-quickstart/src/main/java/com/doub1e/entity/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-mybatis-quickstart/src/main/java/com/doub1e/mapper/UserMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-mybatis-quickstart/src/main/resources/mapper/UserMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-mybatis-quickstart/src/test/java/com/doub1e/UserMapperTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/e1398902-a177-4f66-8091-b8b36d8d6cc4/storage_v2/_src_/schema/sakila.oXLGyQ.zip" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/e1398902-a177-4f66-8091-b8b36d8d6cc4/storage_v2/_src_/schema/sakila.oXLGyQ.zip" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
@@ -24,6 +27,7 @@
       <list>
         <option value="Interface" />
         <option value="Class" />
+        <option value="Mybatis Mapper" />
       </list>
     </option>
   </component>
@@ -69,11 +73,15 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.Main.executor": "Run",
+    "Application.TliasWebManagerApplication.executor": "Run",
     "JUnit.Demo1Test.executor": "Run",
     "JUnit.JDBCTest.executor": "Run",
     "JUnit.JDBCTest.testSelect (1).executor": "Run",
     "JUnit.JDBCTest.testSelect.executor": "Run",
+    "JUnit.JDBCTest.testSelect2.executor": "Run",
     "JUnit.JDBCTest.testUpdate.executor": "Run",
+    "JUnit.UserMapperTest.executor": "Run",
+    "JUnit.UserMapperTest.testList.executor": "Run",
     "JUnit.UserService2Test.executor": "Run",
     "JUnit.UserService2Test.testGetGender.executor": "Run",
     "JUnit.UserServiceTest.executor": "Run",
@@ -95,7 +103,7 @@
     "Spring Boot.SpringbootWebQuickerstart01Application.executor": "Run",
     "Spring Boot.TliasWebManagerApplication.executor": "Run",
     "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/Code/IDEA-code/java-maven/JDBC-demo/src/test/java/com/doub1e",
+    "last_opened_file_path": "C:/Code/IDEA-code/java-maven/springboot-mybatis-quickstart/src/main/resources/mapper",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -106,7 +114,7 @@
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "run.configurations.included.in.services": "true",
-    "settings.editor.selected.configurable": "reference.projectsettings.compiler.javacompiler",
+    "settings.editor.selected.configurable": "reference.settingsdialog.IDE.editor.colors",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -117,12 +125,17 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Code\IDEA-code\java-maven\springboot-mybatis-quickstart\src\main\resources\mapper" />
+      <recent name="C:\Code\IDEA-code\java-maven\springboot-mybatis-quickstart\src\main\java\com\doub1e\entity" />
       <recent name="C:\Code\IDEA-code\java-maven\JDBC-demo\src\test\java\com\doub1e" />
       <recent name="C:\Code\IDEA-code\java-maven\tlias-web-manager\src\main\java\com\doub1e\entity" />
       <recent name="C:\Code\IDEA-code\java-maven\tlias-web-manager\src\main\resources" />
-      <recent name="C:\Code\IDEA-code\java-maven\maven-project01\src\main\java\com\doub1e" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Code\IDEA-code\java-maven\springboot-mybatis-quickstart\src\main\resources\mapper" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.doub1e.mapper" />
       <recent name="com.doub1e.service" />
       <recent name="com.doub1e" />
     </key>
@@ -137,18 +150,16 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.JDBCTest.testSelect2">
-    <configuration name="JDBCTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="JDBC-demo" />
+  <component name="RunManager" selected="Application.TliasWebManagerApplication">
+    <configuration name="TliasWebManagerApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.doub1e.TliasWebManagerApplication" />
+      <module name="tlias-web-manager" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.doub1e.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.doub1e" />
-      <option name="MAIN_CLASS_NAME" value="com.doub1e.JDBCTest" />
-      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -164,22 +175,6 @@
       <option name="PACKAGE_NAME" value="com.doub1e" />
       <option name="MAIN_CLASS_NAME" value="com.doub1e.JDBCTest" />
       <option name="METHOD_NAME" value="testSelect(java.lang.String,java.lang.String)" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="JDBCTest.testSelect" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="JDBC-demo" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.doub1e.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.doub1e" />
-      <option name="MAIN_CLASS_NAME" value="com.doub1e.JDBCTest" />
-      <option name="METHOD_NAME" value="testSelect" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -201,8 +196,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="JDBCTest.testUpdate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="JDBC-demo" />
+    <configuration name="UserMapperTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="springboot-mybatis-quickstart" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.doub1e.*" />
@@ -210,9 +205,31 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.doub1e" />
-      <option name="MAIN_CLASS_NAME" value="com.doub1e.JDBCTest" />
-      <option name="METHOD_NAME" value="testUpdate" />
+      <option name="MAIN_CLASS_NAME" value="com.doub1e.UserMapperTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserMapperTest.testList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="springboot-mybatis-quickstart" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.doub1e.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.doub1e" />
+      <option name="MAIN_CLASS_NAME" value="com.doub1e.UserMapperTest" />
+      <option name="METHOD_NAME" value="testList" />
       <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringbootMybatisQuickstartApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="springboot-mybatis-quickstart" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.doub1e.SpringbootMybatisQuickstartApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -233,11 +250,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.TliasWebManagerApplication" />
+        <item itemvalue="JUnit.UserMapperTest.testList" />
+        <item itemvalue="JUnit.UserMapperTest" />
         <item itemvalue="JUnit.JDBCTest.testSelect2" />
         <item itemvalue="JUnit.JDBCTest.testSelect (1)" />
-        <item itemvalue="JUnit.JDBCTest.testUpdate" />
-        <item itemvalue="JUnit.JDBCTest.testSelect" />
-        <item itemvalue="JUnit.JDBCTest" />
       </list>
     </recent_temporary>
   </component>
@@ -261,7 +278,8 @@
       <workItem from="1756598142054" duration="44000" />
       <workItem from="1756598763600" duration="7702000" />
       <workItem from="1756633142399" duration="5846000" />
-      <workItem from="1756687937775" duration="21436000" />
+      <workItem from="1756687937775" duration="24011000" />
+      <workItem from="1756776585361" duration="3736000" />
     </task>
     <task id="LOCAL-00001" summary="maven init">
       <option name="closed" value="true" />
@@ -319,7 +337,15 @@
       <option name="project" value="LOCAL" />
       <updated>1756717801249</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="预编译sql 防止sql注入 提升效率">
+      <option name="closed" value="true" />
+      <created>1756745825752</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1756745825752</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -344,7 +370,8 @@
     <MESSAGE value="分层解耦" />
     <MESSAGE value="增强可扩展性，引入接口编程" />
     <MESSAGE value="IOC + DI" />
-    <option name="LAST_COMMIT_MESSAGE" value="IOC + DI" />
+    <MESSAGE value="预编译sql 防止sql注入 提升效率" />
+    <option name="LAST_COMMIT_MESSAGE" value="预编译sql 防止sql注入 提升效率" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
