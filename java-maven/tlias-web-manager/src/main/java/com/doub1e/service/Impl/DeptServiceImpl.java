@@ -50,4 +50,29 @@ public class DeptServiceImpl implements DeptService {
         // 2.调用mapper的新增方法
         deptMapper.insert(dept);
     }
+
+    /**
+     * 数据回显
+     * @param id
+     * @return
+     */
+    @Override
+    public Dept getById(Integer id) {
+        //调用mapper的查询方法
+
+        return deptMapper.getById(id);
+    }
+
+    /**
+     * 修改部门
+     * @param dept
+     */
+    @Override
+    public void update(Dept dept) {
+         // 1.补充属性
+        dept.setUpdateTime(LocalDateTime.now());
+
+        // 2.调用mapper
+        deptMapper.update(dept);
+    }
 }

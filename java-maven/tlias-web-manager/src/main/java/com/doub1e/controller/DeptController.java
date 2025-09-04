@@ -6,6 +6,7 @@ import com.doub1e.service.DeptService;
 import jakarta.annotation.Resource;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
+import org.apache.ibatis.annotations.Update;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -67,6 +68,33 @@ public class DeptController  {
         System.out.println("dept = " + dept);
         // 调用Service
         deptService.save(dept);
+        return Result.success();
+    }
+
+    /**
+     * 回显
+     * @param id
+     * @return
+     */
+    // @PathVariable用于接收路径参数值
+    @GetMapping("/depts/{id}")
+    public Result getById(@PathVariable Integer id){
+        System.out.println("id = " + id);
+
+        //调用Service方法
+        Dept dept = deptService.getById(id);
+        return Result.success(dept);
+    }
+
+    /**
+     * 修改部门
+     * @param dept
+     * @return
+     */
+    @PutMapping("/depts")
+    public Result update(@RequestBody Dept dept){
+        System.out.println("dept = " + dept);
+        deptService.update(dept);
         return Result.success();
     }
 }
