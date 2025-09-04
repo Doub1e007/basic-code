@@ -56,4 +56,17 @@ public class DeptController  {
         return Result.success();
     }
 
+    /**
+     * 新增部门
+     * @param dept
+     * @return
+     */
+    // @RequestBody 用来接收json格式数据
+    @PostMapping("/depts")
+    public Result save(@RequestBody Dept dept){
+        System.out.println("dept = " + dept);
+        // 调用Service
+        deptService.save(dept);
+        return Result.success();
+    }
 }
