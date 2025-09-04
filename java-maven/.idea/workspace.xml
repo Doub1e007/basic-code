@@ -4,17 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e65c3d5b-aa61-4703-bb2e-d71c17c77e50" name="Changes" comment="新增部门逻辑实现">
-      <change afterPath="$PROJECT_DIR$/tlias-web-manager/src/main/resources/com/doub1e/mapper/DeptMapper.xml" afterDir="false" />
+    <list default="true" id="e65c3d5b-aa61-4703-bb2e-d71c17c77e50" name="Changes" comment="动态sql优化">
+      <change afterPath="$PROJECT_DIR$/tlias-web-manager/src/main/resources/logback.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tlias-web-manager/src/test/java/com/doub1e/LogTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tlias-web-manager/src/main/java/com/doub1e/TliasWebManagerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/tlias-web-manager/src/main/java/com/doub1e/TliasWebManagerApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tlias-web-manager/src/main/java/com/doub1e/controller/DeptController.java" beforeDir="false" afterPath="$PROJECT_DIR$/tlias-web-manager/src/main/java/com/doub1e/controller/DeptController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tlias-web-manager/src/main/java/com/doub1e/mapper/DeptMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/tlias-web-manager/src/main/java/com/doub1e/mapper/DeptMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tlias-web-manager/src/main/java/com/doub1e/service/DeptService.java" beforeDir="false" afterPath="$PROJECT_DIR$/tlias-web-manager/src/main/java/com/doub1e/service/DeptService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tlias-web-manager/src/main/java/com/doub1e/service/Impl/DeptServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/tlias-web-manager/src/main/java/com/doub1e/service/Impl/DeptServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tlias-web-manager/target/classes/com/doub1e/controller/DeptController.class" beforeDir="false" afterPath="$PROJECT_DIR$/tlias-web-manager/target/classes/com/doub1e/controller/DeptController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tlias-web-manager/target/classes/com/doub1e/mapper/DeptMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/tlias-web-manager/target/classes/com/doub1e/mapper/DeptMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tlias-web-manager/target/classes/com/doub1e/service/DeptService.class" beforeDir="false" afterPath="$PROJECT_DIR$/tlias-web-manager/target/classes/com/doub1e/service/DeptService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tlias-web-manager/target/classes/com/doub1e/service/Impl/DeptServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/tlias-web-manager/target/classes/com/doub1e/service/Impl/DeptServiceImpl.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,6 +76,8 @@
     "JUnit.JDBCTest.testSelect.executor": "Run",
     "JUnit.JDBCTest.testSelect2.executor": "Run",
     "JUnit.JDBCTest.testUpdate.executor": "Run",
+    "JUnit.LogTest.testLog.executor": "Run",
+    "JUnit.LogTest.testLogLevel.executor": "Run",
     "JUnit.UserMapperTest.executor": "Run",
     "JUnit.UserMapperTest.testList.executor": "Run",
     "JUnit.UserService2Test.executor": "Run",
@@ -103,7 +102,7 @@
     "Spring Boot.SpringbootWebQuickerstart01Application.executor": "Run",
     "Spring Boot.TliasWebManagerApplication.executor": "Run",
     "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/Code/IDEA-code/java-maven/springboot-mybatis-quickstart/src/main/resources/mapper",
+    "last_opened_file_path": "C:/Code/IDEA-code/java-maven/tlias-web-manager/src/main/resources",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -125,11 +124,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Code\IDEA-code\java-maven\tlias-web-manager\src\main\resources" />
+      <recent name="C:\Code\IDEA-code\java-maven\tlias-web-manager\src\test\java\com\doub1e" />
       <recent name="C:\Code\IDEA-code\java-maven\springboot-mybatis-quickstart\src\main\resources\mapper" />
       <recent name="C:\Code\IDEA-code\java-maven\springboot-mybatis-quickstart\src\main\java\com\doub1e\entity" />
       <recent name="C:\Code\IDEA-code\java-maven\JDBC-demo\src\test\java\com\doub1e" />
-      <recent name="C:\Code\IDEA-code\java-maven\tlias-web-manager\src\main\java\com\doub1e\entity" />
-      <recent name="C:\Code\IDEA-code\java-maven\tlias-web-manager\src\main\resources" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Code\IDEA-code\java-maven\springboot-mybatis-quickstart\src\main\resources\mapper" />
@@ -150,7 +149,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Application.TliasWebManagerApplication">
+  <component name="RunManager" selected="Spring Boot.TliasWebManagerApplication">
     <configuration name="TliasWebManagerApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.doub1e.TliasWebManagerApplication" />
       <module name="tlias-web-manager" />
@@ -164,8 +163,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="JDBCTest.testSelect (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="JDBC-demo" />
+    <configuration name="LogTest.testLog" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="tlias-web-manager" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.doub1e.*" />
@@ -173,15 +172,15 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.doub1e" />
-      <option name="MAIN_CLASS_NAME" value="com.doub1e.JDBCTest" />
-      <option name="METHOD_NAME" value="testSelect(java.lang.String,java.lang.String)" />
+      <option name="MAIN_CLASS_NAME" value="com.doub1e.LogTest" />
+      <option name="METHOD_NAME" value="testLog" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="JDBCTest.testSelect2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="JDBC-demo" />
+    <configuration name="LogTest.testLogLevel" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="tlias-web-manager" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.doub1e.*" />
@@ -189,8 +188,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.doub1e" />
-      <option name="MAIN_CLASS_NAME" value="com.doub1e.JDBCTest" />
-      <option name="METHOD_NAME" value="testSelect2(java.lang.String,java.lang.String)" />
+      <option name="MAIN_CLASS_NAME" value="com.doub1e.LogTest" />
+      <option name="METHOD_NAME" value="testLogLevel" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -250,11 +249,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.LogTest.testLogLevel" />
+        <item itemvalue="JUnit.LogTest.testLog" />
         <item itemvalue="Application.TliasWebManagerApplication" />
         <item itemvalue="JUnit.UserMapperTest.testList" />
         <item itemvalue="JUnit.UserMapperTest" />
-        <item itemvalue="JUnit.JDBCTest.testSelect2" />
-        <item itemvalue="JUnit.JDBCTest.testSelect (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -282,7 +281,8 @@
       <workItem from="1756776585361" duration="11397000" />
       <workItem from="1756827951150" duration="4009000" />
       <workItem from="1756907732465" duration="733000" />
-      <workItem from="1756945338487" duration="9395000" />
+      <workItem from="1756945338487" duration="10804000" />
+      <workItem from="1756996333925" duration="3977000" />
     </task>
     <task id="LOCAL-00001" summary="maven init">
       <option name="closed" value="true" />
@@ -388,7 +388,15 @@
       <option name="project" value="LOCAL" />
       <updated>1756948172937</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="动态sql优化">
+      <option name="closed" value="true" />
+      <created>1756976798203</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1756976798203</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -418,7 +426,8 @@
     <MESSAGE value="使用mybatis" />
     <MESSAGE value="删除部门逻辑实现" />
     <MESSAGE value="新增部门逻辑实现" />
-    <option name="LAST_COMMIT_MESSAGE" value="新增部门逻辑实现" />
+    <MESSAGE value="动态sql优化" />
+    <option name="LAST_COMMIT_MESSAGE" value="动态sql优化" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

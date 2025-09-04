@@ -6,6 +6,7 @@ import com.doub1e.service.DeptService;
 import jakarta.annotation.Resource;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
+import lombok.extern.slf4j.Slf4j;
 import org.apache.ibatis.annotations.Update;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -15,6 +16,7 @@ import java.util.List;
 /**
  * 请求处理类
  */
+@Slf4j // 自动生成log对象 用于打日志
 @RestController
 public class DeptController  {
 
@@ -52,6 +54,7 @@ public class DeptController  {
 //    public Result delete(@RequestParam(value = "id",required = false) Integer deptId){
     public Result delete(Integer id){
         System.out.println("deptId = " + id);
+        log.info("id = {}",id);
         //调用service的删除方法
         deptService.delete(id);
         return Result.success();
@@ -65,7 +68,7 @@ public class DeptController  {
     // @RequestBody 用来接收json格式数据
     @PostMapping("/depts")
     public Result save(@RequestBody Dept dept){
-        System.out.println("dept = " + dept);
+        log.info("dept = {}" ,dept);
         // 调用Service
         deptService.save(dept);
         return Result.success();
@@ -79,7 +82,7 @@ public class DeptController  {
     // @PathVariable用于接收路径参数值
     @GetMapping("/depts/{id}")
     public Result getById(@PathVariable Integer id){
-        System.out.println("id = " + id);
+        log.info("id = {}" , id);
 
         //调用Service方法
         Dept dept = deptService.getById(id);
@@ -93,7 +96,7 @@ public class DeptController  {
      */
     @PutMapping("/depts")
     public Result update(@RequestBody Dept dept){
-        System.out.println("dept = " + dept);
+        log.info("dept = {}" , dept);
         deptService.update(dept);
         return Result.success();
     }
