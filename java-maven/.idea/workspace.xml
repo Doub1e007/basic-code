@@ -4,101 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e65c3d5b-aa61-4703-bb2e-d71c17c77e50" name="Changes" comment="使用mybatis">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/3a383849-74d1-4128-a6af-c95ab07937c9.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/3a383849-74d1-4128-a6af-c95ab07937c9/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/3a383849-74d1-4128-a6af-c95ab07937c9/storage_v2/_src_/schema/mysql.osA4Bg.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/3a383849-74d1-4128-a6af-c95ab07937c9/storage_v2/_src_/schema/performance_schema.kIw0nw.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/3a383849-74d1-4128-a6af-c95ab07937c9/storage_v2/_src_/schema/sys.zb4BAA.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/e1398902-a177-4f66-8091-b8b36d8d6cc4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/e1398902-a177-4f66-8091-b8b36d8d6cc4.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/e1398902-a177-4f66-8091-b8b36d8d6cc4/storage_v2/_src_/schema/information_schema.FNRwLQ.zip" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/e1398902-a177-4f66-8091-b8b36d8d6cc4/storage_v2/_src_/schema/information_schema.FNRwLQ.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/e1398902-a177-4f66-8091-b8b36d8d6cc4/storage_v2/_src_/schema/sakila.oXLGyQ.zip" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/e1398902-a177-4f66-8091-b8b36d8d6cc4/storage_v2/_src_/schema/sakila.oXLGyQ.zip" afterDir="false" />
+    <list default="true" id="e65c3d5b-aa61-4703-bb2e-d71c17c77e50" name="Changes" comment="删除部门逻辑实现">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/e1398902-a177-4f66-8091-b8b36d8d6cc4/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/e1398902-a177-4f66-8091-b8b36d8d6cc4/storage_v2/_src_/schema/information_schema.FNRwLQ.zip" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/init/springboot-web-quickerstart01/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/init/springboot-web-quickerstart01/src/main/java/com/doub1e/HelloController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/init/springboot-web-quickerstart01/src/main/java/com/doub1e/SpringbootWebQuickerstart01Application.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/init/springboot-web-quickerstart01/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/init/springboot-web-quickerstart01/src/test/java/com/doub1e/SpringbootWebQuickerstart01ApplicationTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/init/springboot-web-quickerstart01/target/classes/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/init/springboot-web-quickerstart01/target/classes/com/doub1e/HelloController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/init/springboot-web-quickerstart01/target/classes/com/doub1e/SpringbootWebQuickerstart01Application.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/init/springboot-web-quickerstart01/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/init/springboot-web-quickerstart01/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/init/springboot-web-quickerstart01/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/init/springboot-web-quickerstart01/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/init/springboot-web-quickerstart01/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/init/springboot-web-quickerstart01/target/springboot-web-quickerstart01-0.0.1-SNAPSHOT.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/init/springboot-web-quickerstart01/target/springboot-web-quickerstart01-0.0.1-SNAPSHOT.jar.original" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/init/springboot-web-quickerstart01/target/test-classes/com/doub1e/SpringbootWebQuickerstart01ApplicationTests.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/init/springboot-web-quickerstart02/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/init/springboot-web-quickerstart02/src/main/java/com/doub1e/HelloController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/init/springboot-web-quickerstart02/src/main/java/com/doub1e/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/init/springboot-web-quickerstart02/target/classes/com/doub1e/HelloController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/init/springboot-web-quickerstart02/target/classes/com/doub1e/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/init/tlias-web-manager/.vscode/settings.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/init/tlias-web-manager/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/init/tlias-web-manager/src/main/java/com/doub1e/TliasWebManagerApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/init/tlias-web-manager/src/main/java/com/doub1e/controller/DeptController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/init/tlias-web-manager/src/main/java/com/doub1e/dao/DeptDao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/init/tlias-web-manager/src/main/java/com/doub1e/dao/DeptDaoImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/init/tlias-web-manager/src/main/java/com/doub1e/entity/Dept.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/init/tlias-web-manager/src/main/java/com/doub1e/entity/Result.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/init/tlias-web-manager/src/main/java/com/doub1e/service/DeptService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/init/tlias-web-manager/src/main/java/com/doub1e/service/DeptServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/init/tlias-web-manager/src/main/java/com/doub1e/service/DeptServiceImpl2.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/init/tlias-web-manager/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/init/tlias-web-manager/src/main/resources/dept.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/init/tlias-web-manager/src/test/java/com/doub1e/TliasWebManagerApplicationTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/init/tlias-web-manager/target/classes/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/init/tlias-web-manager/target/classes/com/doub1e/TliasWebManagerApplication.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/init/tlias-web-manager/target/classes/com/doub1e/controller/DeptController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/init/tlias-web-manager/target/classes/com/doub1e/dao/DeptDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/init/tlias-web-manager/target/classes/com/doub1e/dao/DeptDaoImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/init/tlias-web-manager/target/classes/com/doub1e/entity/Dept.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/init/tlias-web-manager/target/classes/com/doub1e/entity/Result.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/init/tlias-web-manager/target/classes/com/doub1e/service/DeptService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/init/tlias-web-manager/target/classes/com/doub1e/service/DeptServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/init/tlias-web-manager/target/classes/com/doub1e/service/DeptServiceImpl2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/init/tlias-web-manager/target/classes/dept.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pre/JDBC-demo/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pre/JDBC-demo/src/main/java/com/doub1e/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pre/JDBC-demo/src/test/java/com/doub1e/JDBCTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pre/JDBC-demo/src/test/java/com/doub1e/User.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pre/JDBC-demo/target/classes/com/doub1e/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pre/JDBC-demo/target/test-classes/com/doub1e/JDBCTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pre/JDBC-demo/target/test-classes/com/doub1e/User.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pre/maven-project01/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pre/maven-project01/src/main/java/com/doub1e/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pre/maven-project01/src/main/java/com/doub1e/UserService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pre/maven-project01/src/test/java/com/doub1e/Demo1Test.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pre/maven-project01/src/test/java/com/doub1e/UserService2Test.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pre/maven-project01/src/test/java/com/doub1e/UserServiceTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pre/maven-project01/target/classes/com/doub1e/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pre/maven-project01/target/classes/com/doub1e/UserService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pre/maven-project01/target/test-classes/com/doub1e/Demo1Test.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pre/maven-project01/target/test-classes/com/doub1e/UserService2Test.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pre/maven-project01/target/test-classes/com/doub1e/UserServiceTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pre/maven-projectA/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pre/maven-projectB/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pre/maven-projectC/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot-mybatis-quickstart/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot-mybatis-quickstart/src/main/java/com/doub1e/SpringbootMybatisQuickstartApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot-mybatis-quickstart/src/main/java/com/doub1e/entity/User.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot-mybatis-quickstart/src/main/java/com/doub1e/mapper/UserMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot-mybatis-quickstart/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot-mybatis-quickstart/src/main/resources/mapper/UserMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot-mybatis-quickstart/src/test/java/com/doub1e/SpringbootMybatisQuickstartApplicationTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot-mybatis-quickstart/src/test/java/com/doub1e/UserMapperTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tlias-web-manager/src/main/java/com/doub1e/controller/DeptController.java" beforeDir="false" afterPath="$PROJECT_DIR$/tlias-web-manager/src/main/java/com/doub1e/controller/DeptController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tlias-web-manager/src/main/java/com/doub1e/mapper/DeptMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/tlias-web-manager/src/main/java/com/doub1e/mapper/DeptMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tlias-web-manager/src/main/java/com/doub1e/service/DeptService.java" beforeDir="false" afterPath="$PROJECT_DIR$/tlias-web-manager/src/main/java/com/doub1e/service/DeptService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tlias-web-manager/src/main/java/com/doub1e/service/Impl/DeptServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/tlias-web-manager/src/main/java/com/doub1e/service/Impl/DeptServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tlias-web-manager/target/classes/com/doub1e/controller/DeptController.class" beforeDir="false" afterPath="$PROJECT_DIR$/tlias-web-manager/target/classes/com/doub1e/controller/DeptController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tlias-web-manager/target/classes/com/doub1e/service/DeptService.class" beforeDir="false" afterPath="$PROJECT_DIR$/tlias-web-manager/target/classes/com/doub1e/service/DeptService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tlias-web-manager/target/classes/dept.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tlias-web-manager/target/classes/com/doub1e/mapper/DeptMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/tlias-web-manager/target/classes/com/doub1e/mapper/DeptMapper.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -153,60 +63,60 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Main.executor": "Run",
-    "Application.TliasWebManagerApplication.executor": "Run",
-    "JUnit.Demo1Test.executor": "Run",
-    "JUnit.JDBCTest.executor": "Run",
-    "JUnit.JDBCTest.testSelect (1).executor": "Run",
-    "JUnit.JDBCTest.testSelect.executor": "Run",
-    "JUnit.JDBCTest.testSelect2.executor": "Run",
-    "JUnit.JDBCTest.testUpdate.executor": "Run",
-    "JUnit.UserMapperTest.executor": "Run",
-    "JUnit.UserMapperTest.testList.executor": "Run",
-    "JUnit.UserService2Test.executor": "Run",
-    "JUnit.UserService2Test.testGetGender.executor": "Run",
-    "JUnit.UserServiceTest.executor": "Run",
-    "JUnit.UserServiceTest.testGetAge.executor": "Run",
-    "JUnit.UserServiceTest.testGetGender.executor": "Run",
-    "Maven.maven-project01 [clean].executor": "Run",
-    "Maven.springboot-mybatis-quickstart [clean].executor": "Run",
-    "Maven.springboot-web-quickerstart01 [clean].executor": "Run",
-    "Maven.springboot-web-quickerstart01 [package].executor": "Run",
-    "Maven.tlias-web-manager [clean].executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "Spring Boot.Main.executor": "Run",
-    "Spring Boot.SpringbootWebQuickerstart01Application.executor": "Run",
-    "Spring Boot.TliasWebManagerApplication.executor": "Run",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/Code/IDEA-code/java-maven/springboot-mybatis-quickstart/src/main/resources/mapper",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "onboarding.tips.debug.path": "C:/Code/IDEA-code/java-maven/JDBC-demo/src/main/java/com/doub1e/Main.java",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "run.configurations.included.in.services": "true",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.TliasWebManagerApplication.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.Demo1Test.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.JDBCTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.JDBCTest.testSelect (1).executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.JDBCTest.testSelect.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.JDBCTest.testSelect2.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.JDBCTest.testUpdate.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserMapperTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserMapperTest.testList.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserService2Test.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserService2Test.testGetGender.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserServiceTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserServiceTest.testGetAge.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserServiceTest.testGetGender.executor&quot;: &quot;Run&quot;,
+    &quot;Maven.maven-project01 [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.springboot-mybatis-quickstart [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.springboot-web-quickerstart01 [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.springboot-web-quickerstart01 [package].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.tlias-web-manager [clean].executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Spring Boot.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.SpringbootWebQuickerstart01Application.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.TliasWebManagerApplication.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Code/IDEA-code/java-maven/springboot-mybatis-quickstart/src/main/resources/mapper&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Code/IDEA-code/java-maven/JDBC-demo/src/main/java/com/doub1e/Main.java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;run.configurations.included.in.services&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Code\IDEA-code\java-maven\springboot-mybatis-quickstart\src\main\resources\mapper" />
@@ -364,7 +274,8 @@
       <workItem from="1756633142399" duration="5846000" />
       <workItem from="1756687937775" duration="24011000" />
       <workItem from="1756776585361" duration="11397000" />
-      <workItem from="1756827951150" duration="3727000" />
+      <workItem from="1756827951150" duration="4009000" />
+      <workItem from="1756907732465" duration="733000" />
     </task>
     <task id="LOCAL-00001" summary="maven init">
       <option name="closed" value="true" />
@@ -446,7 +357,15 @@
       <option name="project" value="LOCAL" />
       <updated>1756792791838</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="删除部门逻辑实现">
+      <option name="closed" value="true" />
+      <created>1756831838175</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1756831838175</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -474,7 +393,8 @@
     <MESSAGE value="预编译sql 防止sql注入 提升效率" />
     <MESSAGE value="暂未使用mybatis的业务" />
     <MESSAGE value="使用mybatis" />
-    <option name="LAST_COMMIT_MESSAGE" value="使用mybatis" />
+    <MESSAGE value="删除部门逻辑实现" />
+    <option name="LAST_COMMIT_MESSAGE" value="删除部门逻辑实现" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
