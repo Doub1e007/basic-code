@@ -16,6 +16,8 @@
             <name qname="java147_db02" />
             <name qname="tlias" />
             <name qname="world" />
+            <name qname="java147_db03" />
+            <name qname="java147_db04" />
           </node>
         </introspection-scope>
       </schema-mapping>
