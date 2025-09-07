@@ -4,18 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e65c3d5b-aa61-4703-bb2e-d71c17c77e50" name="Changes" comment="引入日志技术 slf4j">
-      <change afterPath="$PROJECT_DIR$/tlias-web-manager/src/main/java/com/doub1e/controller/EmpController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tlias-web-manager/src/main/java/com/doub1e/entity/Emp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tlias-web-manager/src/main/java/com/doub1e/entity/EmpExpr.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tlias-web-manager/src/main/java/com/doub1e/entity/PageBean.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tlias-web-manager/src/main/java/com/doub1e/mapper/EmpMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tlias-web-manager/src/main/java/com/doub1e/service/EmpService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tlias-web-manager/src/main/java/com/doub1e/service/Impl/EmpServiceImpl.java" afterDir="false" />
+    <list default="true" id="e65c3d5b-aa61-4703-bb2e-d71c17c77e50" name="Changes" comment="加入分页查询逻辑">
+      <change afterPath="$PROJECT_DIR$/tlias-web-manager/src/main/java/com/doub1e/entity/EmpQueryParam.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tlias-web-manager/src/main/resources/com/doub1e/mapper/EmpMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/e1398902-a177-4f66-8091-b8b36d8d6cc4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/e1398902-a177-4f66-8091-b8b36d8d6cc4.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tlias-web-manager/target/classes/com/doub1e/TliasWebManagerApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/tlias-web-manager/target/classes/com/doub1e/TliasWebManagerApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tlias-web-manager/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/tlias-web-manager/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tlias-web-manager/src/main/java/com/doub1e/controller/EmpController.java" beforeDir="false" afterPath="$PROJECT_DIR$/tlias-web-manager/src/main/java/com/doub1e/controller/EmpController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tlias-web-manager/src/main/java/com/doub1e/mapper/EmpMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/tlias-web-manager/src/main/java/com/doub1e/mapper/EmpMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tlias-web-manager/src/main/java/com/doub1e/service/EmpService.java" beforeDir="false" afterPath="$PROJECT_DIR$/tlias-web-manager/src/main/java/com/doub1e/service/EmpService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tlias-web-manager/src/main/java/com/doub1e/service/Impl/EmpServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/tlias-web-manager/src/main/java/com/doub1e/service/Impl/EmpServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,9 +23,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Mybatis Mapper" />
         <option value="Interface" />
         <option value="Class" />
+        <option value="Mybatis Mapper" />
       </list>
     </option>
   </component>
@@ -267,8 +265,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9823dce3aa75-fbdcb00ec9e3-intellij.indexing.shared.core-IU-251.28293.22" />
-        <option value="bundled-js-predefined-d6986cc7102b-09060db00ec0-JavaScript-IU-251.28293.22" />
+        <option value="bundled-jdk-9823dce3aa75-fbdcb00ec9e3-intellij.indexing.shared.core-IU-251.28293.39" />
+        <option value="bundled-js-predefined-d6986cc7102b-09060db00ec0-JavaScript-IU-251.28293.39" />
       </set>
     </attachedChunks>
   </component>
@@ -291,7 +289,9 @@
       <workItem from="1756945338487" duration="10804000" />
       <workItem from="1756996333925" duration="5772000" />
       <workItem from="1757033295701" duration="17204000" />
-      <workItem from="1757122174683" duration="8332000" />
+      <workItem from="1757122174683" duration="12297000" />
+      <workItem from="1757179417089" duration="67000" />
+      <workItem from="1757207397343" duration="7076000" />
     </task>
     <task id="LOCAL-00001" summary="maven init">
       <option name="closed" value="true" />
@@ -413,7 +413,15 @@
       <option name="project" value="LOCAL" />
       <updated>1757004481951</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="加入分页查询逻辑">
+      <option name="closed" value="true" />
+      <created>1757175614705</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1757175614705</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -445,7 +453,8 @@
     <MESSAGE value="新增部门逻辑实现" />
     <MESSAGE value="动态sql优化" />
     <MESSAGE value="引入日志技术 slf4j" />
-    <option name="LAST_COMMIT_MESSAGE" value="引入日志技术 slf4j" />
+    <MESSAGE value="加入分页查询逻辑" />
+    <option name="LAST_COMMIT_MESSAGE" value="加入分页查询逻辑" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
