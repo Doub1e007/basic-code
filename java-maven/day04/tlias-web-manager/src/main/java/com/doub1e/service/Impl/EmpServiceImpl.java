@@ -1,33 +1,22 @@
 package com.doub1e.service.Impl;
 
 import com.doub1e.entity.Emp;
-import com.doub1e.entity.EmpExpr;
 import com.doub1e.entity.EmpQueryParam;
 import com.doub1e.entity.PageBean;
-import com.doub1e.mapper.EmpExperMapper;
 import com.doub1e.mapper.EmpMapper;
 import com.doub1e.service.EmpService;
 import com.github.pagehelper.Page;
 import com.github.pagehelper.PageHelper;
-import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import org.springframework.transaction.annotation.Transactional;
-import org.springframework.util.CollectionUtils;
 
 import java.time.LocalDate;
-import java.time.LocalDateTime;
-import java.util.Collections;
 import java.util.List;
 
-@Slf4j
 @Service
 public class EmpServiceImpl implements EmpService {
     @Autowired
     private EmpMapper empMapper;
-
-    @Autowired
-    private EmpExperMapper empExperMapper;
 
     /**
      * 分页查询
@@ -76,33 +65,5 @@ public class EmpServiceImpl implements EmpService {
 
         // 3.封装PageBean对象并返回
         return new PageBean(p.getTotal(),p.getResult());
-    }
-    @Transactional  // 开启事务
-    @Override
-    public void save(Emp emp) {
-        // 1.调用mapper，保存员工的基本信息到emp表
-        // 1.1 补充缺失的字段（前端没传的数据
-        emp.setPassword("123456");
-        emp.setCreateTime(LocalDateTime.now());
-        emp.setUpdateTime(LocalDateTime.now());
-        // 1.2调勇mapper
-        empMapper.insert(emp);
-
-        Integer id = emp.getId();
-        log.info("id={}",id);
-
-        // 模拟异常
-//        int i = 1 / 0;
-
-        // 2.保存员工的工作经历到emp_expr表
-        List<EmpExpr> exprList = emp.getExprList();
-        // 2.1 关联员工id
-        if(!CollectionUtils.isEmpty(exprList)){
-            exprList.forEach((expr)->{
-                expr.setEmpId(id);
-            });
-            // 2.2 调用mapper，批量保存工作经历数据
-            empExperMapper.insertBatch(exprList);
-        }
     }
 }

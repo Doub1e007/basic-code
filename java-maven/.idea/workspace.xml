@@ -4,16 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e65c3d5b-aa61-4703-bb2e-d71c17c77e50" name="Changes" comment="加入分页查询逻辑">
-      <change afterPath="$PROJECT_DIR$/tlias-web-manager/src/main/java/com/doub1e/entity/EmpQueryParam.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tlias-web-manager/src/main/resources/com/doub1e/mapper/EmpMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+    <list default="true" id="e65c3d5b-aa61-4703-bb2e-d71c17c77e50" name="Changes" comment="员工列表查询功能实现">
+      <change afterPath="$PROJECT_DIR$/tlias-web-manager/src/main/java/com/doub1e/mapper/EmpExperMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tlias-web-manager/src/main/resources/com/doub1e/mapper/EmpExperMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tlias-web-manager/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/tlias-web-manager/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tlias-web-manager/src/main/java/com/doub1e/controller/EmpController.java" beforeDir="false" afterPath="$PROJECT_DIR$/tlias-web-manager/src/main/java/com/doub1e/controller/EmpController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tlias-web-manager/src/main/java/com/doub1e/entity/Emp.java" beforeDir="false" afterPath="$PROJECT_DIR$/tlias-web-manager/src/main/java/com/doub1e/entity/Emp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tlias-web-manager/src/main/java/com/doub1e/mapper/EmpMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/tlias-web-manager/src/main/java/com/doub1e/mapper/EmpMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tlias-web-manager/src/main/java/com/doub1e/service/EmpService.java" beforeDir="false" afterPath="$PROJECT_DIR$/tlias-web-manager/src/main/java/com/doub1e/service/EmpService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tlias-web-manager/src/main/java/com/doub1e/service/Impl/EmpServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/tlias-web-manager/src/main/java/com/doub1e/service/Impl/EmpServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tlias-web-manager/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/tlias-web-manager/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tlias-web-manager/target/classes/com/doub1e/controller/EmpController.class" beforeDir="false" afterPath="$PROJECT_DIR$/tlias-web-manager/target/classes/com/doub1e/controller/EmpController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tlias-web-manager/target/classes/com/doub1e/entity/Emp.class" beforeDir="false" afterPath="$PROJECT_DIR$/tlias-web-manager/target/classes/com/doub1e/entity/Emp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tlias-web-manager/target/classes/com/doub1e/mapper/EmpMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/tlias-web-manager/target/classes/com/doub1e/mapper/EmpMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tlias-web-manager/target/classes/com/doub1e/service/EmpService.class" beforeDir="false" afterPath="$PROJECT_DIR$/tlias-web-manager/target/classes/com/doub1e/service/EmpService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tlias-web-manager/target/classes/com/doub1e/service/Impl/EmpServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/tlias-web-manager/target/classes/com/doub1e/service/Impl/EmpServiceImpl.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,8 +28,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
         <option value="Mybatis Mapper" />
       </list>
     </option>
@@ -68,62 +73,62 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
-    &quot;Application.TliasWebManagerApplication.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.Demo1Test.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.JDBCTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.JDBCTest.testSelect (1).executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.JDBCTest.testSelect.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.JDBCTest.testSelect2.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.JDBCTest.testUpdate.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.LogTest.testLog.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.LogTest.testLogLevel.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.UserMapperTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.UserMapperTest.testList.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.UserService2Test.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.UserService2Test.testGetGender.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.UserServiceTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.UserServiceTest.testGetAge.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.UserServiceTest.testGetGender.executor&quot;: &quot;Run&quot;,
-    &quot;Maven.maven-project01 [clean].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.springboot-mybatis-quickstart [clean].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.springboot-web-quickerstart01 [clean].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.springboot-web-quickerstart01 [package].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.tlias-web-manager [clean].executor&quot;: &quot;Run&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;Spring Boot.Main.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.SpringbootWebQuickerstart01Application.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.TliasWebManagerApplication.executor&quot;: &quot;Run&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Code/IDEA-code/java-maven/tlias-web-manager/src/main/java/com/doub1e/entity&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Code/IDEA-code/java-maven/JDBC-demo/src/main/java/com/doub1e/Main.java&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;run.configurations.included.in.services&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Main.executor": "Run",
+    "Application.TliasWebManagerApplication.executor": "Run",
+    "JUnit.Demo1Test.executor": "Run",
+    "JUnit.JDBCTest.executor": "Run",
+    "JUnit.JDBCTest.testSelect (1).executor": "Run",
+    "JUnit.JDBCTest.testSelect.executor": "Run",
+    "JUnit.JDBCTest.testSelect2.executor": "Run",
+    "JUnit.JDBCTest.testUpdate.executor": "Run",
+    "JUnit.LogTest.testLog.executor": "Run",
+    "JUnit.LogTest.testLogLevel.executor": "Run",
+    "JUnit.UserMapperTest.executor": "Run",
+    "JUnit.UserMapperTest.testList.executor": "Run",
+    "JUnit.UserService2Test.executor": "Run",
+    "JUnit.UserService2Test.testGetGender.executor": "Run",
+    "JUnit.UserServiceTest.executor": "Run",
+    "JUnit.UserServiceTest.testGetAge.executor": "Run",
+    "JUnit.UserServiceTest.testGetGender.executor": "Run",
+    "Maven.maven-project01 [clean].executor": "Run",
+    "Maven.springboot-mybatis-quickstart [clean].executor": "Run",
+    "Maven.springboot-web-quickerstart01 [clean].executor": "Run",
+    "Maven.springboot-web-quickerstart01 [package].executor": "Run",
+    "Maven.tlias-web-manager [clean].executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Spring Boot.Main.executor": "Run",
+    "Spring Boot.SpringbootWebQuickerstart01Application.executor": "Run",
+    "Spring Boot.TliasWebManagerApplication.executor": "Run",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "C:/Code/IDEA-code/java-maven/tlias-web-manager/src/main/java/com/doub1e/entity",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "onboarding.tips.debug.path": "C:/Code/IDEA-code/java-maven/JDBC-demo/src/main/java/com/doub1e/Main.java",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "run.configurations.included.in.services": "true",
+    "settings.editor.selected.configurable": "preferences.keymap",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;mysql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.doub1e.service" />
@@ -291,7 +296,8 @@
       <workItem from="1757033295701" duration="17204000" />
       <workItem from="1757122174683" duration="12297000" />
       <workItem from="1757179417089" duration="67000" />
-      <workItem from="1757207397343" duration="7076000" />
+      <workItem from="1757207397343" duration="9041000" />
+      <workItem from="1757304269274" duration="13875000" />
     </task>
     <task id="LOCAL-00001" summary="maven init">
       <option name="closed" value="true" />
@@ -421,7 +427,15 @@
       <option name="project" value="LOCAL" />
       <updated>1757175614705</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="员工列表查询功能实现">
+      <option name="closed" value="true" />
+      <created>1757215300222</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1757215300222</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -454,7 +468,8 @@
     <MESSAGE value="动态sql优化" />
     <MESSAGE value="引入日志技术 slf4j" />
     <MESSAGE value="加入分页查询逻辑" />
-    <option name="LAST_COMMIT_MESSAGE" value="加入分页查询逻辑" />
+    <MESSAGE value="员工列表查询功能实现" />
+    <option name="LAST_COMMIT_MESSAGE" value="员工列表查询功能实现" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
