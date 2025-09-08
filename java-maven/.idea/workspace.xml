@@ -4,20 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e65c3d5b-aa61-4703-bb2e-d71c17c77e50" name="Changes" comment="员工列表查询功能实现">
-      <change afterPath="$PROJECT_DIR$/tlias-web-manager/src/main/java/com/doub1e/mapper/EmpExperMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tlias-web-manager/src/main/resources/com/doub1e/mapper/EmpExperMapper.xml" afterDir="false" />
+    <list default="true" id="e65c3d5b-aa61-4703-bb2e-d71c17c77e50" name="Changes" comment="新增功能实现、@Transactional注解开启事务">
+      <change afterPath="$PROJECT_DIR$/tlias-web-manager/src/main/java/com/doub1e/controller/UploadController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tlias-web-manager/src/main/java/com/doub1e/entity/EmpLog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tlias-web-manager/src/main/java/com/doub1e/mapper/EmpLogMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tlias-web-manager/src/main/java/com/doub1e/service/EmpLogService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tlias-web-manager/src/main/java/com/doub1e/service/Impl/EmpLogServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tlias-web-manager/src/main/resources/static/upload.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/e1398902-a177-4f66-8091-b8b36d8d6cc4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/e1398902-a177-4f66-8091-b8b36d8d6cc4.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tlias-web-manager/src/main/java/com/doub1e/controller/EmpController.java" beforeDir="false" afterPath="$PROJECT_DIR$/tlias-web-manager/src/main/java/com/doub1e/controller/EmpController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tlias-web-manager/src/main/java/com/doub1e/entity/Emp.java" beforeDir="false" afterPath="$PROJECT_DIR$/tlias-web-manager/src/main/java/com/doub1e/entity/Emp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tlias-web-manager/src/main/java/com/doub1e/mapper/EmpMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/tlias-web-manager/src/main/java/com/doub1e/mapper/EmpMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tlias-web-manager/src/main/java/com/doub1e/service/EmpService.java" beforeDir="false" afterPath="$PROJECT_DIR$/tlias-web-manager/src/main/java/com/doub1e/service/EmpService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tlias-web-manager/src/main/java/com/doub1e/service/Impl/EmpServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/tlias-web-manager/src/main/java/com/doub1e/service/Impl/EmpServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tlias-web-manager/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/tlias-web-manager/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tlias-web-manager/target/classes/com/doub1e/controller/EmpController.class" beforeDir="false" afterPath="$PROJECT_DIR$/tlias-web-manager/target/classes/com/doub1e/controller/EmpController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tlias-web-manager/target/classes/com/doub1e/entity/Emp.class" beforeDir="false" afterPath="$PROJECT_DIR$/tlias-web-manager/target/classes/com/doub1e/entity/Emp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tlias-web-manager/target/classes/com/doub1e/mapper/EmpMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/tlias-web-manager/target/classes/com/doub1e/mapper/EmpMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tlias-web-manager/target/classes/com/doub1e/service/EmpService.class" beforeDir="false" afterPath="$PROJECT_DIR$/tlias-web-manager/target/classes/com/doub1e/service/EmpService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tlias-web-manager/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/tlias-web-manager/target/classes/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tlias-web-manager/target/classes/com/doub1e/service/Impl/EmpServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/tlias-web-manager/target/classes/com/doub1e/service/Impl/EmpServiceImpl.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -28,9 +26,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
-        <option value="Interface" />
         <option value="Mybatis Mapper" />
+        <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -107,9 +105,9 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "Spring Boot.Main.executor": "Run",
     "Spring Boot.SpringbootWebQuickerstart01Application.executor": "Run",
-    "Spring Boot.TliasWebManagerApplication.executor": "Run",
+    "Spring Boot.TliasWebManagerApplication.executor": "Debug",
     "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/Code/IDEA-code/java-maven/tlias-web-manager/src/main/java/com/doub1e/entity",
+    "last_opened_file_path": "C:/Code/IDEA-code/java-maven/tlias-web-manager/src/main/resources/static",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -131,17 +129,21 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.doub1e.service.Impl" />
       <recent name="com.doub1e.service" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Code\IDEA-code\java-maven\tlias-web-manager\src\main\resources\static" />
+      <recent name="C:\Code\IDEA-code\java-maven\tlias-web-manager\src\main\java\com\doub1e" />
       <recent name="C:\Code\IDEA-code\java-maven\tlias-web-manager\src\main\java\com\doub1e\entity" />
       <recent name="C:\Code\IDEA-code\java-maven\tlias-web-manager\src\main\resources" />
       <recent name="C:\Code\IDEA-code\java-maven\tlias-web-manager\src\test\java\com\doub1e" />
-      <recent name="C:\Code\IDEA-code\java-maven\springboot-mybatis-quickstart\src\main\resources\mapper" />
-      <recent name="C:\Code\IDEA-code\java-maven\springboot-mybatis-quickstart\src\main\java\com\doub1e\entity" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Code\IDEA-code\java-maven\springboot-mybatis-quickstart\src\main\resources\mapper" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.doub1e.mapper" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.doub1e.mapper" />
@@ -165,7 +167,7 @@
       <module name="tlias-web-manager" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.doub1e.*" />
+          <option name="PATTERN" value="com.doub1e.entity.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -177,7 +179,7 @@
       <module name="tlias-web-manager" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.doub1e.*" />
+          <option name="PATTERN" value="com.doub1e.entity.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -193,7 +195,7 @@
       <module name="tlias-web-manager" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.doub1e.*" />
+          <option name="PATTERN" value="com.doub1e.entity.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -209,7 +211,7 @@
       <module name="springboot-mybatis-quickstart" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.doub1e.*" />
+          <option name="PATTERN" value="com.doub1e.entity.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -224,7 +226,7 @@
       <module name="springboot-mybatis-quickstart" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.doub1e.*" />
+          <option name="PATTERN" value="com.doub1e.entity.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -297,7 +299,7 @@
       <workItem from="1757122174683" duration="12297000" />
       <workItem from="1757179417089" duration="67000" />
       <workItem from="1757207397343" duration="9041000" />
-      <workItem from="1757304269274" duration="13875000" />
+      <workItem from="1757304269274" duration="23289000" />
     </task>
     <task id="LOCAL-00001" summary="maven init">
       <option name="closed" value="true" />
@@ -435,7 +437,15 @@
       <option name="project" value="LOCAL" />
       <updated>1757215300222</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="新增功能实现、@Transactional注解开启事务">
+      <option name="closed" value="true" />
+      <created>1757327218838</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1757327218838</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -469,7 +479,8 @@
     <MESSAGE value="引入日志技术 slf4j" />
     <MESSAGE value="加入分页查询逻辑" />
     <MESSAGE value="员工列表查询功能实现" />
-    <option name="LAST_COMMIT_MESSAGE" value="员工列表查询功能实现" />
+    <MESSAGE value="新增功能实现、@Transactional注解开启事务" />
+    <option name="LAST_COMMIT_MESSAGE" value="新增功能实现、@Transactional注解开启事务" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

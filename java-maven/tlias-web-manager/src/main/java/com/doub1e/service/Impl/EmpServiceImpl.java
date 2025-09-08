@@ -1,11 +1,10 @@
 package com.doub1e.service.Impl;
 
-import com.doub1e.entity.Emp;
-import com.doub1e.entity.EmpExpr;
-import com.doub1e.entity.EmpQueryParam;
-import com.doub1e.entity.PageBean;
+import com.doub1e.entity.*;
 import com.doub1e.mapper.EmpExperMapper;
+import com.doub1e.mapper.EmpLogMapper;
 import com.doub1e.mapper.EmpMapper;
+import com.doub1e.service.EmpLogService;
 import com.doub1e.service.EmpService;
 import com.github.pagehelper.Page;
 import com.github.pagehelper.PageHelper;
@@ -28,6 +27,9 @@ public class EmpServiceImpl implements EmpService {
 
     @Autowired
     private EmpExperMapper empExperMapper;
+
+    @Autowired
+    private EmpLogService empLogService;
 
     /**
      * 分页查询
@@ -77,32 +79,40 @@ public class EmpServiceImpl implements EmpService {
         // 3.封装PageBean对象并返回
         return new PageBean(p.getTotal(),p.getResult());
     }
-    @Transactional  // 开启事务
+    @Transactional(rollbackFor = Exception.class)  // 开启事务，rollbackFor指定处理所有异常信息 默认情况下只能处理运行时异常
     @Override
     public void save(Emp emp) {
-        // 1.调用mapper，保存员工的基本信息到emp表
-        // 1.1 补充缺失的字段（前端没传的数据
-        emp.setPassword("123456");
-        emp.setCreateTime(LocalDateTime.now());
-        emp.setUpdateTime(LocalDateTime.now());
-        // 1.2调勇mapper
-        empMapper.insert(emp);
+        try {
+            // 1.调用mapper，保存员工的基本信息到emp表
+            // 1.1 补充缺失的字段（前端没传的数据
+            emp.setPassword("123456");
+            emp.setCreateTime(LocalDateTime.now());
+            emp.setUpdateTime(LocalDateTime.now());
+            // 1.2调勇mapper
+            empMapper.insert(emp);
 
-        Integer id = emp.getId();
-        log.info("id={}",id);
+            Integer id = emp.getId();
+            log.info("id={}",id);
 
-        // 模拟异常
+            // 模拟异常
 //        int i = 1 / 0;
 
-        // 2.保存员工的工作经历到emp_expr表
-        List<EmpExpr> exprList = emp.getExprList();
-        // 2.1 关联员工id
-        if(!CollectionUtils.isEmpty(exprList)){
-            exprList.forEach((expr)->{
-                expr.setEmpId(id);
-            });
-            // 2.2 调用mapper，批量保存工作经历数据
-            empExperMapper.insertBatch(exprList);
+            // 2.保存员工的工作经历到emp_expr表
+            List<EmpExpr> exprList = emp.getExprList();
+            // 2.1 关联员工id
+            if(!CollectionUtils.isEmpty(exprList)){
+                exprList.forEach((expr)->{
+                    expr.setEmpId(id);
+                });
+                // 2.2 调用mapper，批量保存工作经历数据
+                empExperMapper.insertBatch(exprList);
+            }
+        } finally {
+            // 无论新增员工成功与否都需要添加操作日志
+            EmpLog empLog = new EmpLog();
+            empLog.setOperateTime(LocalDateTime.now());
+            empLog.setInfo("插入员工信息：" + emp);
+            empLogService.insertLog(empLog);
         }
     }
 }
