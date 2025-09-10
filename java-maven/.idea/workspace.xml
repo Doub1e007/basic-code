@@ -4,16 +4,96 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e65c3d5b-aa61-4703-bb2e-d71c17c77e50" name="Changes" comment="加入分页查询逻辑">
-      <change afterPath="$PROJECT_DIR$/tlias-web-manager/src/main/java/com/doub1e/entity/EmpQueryParam.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tlias-web-manager/src/main/resources/com/doub1e/mapper/EmpMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+    <list default="true" id="e65c3d5b-aa61-4703-bb2e-d71c17c77e50" name="Changes" comment="Remove sensitive information">
+      <change afterPath="$PROJECT_DIR$/day04/tlias-web-manager/.vscode/settings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day04/tlias-web-manager/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day04/tlias-web-manager/src/main/java/com/doub1e/TliasWebManagerApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day04/tlias-web-manager/src/main/java/com/doub1e/controller/DeptController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day04/tlias-web-manager/src/main/java/com/doub1e/controller/EmpController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day04/tlias-web-manager/src/main/java/com/doub1e/entity/Dept.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day04/tlias-web-manager/src/main/java/com/doub1e/entity/Emp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day04/tlias-web-manager/src/main/java/com/doub1e/entity/EmpExpr.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day04/tlias-web-manager/src/main/java/com/doub1e/entity/EmpQueryParam.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day04/tlias-web-manager/src/main/java/com/doub1e/entity/PageBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day04/tlias-web-manager/src/main/java/com/doub1e/entity/Result.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day04/tlias-web-manager/src/main/java/com/doub1e/mapper/DeptMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day04/tlias-web-manager/src/main/java/com/doub1e/mapper/EmpMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day04/tlias-web-manager/src/main/java/com/doub1e/service/DeptService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day04/tlias-web-manager/src/main/java/com/doub1e/service/EmpService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day04/tlias-web-manager/src/main/java/com/doub1e/service/Impl/DeptServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day04/tlias-web-manager/src/main/java/com/doub1e/service/Impl/EmpServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day04/tlias-web-manager/src/main/resources/com/doub1e/mapper/DeptMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day04/tlias-web-manager/src/main/resources/com/doub1e/mapper/EmpMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day04/tlias-web-manager/src/main/resources/logback.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day04/tlias-web-manager/src/test/java/com/doub1e/LogTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day04/tlias-web-manager/src/test/java/com/doub1e/TliasWebManagerApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day04/tlias-web-manager/target/classes/com/doub1e/TliasWebManagerApplication.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day04/tlias-web-manager/target/classes/com/doub1e/controller/DeptController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day04/tlias-web-manager/target/classes/com/doub1e/controller/EmpController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day04/tlias-web-manager/target/classes/com/doub1e/entity/Dept.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day04/tlias-web-manager/target/classes/com/doub1e/entity/Emp.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day04/tlias-web-manager/target/classes/com/doub1e/entity/EmpExpr.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day04/tlias-web-manager/target/classes/com/doub1e/entity/EmpQueryParam.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day04/tlias-web-manager/target/classes/com/doub1e/entity/PageBean.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day04/tlias-web-manager/target/classes/com/doub1e/entity/Result.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day04/tlias-web-manager/target/classes/com/doub1e/mapper/DeptMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day04/tlias-web-manager/target/classes/com/doub1e/mapper/DeptMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day04/tlias-web-manager/target/classes/com/doub1e/mapper/EmpMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day04/tlias-web-manager/target/classes/com/doub1e/mapper/EmpMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day04/tlias-web-manager/target/classes/com/doub1e/service/DeptService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day04/tlias-web-manager/target/classes/com/doub1e/service/EmpService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day04/tlias-web-manager/target/classes/com/doub1e/service/Impl/DeptServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day04/tlias-web-manager/target/classes/com/doub1e/service/Impl/EmpServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day04/tlias-web-manager/target/classes/logback.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day04/tlias-web-manager/target/test-classes/com/doub1e/LogTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day04/tlias-web-manager/target/test-classes/com/doub1e/TliasWebManagerApplicationTests.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tlias-web-manager/src/main/java/com/doub1e/controller/UploadController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tlias-web-manager/src/main/java/com/doub1e/entity/AilOSSProperties.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tlias-web-manager/src/main/java/com/doub1e/entity/EmpLog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tlias-web-manager/src/main/java/com/doub1e/mapper/EmpExperMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tlias-web-manager/src/main/java/com/doub1e/mapper/EmpLogMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tlias-web-manager/src/main/java/com/doub1e/service/EmpLogService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tlias-web-manager/src/main/java/com/doub1e/service/Impl/EmpLogServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tlias-web-manager/src/main/java/com/doub1e/utils/AliyunOSSUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tlias-web-manager/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tlias-web-manager/src/main/resources/bak/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tlias-web-manager/src/main/resources/bak/application.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tlias-web-manager/src/main/resources/com/doub1e/mapper/EmpExperMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tlias-web-manager/src/main/resources/static/upload.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tlias-web-manager/src/test/java/com/doub1e/Demo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tlias-web-manager/target/classes/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tlias-web-manager/target/classes/bak/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tlias-web-manager/target/classes/bak/application.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tlias-web-manager/target/classes/com/doub1e/controller/UploadController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tlias-web-manager/target/classes/com/doub1e/entity/AilOSSProperties.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tlias-web-manager/target/classes/com/doub1e/entity/EmpLog.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tlias-web-manager/target/classes/com/doub1e/entity/EmpQueryParam.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tlias-web-manager/target/classes/com/doub1e/mapper/EmpExperMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tlias-web-manager/target/classes/com/doub1e/mapper/EmpExperMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tlias-web-manager/target/classes/com/doub1e/mapper/EmpLogMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tlias-web-manager/target/classes/com/doub1e/service/EmpLogService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tlias-web-manager/target/classes/com/doub1e/service/Impl/EmpLogServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tlias-web-manager/target/classes/com/doub1e/utils/AliyunOSSUtils.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tlias-web-manager/target/classes/static/upload.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tlias-web-manager/target/test-classes/com/doub1e/Demo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/e1398902-a177-4f66-8091-b8b36d8d6cc4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/e1398902-a177-4f66-8091-b8b36d8d6cc4.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tlias-web-manager/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/tlias-web-manager/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tlias-web-manager/src/main/java/com/doub1e/controller/EmpController.java" beforeDir="false" afterPath="$PROJECT_DIR$/tlias-web-manager/src/main/java/com/doub1e/controller/EmpController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tlias-web-manager/src/main/java/com/doub1e/entity/Emp.java" beforeDir="false" afterPath="$PROJECT_DIR$/tlias-web-manager/src/main/java/com/doub1e/entity/Emp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tlias-web-manager/src/main/java/com/doub1e/mapper/EmpMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/tlias-web-manager/src/main/java/com/doub1e/mapper/EmpMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tlias-web-manager/src/main/java/com/doub1e/service/EmpService.java" beforeDir="false" afterPath="$PROJECT_DIR$/tlias-web-manager/src/main/java/com/doub1e/service/EmpService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tlias-web-manager/src/main/java/com/doub1e/service/Impl/EmpServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/tlias-web-manager/src/main/java/com/doub1e/service/Impl/EmpServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tlias-web-manager/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/day04/tlias-web-manager/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tlias-web-manager/src/main/resources/com/doub1e/mapper/EmpMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/tlias-web-manager/src/main/resources/com/doub1e/mapper/EmpMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tlias-web-manager/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/day04/tlias-web-manager/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tlias-web-manager/target/classes/com/doub1e/controller/EmpController.class" beforeDir="false" afterPath="$PROJECT_DIR$/tlias-web-manager/target/classes/com/doub1e/controller/EmpController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tlias-web-manager/target/classes/com/doub1e/entity/Emp.class" beforeDir="false" afterPath="$PROJECT_DIR$/tlias-web-manager/target/classes/com/doub1e/entity/Emp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tlias-web-manager/target/classes/com/doub1e/mapper/EmpMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/tlias-web-manager/target/classes/com/doub1e/mapper/EmpMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tlias-web-manager/target/classes/com/doub1e/mapper/EmpMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/tlias-web-manager/target/classes/com/doub1e/mapper/EmpMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tlias-web-manager/target/classes/com/doub1e/service/EmpService.class" beforeDir="false" afterPath="$PROJECT_DIR$/tlias-web-manager/target/classes/com/doub1e/service/EmpService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tlias-web-manager/target/classes/com/doub1e/service/Impl/EmpServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/tlias-web-manager/target/classes/com/doub1e/service/Impl/EmpServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tlias-web-manager/target/test-classes/com/doub1e/LogTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/tlias-web-manager/target/test-classes/com/doub1e/LogTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,9 +103,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Mybatis Mapper" />
         <option value="Interface" />
         <option value="Class" />
-        <option value="Mybatis Mapper" />
       </list>
     </option>
   </component>
@@ -70,6 +150,7 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;Application.Demo.executor&quot;: &quot;Run&quot;,
     &quot;Application.Main.executor&quot;: &quot;Run&quot;,
     &quot;Application.TliasWebManagerApplication.executor&quot;: &quot;Run&quot;,
     &quot;JUnit.Demo1Test.executor&quot;: &quot;Run&quot;,
@@ -104,7 +185,7 @@
     &quot;Spring Boot.SpringbootWebQuickerstart01Application.executor&quot;: &quot;Run&quot;,
     &quot;Spring Boot.TliasWebManagerApplication.executor&quot;: &quot;Run&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Code/IDEA-code/java-maven/tlias-web-manager/src/main/java/com/doub1e/entity&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Code/IDEA-code/java-maven/tlias-web-manager/src/main/java/com/doub1e/utils&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -126,17 +207,22 @@
 }</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.doub1e.service.Impl" />
       <recent name="com.doub1e.service" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Code\IDEA-code\java-maven\tlias-web-manager\src\main\java\com\doub1e\utils" />
+      <recent name="C:\Code\IDEA-code\java-maven\tlias-web-manager\src\main\resources\static" />
+      <recent name="C:\Code\IDEA-code\java-maven\tlias-web-manager\src\main\java\com\doub1e" />
       <recent name="C:\Code\IDEA-code\java-maven\tlias-web-manager\src\main\java\com\doub1e\entity" />
       <recent name="C:\Code\IDEA-code\java-maven\tlias-web-manager\src\main\resources" />
-      <recent name="C:\Code\IDEA-code\java-maven\tlias-web-manager\src\test\java\com\doub1e" />
-      <recent name="C:\Code\IDEA-code\java-maven\springboot-mybatis-quickstart\src\main\resources\mapper" />
-      <recent name="C:\Code\IDEA-code\java-maven\springboot-mybatis-quickstart\src\main\java\com\doub1e\entity" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Code\IDEA-code\java-maven\tlias-web-manager\src\main\resources\bak" />
       <recent name="C:\Code\IDEA-code\java-maven\springboot-mybatis-quickstart\src\main\resources\mapper" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.doub1e.mapper" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.doub1e.mapper" />
@@ -155,8 +241,8 @@
     </option>
   </component>
   <component name="RunManager" selected="Spring Boot.TliasWebManagerApplication">
-    <configuration name="TliasWebManagerApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.doub1e.TliasWebManagerApplication" />
+    <configuration name="Demo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.doub1e.Demo" />
       <module name="tlias-web-manager" />
       <extension name="coverage">
         <pattern>
@@ -168,11 +254,24 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TliasWebManagerApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.doub1e.TliasWebManagerApplication" />
+      <module name="tlias-web-manager" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.doub1e.entity.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="LogTest.testLog" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="tlias-web-manager" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.doub1e.*" />
+          <option name="PATTERN" value="com.doub1e.entity.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -188,7 +287,7 @@
       <module name="tlias-web-manager" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.doub1e.*" />
+          <option name="PATTERN" value="com.doub1e.entity.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -200,26 +299,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserMapperTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="springboot-mybatis-quickstart" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.doub1e.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.doub1e" />
-      <option name="MAIN_CLASS_NAME" value="com.doub1e.UserMapperTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="UserMapperTest.testList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="springboot-mybatis-quickstart" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.doub1e.*" />
+          <option name="PATTERN" value="com.doub1e.entity.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -254,11 +338,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Demo" />
         <item itemvalue="JUnit.LogTest.testLogLevel" />
         <item itemvalue="JUnit.LogTest.testLog" />
         <item itemvalue="Application.TliasWebManagerApplication" />
         <item itemvalue="JUnit.UserMapperTest.testList" />
-        <item itemvalue="JUnit.UserMapperTest" />
       </list>
     </recent_temporary>
   </component>
@@ -291,7 +375,10 @@
       <workItem from="1757033295701" duration="17204000" />
       <workItem from="1757122174683" duration="12297000" />
       <workItem from="1757179417089" duration="67000" />
-      <workItem from="1757207397343" duration="7076000" />
+      <workItem from="1757207397343" duration="9041000" />
+      <workItem from="1757304269274" duration="24573000" />
+      <workItem from="1757382211300" duration="17148000" />
+      <workItem from="1757467830690" duration="594000" />
     </task>
     <task id="LOCAL-00001" summary="maven init">
       <option name="closed" value="true" />
@@ -421,7 +508,47 @@
       <option name="project" value="LOCAL" />
       <updated>1757175614705</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="员工列表查询功能实现">
+      <option name="closed" value="true" />
+      <created>1757215300222</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1757215300222</updated>
+    </task>
+    <task id="LOCAL-00018" summary="新增功能实现、@Transactional注解开启事务">
+      <option name="closed" value="true" />
+      <created>1757327218838</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1757327218838</updated>
+    </task>
+    <task id="LOCAL-00019" summary="文件上传，本地存储">
+      <option name="closed" value="true" />
+      <created>1757351739598</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1757351739598</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Remove sensitive information">
+      <option name="closed" value="true" />
+      <created>1757485968049</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1757485968049</updated>
+    </task>
+    <task id="LOCAL-00021" summary="Remove sensitive information">
+      <option name="closed" value="true" />
+      <created>1757487280678</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1757487280678</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -454,7 +581,12 @@
     <MESSAGE value="动态sql优化" />
     <MESSAGE value="引入日志技术 slf4j" />
     <MESSAGE value="加入分页查询逻辑" />
-    <option name="LAST_COMMIT_MESSAGE" value="加入分页查询逻辑" />
+    <MESSAGE value="员工列表查询功能实现" />
+    <MESSAGE value="新增功能实现、@Transactional注解开启事务" />
+    <MESSAGE value="文件上传，本地存储" />
+    <MESSAGE value="员工信息删除功能" />
+    <MESSAGE value="Remove sensitive information" />
+    <option name="LAST_COMMIT_MESSAGE" value="Remove sensitive information" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
