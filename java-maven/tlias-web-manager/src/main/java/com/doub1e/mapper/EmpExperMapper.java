@@ -20,4 +20,11 @@ public interface EmpExperMapper {
      */
     // 基于xml开发 -- 动态sql -- <foreach>
     void deleteBatch(List<Integer> empIds);
+
+    /**
+     * 根据员工id查询员工经历
+     * @param empId
+     * @return
+     */
+    List<EmpExpr> getByEmpId(Integer empId);
 }

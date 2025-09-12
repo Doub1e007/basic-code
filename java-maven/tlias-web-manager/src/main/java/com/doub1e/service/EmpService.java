@@ -28,4 +28,11 @@ public interface EmpService {
      * @param ids
      */
     void delete(List<Integer> ids);
+
+    /**
+     * 员工回显
+     * @param id
+     * @return
+     */
+    Emp getById(Integer id);
 }

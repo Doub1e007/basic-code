@@ -124,4 +124,22 @@ public class EmpServiceImpl implements EmpService {
         // 2.删除员工的经历信息数据 emp_expr表
         empExperMapper.deleteBatch(ids);
     }
+
+    @Override
+    public Emp getById(Integer id) {
+        // 方式一
+        // 调用mapper查询方法 获取员工基本信息及经历列表信息
+//        return empMapper.getById(id);
+
+        // 方式二
+        // 1.查询员工基本信息 封装到Emp对象中
+        Emp emp = empMapper.getById2(id);
+
+        // 2.查询员工经历列表信息 封装到Emp对象中
+        List<EmpExpr> empExprList = empExperMapper.getByEmpId(id);
+        emp.setExprList(empExprList);
+
+        // 3.返回员工Emp对象
+        return emp;
+    }
 }

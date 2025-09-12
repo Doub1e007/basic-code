@@ -70,8 +70,20 @@ public class EmpController {
 //    public Result delete(Integer[] ids){
     // 通过集合类型接收前端传递的数组值，需要加注解@RequestParam
     public Result delete(@RequestParam List<Integer> ids){
-        log.info("ids = {}", ids);
+        log.info("删除员工，ids = {}", ids);
         empService.delete(ids);
         return Result.success();
+    }
+
+    /**
+     * 员工回显
+     * @param id
+     * @return
+     */
+    @GetMapping("/emps/{id}")
+    public Result getByID(@PathVariable Integer id){
+        log.info("回显员工，id = {}",id);
+        Emp emp = empService.getById(id);
+        return Result.success(emp);
     }
 }

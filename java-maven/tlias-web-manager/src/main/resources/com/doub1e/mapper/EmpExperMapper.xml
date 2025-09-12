@@ -16,4 +16,9 @@
             #{empId}
         </foreach>
     </delete>
+
+    <!--根据员工id查询员工经历-->
+    <select id="getByEmpId" resultType="com.doub1e.entity.EmpExpr">
+        select * from emp_expr where emp_id = #{empId}
+    </select>
 </mapper>

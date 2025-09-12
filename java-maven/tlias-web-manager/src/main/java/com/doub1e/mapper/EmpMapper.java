@@ -49,4 +49,15 @@ public interface EmpMapper {
 //    @Delete("delete from emp where id in (1,2,3)")
     // 基于xml开发 -- 动态sql -- foreach
     void deleteBatch(List<Integer> ids);
+
+    /**
+     * 根据id查询员工基本信息和员工经历信息
+     * @param id
+     * @return
+     */
+//    @Select("select * from emp e left join emp_expr ee on e.id = ee.emp_id where e.id = #{id}")
+    Emp getById(Integer id);
+
+    @Select("select * from emp where id = #{id}")
+    Emp getById2(Integer id);
 }
