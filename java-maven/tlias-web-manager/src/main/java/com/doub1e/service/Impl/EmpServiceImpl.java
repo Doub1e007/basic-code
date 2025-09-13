@@ -142,4 +142,26 @@ public class EmpServiceImpl implements EmpService {
         // 3.返回员工Emp对象
         return emp;
     }
+
+    @Transactional  //开启事务
+    public void update(Emp emp) {
+        // 1.修改员工的基本信息 -- 修改emp表
+        // 1.1 补充基础属性 -- 更新时间
+        emp.setUpdateTime(LocalDateTime.now());
+        empMapper.update(emp);
+
+        // 2.修改员工的工作经历信息 -- emp_expr表
+        // 先删后增
+        empExperMapper.deleteByEmpId(emp.getId());
+        List<EmpExpr> exprList = emp.getExprList();
+
+        if(!CollectionUtils.isEmpty(exprList)){
+            // 关联员工id
+            exprList.forEach(expr->{
+                expr.setEmpId(emp.getId());
+            });
+            empExperMapper.insertBatch(emp.getExprList());
+        }
+    }
 }
+

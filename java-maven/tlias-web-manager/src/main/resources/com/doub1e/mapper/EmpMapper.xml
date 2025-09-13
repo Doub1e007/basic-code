@@ -1,6 +1,24 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
 <mapper namespace="com.doub1e.mapper.EmpMapper">
+    <!--根据ID更新员工信息-->
+    <update id="update">
+        update emp
+        <set>
+            <if test="username != null and username != ''">username = #{username},</if>
+            <if test="password != null and password != ''">password = #{password},</if>
+            <if test="name != null and name != ''">name = #{name},</if>
+            <if test="gender != null">gender = #{gender},</if>
+            <if test="phone != null and phone != ''">phone = #{phone},</if>
+            <if test="job != null">job = #{job},</if>
+            <if test="salary != null">salary = #{salary},</if>
+            <if test="image != null and image != ''">image = #{image},</if>
+            <if test="entryDate != null">entry_date = #{entryDate},</if>
+            <if test="deptId != null">dept_id = #{deptId},</if>
+            <if test="updateTime != null">update_time = #{updateTime},</if>
+        </set>
+        where id = #{id}
+    </update>
     <!--批量删除员工(1,2,3)-->
     <delete id="deleteBatch">
         delete from emp where id in
@@ -12,12 +30,12 @@
     <select id="list" resultType="com.doub1e.entity.Emp">
         select e.*, d.name deptName
         from emp e
-                 left join dept d on e.dept_id = d.id
+        left join dept d on e.dept_id = d.id
         <where>
             <if test="name != null">
                 e.name like concat('%',#{name},'%')
             </if>
-                <if test="gender != null and gender != ''">
+            <if test="gender != null and gender != ''">
                 and e.gender = #{gender}
             </if>
             <if test="begin != null and end != null ">
@@ -42,16 +60,18 @@
             <result column="ee_job" property="job"></result>
         </collection>
     </resultMap>
-    
+
     <!--根据id查询员工基本信息和员工经历信息-->
     <select id="getById" resultMap="empResultMap">
         select e.*,
-               ee.id ee_id,
-               ee.emp_id ee_empId,
-               ee.begin ee_begin,
-               ee.end ee_end,
+               ee.id      ee_id,
+               ee.emp_id  ee_empId,
+               ee.begin   ee_begin,
+               ee.end     ee_end,
                ee.company ee_company,
-               ee.job ee_job
-        from emp e left join emp_expr ee on e.id = ee.emp_id where e.id = #{id}
+               ee.job     ee_job
+        from emp e
+                 left join emp_expr ee on e.id = ee.emp_id
+        where e.id = #{id}
     </select>
 </mapper>

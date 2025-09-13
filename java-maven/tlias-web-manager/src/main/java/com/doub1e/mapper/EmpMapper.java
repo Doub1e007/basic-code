@@ -1,6 +1,7 @@
 package com.doub1e.mapper;
 
 import com.doub1e.entity.Emp;
+import com.doub1e.entity.EmpExpr;
 import com.doub1e.entity.EmpQueryParam;
 import org.apache.ibatis.annotations.*;
 
@@ -60,4 +61,10 @@ public interface EmpMapper {
 
     @Select("select * from emp where id = #{id}")
     Emp getById2(Integer id);
+
+    /**
+     * 更新员工 - 动态sql
+     * @param emp
+     */
+    void update(Emp emp);
 }

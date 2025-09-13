@@ -27,4 +27,10 @@ public interface EmpExperMapper {
      * @return
      */
     List<EmpExpr> getByEmpId(Integer empId);
+
+    /**
+     * 根据id删除员工经历
+     * @param id
+     */
+    void deleteByEmpId(Integer id);
 }

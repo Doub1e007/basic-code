@@ -35,4 +35,10 @@ public interface EmpService {
      * @return
      */
     Emp getById(Integer id);
+
+    /**
+     * 修改员工
+     * @param emp
+     */
+    void update(Emp emp);
 }
