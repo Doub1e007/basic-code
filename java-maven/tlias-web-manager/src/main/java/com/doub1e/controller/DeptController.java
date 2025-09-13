@@ -70,7 +70,12 @@ public class DeptController  {
     public Result save(@RequestBody Dept dept){
         log.info("dept = {}" ,dept);
         // 调用Service
-        deptService.save(dept);
+//        try {
+            deptService.save(dept);
+//        } catch (Exception e) {
+////            throw new RuntimeException(e);
+//            return Result.error("出错了，请联系管理员!!!");
+//        }
         return Result.success();
     }
 
