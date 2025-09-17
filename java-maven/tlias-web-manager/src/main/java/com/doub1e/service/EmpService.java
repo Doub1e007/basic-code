@@ -1,6 +1,7 @@
 package com.doub1e.service;
 
 import com.doub1e.entity.Emp;
+import com.doub1e.entity.EmpLoginInfo;
 import com.doub1e.entity.EmpQueryParam;
 import com.doub1e.entity.PageBean;
 import org.springframework.format.annotation.DateTimeFormat;
@@ -41,4 +42,11 @@ public interface EmpService {
      * @param emp
      */
     void update(Emp emp);
+
+    /**
+     * 员工登录
+     * @param emp
+     * @return
+     */
+    EmpLoginInfo login(Emp emp);
 }

@@ -6,6 +6,7 @@ import com.doub1e.mapper.EmpLogMapper;
 import com.doub1e.mapper.EmpMapper;
 import com.doub1e.service.EmpLogService;
 import com.doub1e.service.EmpService;
+import com.doub1e.utils.JwtUtils;
 import com.github.pagehelper.Page;
 import com.github.pagehelper.PageHelper;
 import lombok.extern.slf4j.Slf4j;
@@ -17,7 +18,9 @@ import org.springframework.util.CollectionUtils;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.Collections;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 @Slf4j
 @Service
@@ -162,6 +165,32 @@ public class EmpServiceImpl implements EmpService {
             });
             empExperMapper.insertBatch(emp.getExprList());
         }
+    }
+
+    @Override
+    public EmpLoginInfo login(Emp emp) {
+        // 1.调用mapper查询用户密码是否正确
+        Emp empDB = empMapper.selectUsernameAndPassword(emp);
+
+        // 2.判断用户密码是否正确(判断查出来的数据是否为空
+        if(empDB != null){
+
+            //完善登录逻辑 登录成功需要生成JWT令牌
+
+            //自定义有效载荷
+            Map<String, Object> claims = new HashMap<>();
+            claims.put("id",empDB.getId());
+            claims.put("username",empDB.getUsername());
+
+            //调用JWT工具类 生成令牌
+            String jwt = JwtUtils.generateJwt(claims);
+
+            // 3.如果查到数据，就构建EmpLoginInfo对象并返回
+            return new EmpLoginInfo(empDB.getId(),empDB.getUsername(),empDB.getName(),jwt);
+        }
+
+        // 3.如果数据查出来为空 代表用户名密码错误 直接返回null
+        return null;
     }
 }
 
