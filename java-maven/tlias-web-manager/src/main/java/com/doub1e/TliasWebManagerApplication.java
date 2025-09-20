@@ -3,6 +3,7 @@ package com.doub1e;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.web.servlet.ServletComponentScan;
 import org.springframework.context.annotation.ComponentScan;
 
 /**
@@ -10,6 +11,7 @@ import org.springframework.context.annotation.ComponentScan;
  */
 @Slf4j
 @SpringBootApplication
+@ServletComponentScan		// 开启Servlet组件扫描
 // @ComponentScan("com.doub1e") // 扫描组件 默认扫描当前包及其子包
 public class TliasWebManagerApplication {
 

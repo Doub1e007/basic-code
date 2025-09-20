@@ -4,22 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e65c3d5b-aa61-4703-bb2e-d71c17c77e50" name="Changes" comment="增加全局异常处理器">
-      <change afterPath="$PROJECT_DIR$/tlias-web-manager/src/main/java/com/doub1e/controller/LoginController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tlias-web-manager/src/main/java/com/doub1e/controller/SessionController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tlias-web-manager/src/main/java/com/doub1e/entity/EmpLoginInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tlias-web-manager/src/main/java/com/doub1e/utils/JwtUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tlias-web-manager/src/test/java/com/doub1e/JWTTest.java" afterDir="false" />
+    <list default="true" id="e65c3d5b-aa61-4703-bb2e-d71c17c77e50" name="Changes" comment="引入JWT令牌技术">
+      <change afterPath="$PROJECT_DIR$/.idea/GrepConsole.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tlias-web-manager/src/main/java/com/doub1e/exception/BusinessException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tlias-web-manager/src/main/java/com/doub1e/filter/Demo1Filter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tlias-web-manager/src/main/java/com/doub1e/filter/Demo2Filter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tlias-web-manager/src/main/java/com/doub1e/filter/DemoFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tlias-web-manager/src/main/java/com/doub1e/filter/LoginCheckFilter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tlias-web-manager/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/tlias-web-manager/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tlias-web-manager/src/main/java/com/doub1e/mapper/EmpMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/tlias-web-manager/src/main/java/com/doub1e/mapper/EmpMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tlias-web-manager/src/main/java/com/doub1e/service/EmpService.java" beforeDir="false" afterPath="$PROJECT_DIR$/tlias-web-manager/src/main/java/com/doub1e/service/EmpService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tlias-web-manager/src/main/java/com/doub1e/service/Impl/EmpServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/tlias-web-manager/src/main/java/com/doub1e/service/Impl/EmpServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tlias-web-manager/target/classes/bak/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/tlias-web-manager/target/classes/bak/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tlias-web-manager/target/classes/com/doub1e/mapper/EmpMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/tlias-web-manager/target/classes/com/doub1e/mapper/EmpMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tlias-web-manager/target/classes/com/doub1e/service/EmpService.class" beforeDir="false" afterPath="$PROJECT_DIR$/tlias-web-manager/target/classes/com/doub1e/service/EmpService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tlias-web-manager/target/classes/com/doub1e/service/Impl/EmpServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/tlias-web-manager/target/classes/com/doub1e/service/Impl/EmpServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tlias-web-manager/target/test-classes/com/doub1e/Demo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tlias-web-manager/src/main/java/com/doub1e/TliasWebManagerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/tlias-web-manager/src/main/java/com/doub1e/TliasWebManagerApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tlias-web-manager/target/classes/com/doub1e/TliasWebManagerApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/tlias-web-manager/target/classes/com/doub1e/TliasWebManagerApplication.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -111,7 +105,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "Spring Boot.Main.executor": "Run",
     "Spring Boot.SpringbootWebQuickerstart01Application.executor": "Run",
-    "Spring Boot.TliasWebManagerApplication.executor": "Run",
+    "Spring Boot.TliasWebManagerApplication.executor": "Debug",
     "git-widget-placeholder": "master",
     "last_opened_file_path": "C:/Code/IDEA-code/java-maven/tlias-web-manager/src/main/java/com/doub1e/utils",
     "node.js.detected.package.eslint": "true",
@@ -153,6 +147,7 @@
       <recent name="com.doub1e.mapper" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.doub1e.filter" />
       <recent name="com.doub1e.mapper" />
       <recent name="com.doub1e.service" />
       <recent name="com.doub1e" />
@@ -313,7 +308,9 @@
       <workItem from="1757638515456" duration="11985000" />
       <workItem from="1757730931294" duration="6688000" />
       <workItem from="1757984152963" duration="13240000" />
-      <workItem from="1758124881633" duration="2866000" />
+      <workItem from="1758124881633" duration="3456000" />
+      <workItem from="1758158635983" duration="7158000" />
+      <workItem from="1758345271311" duration="3849000" />
     </task>
     <task id="LOCAL-00001" summary="maven init">
       <option name="closed" value="true" />
@@ -515,7 +512,15 @@
       <option name="project" value="LOCAL" />
       <updated>1757754740385</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="引入JWT令牌技术">
+      <option name="closed" value="true" />
+      <created>1758128625013</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1758128625013</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -556,7 +561,8 @@
     <MESSAGE value="修改功能 -- 回显接口" />
     <MESSAGE value="修改功能" />
     <MESSAGE value="增加全局异常处理器" />
-    <option name="LAST_COMMIT_MESSAGE" value="增加全局异常处理器" />
+    <MESSAGE value="引入JWT令牌技术" />
+    <option name="LAST_COMMIT_MESSAGE" value="引入JWT令牌技术" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -565,6 +571,26 @@
           <url>file://$PROJECT_DIR$/JDBC-demo/src/main/java/com/doub1e/Main.java</url>
           <line>13</line>
           <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/tlias-web-manager/src/main/java/com/doub1e/filter/LoginCheckFilter.java</url>
+          <line>19</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/tlias-web-manager/src/main/java/com/doub1e/controller/LoginController.java</url>
+          <line>25</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/tlias-web-manager/src/main/java/com/doub1e/filter/LoginCheckFilter.java</url>
+          <line>24</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/tlias-web-manager/src/main/java/com/doub1e/controller/LoginController.java</url>
+          <line>27</line>
+          <option name="timeStamp" value="6" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
