@@ -4,17 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e65c3d5b-aa61-4703-bb2e-d71c17c77e50" name="Changes" comment="登录拦截器实现">
-      <change afterPath="$PROJECT_DIR$/springboot-aop-quickstart/src/main/java/com/doub1e/aop/DemoAspect.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot-aop-quickstart/src/main/java/com/doub1e/aop/MyAspect1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot-aop-quickstart/src/main/java/com/doub1e/aop/MyAspect2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot-aop-quickstart/src/main/java/com/doub1e/aop/MyAspect3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot-aop-quickstart/src/main/java/com/doub1e/aop/MyAspect4.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/GrepConsole.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/GrepConsole.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="e65c3d5b-aa61-4703-bb2e-d71c17c77e50" name="Changes" comment="AOP编程">
+      <change afterPath="$PROJECT_DIR$/springboot-aop-quickstart/src/main/java/com/doub1e/aop/Log.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-aop-quickstart/src/main/java/com/doub1e/aop/MyAspect5.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-aop-quickstart/src/main/java/com/doub1e/aop/MyAspect2.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-aop-quickstart/src/main/java/com/doub1e/aop/MyAspect2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-aop-quickstart/src/main/java/com/doub1e/aop/MyAspect3.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-aop-quickstart/src/main/java/com/doub1e/aop/MyAspect3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-aop-quickstart/src/main/java/com/doub1e/aop/MyAspect4.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-aop-quickstart/src/main/java/com/doub1e/aop/MyAspect4.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-aop-quickstart/src/main/java/com/doub1e/service/impl/DeptServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-aop-quickstart/src/main/java/com/doub1e/service/impl/DeptServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-aop-quickstart/target/classes/com/doub1e/aop/MyAspect2.class" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-aop-quickstart/target/classes/com/doub1e/aop/MyAspect2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-aop-quickstart/target/classes/com/doub1e/aop/MyAspect3.class" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-aop-quickstart/target/classes/com/doub1e/aop/MyAspect3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-aop-quickstart/target/classes/com/doub1e/aop/MyAspect4.class" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-aop-quickstart/target/classes/com/doub1e/aop/MyAspect4.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,6 +28,7 @@
         <option value="Mybatis Mapper" />
         <option value="Interface" />
         <option value="Class" />
+        <option value="AnnotationType" />
       </list>
     </option>
   </component>
@@ -105,10 +107,11 @@
     "RunOnceActivity.git.unshallow": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "Spring Boot.Main.executor": "Run",
-    "Spring Boot.SpringbootAopQuickstartApplication.executor": "Debug",
+    "Spring Boot.SpringbootAopQuickstartApplication.executor": "Run",
     "Spring Boot.SpringbootWebQuickerstart01Application.executor": "Run",
     "Spring Boot.TliasWebManagerApplication.executor": "Run",
     "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Code/IDEA-code/java-maven/tlias-web-manager/src/main/java/com/doub1e/utils",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -120,7 +123,7 @@
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "run.configurations.included.in.services": "true",
-    "settings.editor.selected.configurable": "preferences.keymap",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -164,6 +167,17 @@
         <option value="QuarkusRunConfigurationType" />
         <option value="SpringBootApplicationConfigurationType" />
       </set>
+    </option>
+    <option name="configurationStatuses">
+      <map>
+        <entry key="SpringBootApplicationConfigurationType">
+          <value>
+            <map>
+              <entry key="SpringbootAopQuickstartApplication" value="STOPPED" />
+            </map>
+          </value>
+        </entry>
+      </map>
     </option>
   </component>
   <component name="RunManager" selected="Spring Boot.SpringbootAopQuickstartApplication">
@@ -285,8 +299,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9823dce3aa75-fbdcb00ec9e3-intellij.indexing.shared.core-IU-251.28293.39" />
-        <option value="bundled-js-predefined-d6986cc7102b-09060db00ec0-JavaScript-IU-251.28293.39" />
+        <option value="bundled-jdk-9823dce3aa75-bf35d07a577b-intellij.indexing.shared.core-IU-252.26199.169" />
+        <option value="bundled-js-predefined-d6986cc7102b-9c94529fcfe0-JavaScript-IU-252.26199.169" />
       </set>
     </attachedChunks>
   </component>
@@ -321,7 +335,12 @@
       <workItem from="1758124881633" duration="3456000" />
       <workItem from="1758158635983" duration="7158000" />
       <workItem from="1758345271311" duration="9620000" />
-      <workItem from="1758505467984" duration="7524000" />
+      <workItem from="1758505467984" duration="9623000" />
+      <workItem from="1758681668559" duration="134000" />
+      <workItem from="1758681843032" duration="77000" />
+      <workItem from="1758888926175" duration="126000" />
+      <workItem from="1758956290001" duration="1829000" />
+      <workItem from="1758958836385" duration="4796000" />
     </task>
     <task id="LOCAL-00001" summary="maven init">
       <option name="closed" value="true" />
@@ -547,7 +566,15 @@
       <option name="project" value="LOCAL" />
       <updated>1758506607964</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="AOP编程">
+      <option name="closed" value="true" />
+      <created>1758524338964</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1758524338964</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -565,7 +592,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="springboot web init" />
     <MESSAGE value="something wrong" />
     <MESSAGE value="修复后" />
     <MESSAGE value="分层解耦" />
@@ -590,7 +616,8 @@
     <MESSAGE value="引入JWT令牌技术" />
     <MESSAGE value="过滤器技术" />
     <MESSAGE value="登录拦截器实现" />
-    <option name="LAST_COMMIT_MESSAGE" value="登录拦截器实现" />
+    <MESSAGE value="AOP编程" />
+    <option name="LAST_COMMIT_MESSAGE" value="AOP编程" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

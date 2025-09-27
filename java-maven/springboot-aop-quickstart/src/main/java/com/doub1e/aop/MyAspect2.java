@@ -8,8 +8,8 @@ import org.springframework.stereotype.Component;
 
 @Order(3)  // 设置优先级 数字越小 优先级越高
 @Slf4j
-@Aspect     // 声明切面类
-@Component
+//@Aspect     // 声明切面类
+//@Component
 public class MyAspect2 {
 
     // 抽取公共切入点表达式

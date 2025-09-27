@@ -10,8 +10,8 @@ import org.springframework.stereotype.Component;
 
 @Order(2)
 @Slf4j
-@Aspect     // 声明切面类
-@Component
+//@Aspect     // 声明切面类
+//@Component
 public class MyAspect3 {
 
     // 抽取公共切入点表达式

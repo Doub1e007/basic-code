@@ -1,5 +1,6 @@
 package com.doub1e.service.impl;
 
+import com.doub1e.aop.Log;
 import com.doub1e.mapper.DeptMapper;
 import com.doub1e.pojo.Dept;
 import com.doub1e.service.DeptService;
@@ -16,6 +17,7 @@ public class DeptServiceImpl implements DeptService {
     @Autowired
     private DeptMapper deptMapper;
 
+    @Log
     @Override
     public List<Dept> list() {
         List<Dept> deptList = deptMapper.list();
@@ -34,6 +36,7 @@ public class DeptServiceImpl implements DeptService {
         deptMapper.save(dept);
     }
 
+    @Log
     @Override
     public Dept getById(Integer id) {
         Dept dept = deptMapper.getById(id);
