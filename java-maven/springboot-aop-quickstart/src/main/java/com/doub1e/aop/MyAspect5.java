@@ -17,7 +17,7 @@ import org.springframework.stereotype.Component;
 @Order(1)  // 设置优先级
 @Slf4j
 @Aspect     // 声明切面类
-@Component
+//@Component
 public class MyAspect5 {
 
     // 抽取公共切入点表达式

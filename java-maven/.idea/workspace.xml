@@ -4,18 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e65c3d5b-aa61-4703-bb2e-d71c17c77e50" name="Changes" comment="AOP编程">
-      <change afterPath="$PROJECT_DIR$/springboot-aop-quickstart/src/main/java/com/doub1e/aop/Log.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot-aop-quickstart/src/main/java/com/doub1e/aop/MyAspect5.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+    <list default="true" id="e65c3d5b-aa61-4703-bb2e-d71c17c77e50" name="Changes" comment="AOP切入点表达式">
+      <change afterPath="$PROJECT_DIR$/springboot-aop-quickstart/src/main/java/com/doub1e/aop/MyAspect6.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot-aop-quickstart/src/main/java/com/doub1e/aop/MyAspect2.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-aop-quickstart/src/main/java/com/doub1e/aop/MyAspect2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot-aop-quickstart/src/main/java/com/doub1e/aop/MyAspect3.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-aop-quickstart/src/main/java/com/doub1e/aop/MyAspect3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot-aop-quickstart/src/main/java/com/doub1e/aop/MyAspect4.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-aop-quickstart/src/main/java/com/doub1e/aop/MyAspect4.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot-aop-quickstart/src/main/java/com/doub1e/service/impl/DeptServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-aop-quickstart/src/main/java/com/doub1e/service/impl/DeptServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot-aop-quickstart/target/classes/com/doub1e/aop/MyAspect2.class" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-aop-quickstart/target/classes/com/doub1e/aop/MyAspect2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot-aop-quickstart/target/classes/com/doub1e/aop/MyAspect3.class" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-aop-quickstart/target/classes/com/doub1e/aop/MyAspect3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot-aop-quickstart/target/classes/com/doub1e/aop/MyAspect4.class" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-aop-quickstart/target/classes/com/doub1e/aop/MyAspect4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-aop-quickstart/src/main/java/com/doub1e/aop/MyAspect5.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-aop-quickstart/src/main/java/com/doub1e/aop/MyAspect5.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-aop-quickstart/target/classes/com/doub1e/aop/MyAspect5.class" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-aop-quickstart/target/classes/com/doub1e/aop/MyAspect5.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,67 +64,67 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Demo.executor": "Run",
-    "Application.Main.executor": "Run",
-    "Application.TliasWebManagerApplication.executor": "Run",
-    "JUnit.Demo1Test.executor": "Run",
-    "JUnit.JDBCTest.executor": "Run",
-    "JUnit.JDBCTest.testSelect (1).executor": "Run",
-    "JUnit.JDBCTest.testSelect.executor": "Run",
-    "JUnit.JDBCTest.testSelect2.executor": "Run",
-    "JUnit.JDBCTest.testUpdate.executor": "Run",
-    "JUnit.JWTTest.testGenerateJwt.executor": "Run",
-    "JUnit.JWTTest.testParseJwt.executor": "Run",
-    "JUnit.LogTest.testLog.executor": "Run",
-    "JUnit.LogTest.testLogLevel.executor": "Run",
-    "JUnit.UserMapperTest.executor": "Run",
-    "JUnit.UserMapperTest.testList.executor": "Run",
-    "JUnit.UserService2Test.executor": "Run",
-    "JUnit.UserService2Test.testGetGender.executor": "Run",
-    "JUnit.UserServiceTest.executor": "Run",
-    "JUnit.UserServiceTest.testGetAge.executor": "Run",
-    "JUnit.UserServiceTest.testGetGender.executor": "Run",
-    "Maven.maven-project01 [clean].executor": "Run",
-    "Maven.springboot-mybatis-quickstart [clean].executor": "Run",
-    "Maven.springboot-web-quickerstart01 [clean].executor": "Run",
-    "Maven.springboot-web-quickerstart01 [package].executor": "Run",
-    "Maven.tlias-web-manager [clean].executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "Spring Boot.Main.executor": "Run",
-    "Spring Boot.SpringbootAopQuickstartApplication.executor": "Run",
-    "Spring Boot.SpringbootWebQuickerstart01Application.executor": "Run",
-    "Spring Boot.TliasWebManagerApplication.executor": "Run",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Code/IDEA-code/java-maven/tlias-web-manager/src/main/java/com/doub1e/utils",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "onboarding.tips.debug.path": "C:/Code/IDEA-code/java-maven/JDBC-demo/src/main/java/com/doub1e/Main.java",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "run.configurations.included.in.services": "true",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Demo.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.TliasWebManagerApplication.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.Demo1Test.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.JDBCTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.JDBCTest.testSelect (1).executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.JDBCTest.testSelect.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.JDBCTest.testSelect2.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.JDBCTest.testUpdate.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.JWTTest.testGenerateJwt.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.JWTTest.testParseJwt.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.LogTest.testLog.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.LogTest.testLogLevel.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserMapperTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserMapperTest.testList.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserService2Test.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserService2Test.testGetGender.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserServiceTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserServiceTest.testGetAge.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserServiceTest.testGetGender.executor&quot;: &quot;Run&quot;,
+    &quot;Maven.maven-project01 [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.springboot-mybatis-quickstart [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.springboot-web-quickerstart01 [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.springboot-web-quickerstart01 [package].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.tlias-web-manager [clean].executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Spring Boot.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.SpringbootAopQuickstartApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.SpringbootWebQuickerstart01Application.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.TliasWebManagerApplication.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Code/IDEA-code/java-maven/tlias-web-manager/src/main/java/com/doub1e/utils&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Code/IDEA-code/java-maven/JDBC-demo/src/main/java/com/doub1e/Main.java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;run.configurations.included.in.services&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.doub1e.service.Impl" />
@@ -340,7 +333,8 @@
       <workItem from="1758681843032" duration="77000" />
       <workItem from="1758888926175" duration="126000" />
       <workItem from="1758956290001" duration="1829000" />
-      <workItem from="1758958836385" duration="4796000" />
+      <workItem from="1758958836385" duration="5277000" />
+      <workItem from="1758982616153" duration="2104000" />
     </task>
     <task id="LOCAL-00001" summary="maven init">
       <option name="closed" value="true" />
@@ -574,7 +568,15 @@
       <option name="project" value="LOCAL" />
       <updated>1758524338964</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="AOP切入点表达式">
+      <option name="closed" value="true" />
+      <created>1758966916289</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1758966916289</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -592,7 +594,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="something wrong" />
     <MESSAGE value="修复后" />
     <MESSAGE value="分层解耦" />
     <MESSAGE value="增强可扩展性，引入接口编程" />
@@ -617,7 +618,8 @@
     <MESSAGE value="过滤器技术" />
     <MESSAGE value="登录拦截器实现" />
     <MESSAGE value="AOP编程" />
-    <option name="LAST_COMMIT_MESSAGE" value="AOP编程" />
+    <MESSAGE value="AOP切入点表达式" />
+    <option name="LAST_COMMIT_MESSAGE" value="AOP切入点表达式" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
