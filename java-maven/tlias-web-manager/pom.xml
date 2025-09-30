@@ -126,6 +126,7 @@
 					</annotationProcessorPaths>
 				</configuration>
 			</plugin>
+            <!--maven打包插件-->
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
