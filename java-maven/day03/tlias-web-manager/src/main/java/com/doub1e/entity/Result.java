@@ -1,4 +1,4 @@
-package com.doub1e.entity;
+package com.example.entity;
 
 import lombok.Data;
 

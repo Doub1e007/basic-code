@@ -1,4 +1,4 @@
-package com.doub1e;
+package com.example;
 
 import org.junit.jupiter.api.*;
 

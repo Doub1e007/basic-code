@@ -1,6 +1,6 @@
-package com.doub1e.dao;
+package com.example.dao;
 
-import com.doub1e.entity.Dept;
+import com.example.entity.Dept;
 
 import java.util.List;
 

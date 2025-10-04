@@ -1,6 +1,6 @@
-package com.doub1e.mapper;
+package com.example.mapper;
 
-import com.doub1e.entity.User;
+import com.example.entity.User;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Select;
 

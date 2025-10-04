@@ -1,9 +1,9 @@
-package com.doub1e.controller;
+package com.example.controller;
 
-import com.doub1e.entity.EmpQueryParam;
-import com.doub1e.entity.PageBean;
-import com.doub1e.entity.Result;
-import com.doub1e.service.EmpService;
+import com.example.entity.EmpQueryParam;
+import com.example.entity.PageBean;
+import com.example.entity.Result;
+import com.example.service.EmpService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.format.annotation.DateTimeFormat;

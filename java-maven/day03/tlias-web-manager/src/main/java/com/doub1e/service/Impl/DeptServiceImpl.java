@@ -1,8 +1,8 @@
-package com.doub1e.service.Impl;
+package com.example.service.Impl;
 
-import com.doub1e.entity.Dept;
-import com.doub1e.mapper.DeptMapper;
-import com.doub1e.service.DeptService;
+import com.example.entity.Dept;
+import com.example.mapper.DeptMapper;
+import com.example.service.DeptService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

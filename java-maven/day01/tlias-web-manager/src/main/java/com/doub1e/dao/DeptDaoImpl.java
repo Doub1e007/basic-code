@@ -1,4 +1,4 @@
-package com.doub1e.dao;
+package com.example.dao;
 
 import org.apache.commons.io.IOUtils;
 import org.springframework.stereotype.Component;

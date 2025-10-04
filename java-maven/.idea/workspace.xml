@@ -4,63 +4,147 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e65c3d5b-aa61-4703-bb2e-d71c17c77e50" name="Changes" comment="AOP连接点对象">
-      <change afterPath="$PROJECT_DIR$/springboot-web-config/src/main/java/com/doub1e/config/CommonConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot-web-config/src/main/java/com/doub1e/service/ServiceA.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot-web-config/src/main/java/com/doub1e/service/ServiceB.java" afterDir="false" />
+    <list default="true" id="e65c3d5b-aa61-4703-bb2e-d71c17c77e50" name="Changes" comment="第三方Bean">
+      <change afterPath="$PROJECT_DIR$/springboot-web-config/src/test/java/com/example/TestAutoConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tlias-web-manager/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/tlias-web-manager/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tlias-web-manager/target/classes/application.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tlias-web-manager/target/classes/bak/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tlias-web-manager/target/classes/bak/application.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tlias-web-manager/target/classes/com/doub1e/TliasWebManagerApplication.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tlias-web-manager/target/classes/com/doub1e/WebConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tlias-web-manager/target/classes/com/doub1e/controller/DeptController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tlias-web-manager/target/classes/com/doub1e/controller/EmpController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tlias-web-manager/target/classes/com/doub1e/controller/LoginController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tlias-web-manager/target/classes/com/doub1e/controller/SessionController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tlias-web-manager/target/classes/com/doub1e/controller/UploadController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tlias-web-manager/target/classes/com/doub1e/entity/AilOSSProperties.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tlias-web-manager/target/classes/com/doub1e/entity/Dept.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tlias-web-manager/target/classes/com/doub1e/entity/Emp.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tlias-web-manager/target/classes/com/doub1e/entity/EmpExpr.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tlias-web-manager/target/classes/com/doub1e/entity/EmpLog.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tlias-web-manager/target/classes/com/doub1e/entity/EmpLoginInfo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tlias-web-manager/target/classes/com/doub1e/entity/EmpQueryParam.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tlias-web-manager/target/classes/com/doub1e/entity/PageBean.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tlias-web-manager/target/classes/com/doub1e/entity/Result.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tlias-web-manager/target/classes/com/doub1e/exception/BusinessException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tlias-web-manager/target/classes/com/doub1e/exception/GlobalExceptionHander.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tlias-web-manager/target/classes/com/doub1e/filter/Demo1Filter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tlias-web-manager/target/classes/com/doub1e/filter/Demo2Filter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tlias-web-manager/target/classes/com/doub1e/filter/DemoFilter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tlias-web-manager/target/classes/com/doub1e/filter/LoginCheckFilter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tlias-web-manager/target/classes/com/doub1e/interceptor/DemoInterceptor.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tlias-web-manager/target/classes/com/doub1e/interceptor/LoginCheckInterceptor.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tlias-web-manager/target/classes/com/doub1e/mapper/DeptMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tlias-web-manager/target/classes/com/doub1e/mapper/DeptMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tlias-web-manager/target/classes/com/doub1e/mapper/EmpExperMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tlias-web-manager/target/classes/com/doub1e/mapper/EmpExperMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tlias-web-manager/target/classes/com/doub1e/mapper/EmpLogMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tlias-web-manager/target/classes/com/doub1e/mapper/EmpMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tlias-web-manager/target/classes/com/doub1e/mapper/EmpMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tlias-web-manager/target/classes/com/doub1e/service/DeptService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tlias-web-manager/target/classes/com/doub1e/service/EmpLogService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tlias-web-manager/target/classes/com/doub1e/service/EmpService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tlias-web-manager/target/classes/com/doub1e/service/Impl/DeptServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tlias-web-manager/target/classes/com/doub1e/service/Impl/EmpLogServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tlias-web-manager/target/classes/com/doub1e/service/Impl/EmpServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tlias-web-manager/target/classes/com/doub1e/utils/AliyunOSSUtils.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tlias-web-manager/target/classes/com/doub1e/utils/JwtUtils.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tlias-web-manager/target/classes/logback.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tlias-web-manager/target/classes/static/upload.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tlias-web-manager/target/test-classes/com/doub1e/JWTTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tlias-web-manager/target/test-classes/com/doub1e/LogTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tlias-web-manager/target/test-classes/com/doub1e/TliasWebManagerApplicationTests.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/day01/springboot-web-quickerstart01/src/main/java/com/doub1e/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/day01/springboot-web-quickerstart01/src/main/java/com/doub1e/HelloController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day01/springboot-web-quickerstart01/src/main/java/com/doub1e/SpringbootWebQuickerstart01Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/day01/springboot-web-quickerstart01/src/main/java/com/doub1e/SpringbootWebQuickerstart01Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day01/springboot-web-quickerstart01/src/test/java/com/doub1e/SpringbootWebQuickerstart01ApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/day01/springboot-web-quickerstart01/src/test/java/com/doub1e/SpringbootWebQuickerstart01ApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day01/springboot-web-quickerstart02/src/main/java/com/doub1e/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/day01/springboot-web-quickerstart02/src/main/java/com/doub1e/HelloController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day01/springboot-web-quickerstart02/src/main/java/com/doub1e/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/day01/springboot-web-quickerstart02/src/main/java/com/doub1e/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day01/tlias-web-manager/src/main/java/com/doub1e/TliasWebManagerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/day01/tlias-web-manager/src/main/java/com/doub1e/TliasWebManagerApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day01/tlias-web-manager/src/main/java/com/doub1e/controller/DeptController.java" beforeDir="false" afterPath="$PROJECT_DIR$/day01/tlias-web-manager/src/main/java/com/doub1e/controller/DeptController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day01/tlias-web-manager/src/main/java/com/doub1e/dao/DeptDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/day01/tlias-web-manager/src/main/java/com/doub1e/dao/DeptDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day01/tlias-web-manager/src/main/java/com/doub1e/dao/DeptDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/day01/tlias-web-manager/src/main/java/com/doub1e/dao/DeptDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day01/tlias-web-manager/src/main/java/com/doub1e/entity/Dept.java" beforeDir="false" afterPath="$PROJECT_DIR$/day01/tlias-web-manager/src/main/java/com/doub1e/entity/Dept.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day01/tlias-web-manager/src/main/java/com/doub1e/entity/Result.java" beforeDir="false" afterPath="$PROJECT_DIR$/day01/tlias-web-manager/src/main/java/com/doub1e/entity/Result.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day01/tlias-web-manager/src/main/java/com/doub1e/service/DeptService.java" beforeDir="false" afterPath="$PROJECT_DIR$/day01/tlias-web-manager/src/main/java/com/doub1e/service/DeptService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day01/tlias-web-manager/src/main/java/com/doub1e/service/DeptServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/day01/tlias-web-manager/src/main/java/com/doub1e/service/DeptServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day01/tlias-web-manager/src/main/java/com/doub1e/service/DeptServiceImpl2.java" beforeDir="false" afterPath="$PROJECT_DIR$/day01/tlias-web-manager/src/main/java/com/doub1e/service/DeptServiceImpl2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day01/tlias-web-manager/src/test/java/com/doub1e/TliasWebManagerApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/day01/tlias-web-manager/src/test/java/com/doub1e/TliasWebManagerApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day02/JDBC-demo/src/main/java/com/doub1e/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/day02/JDBC-demo/src/main/java/com/doub1e/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day02/JDBC-demo/src/test/java/com/doub1e/JDBCTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/day02/JDBC-demo/src/test/java/com/doub1e/JDBCTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day02/JDBC-demo/src/test/java/com/doub1e/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/day02/JDBC-demo/src/test/java/com/doub1e/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day02/maven-project01/src/main/java/com/doub1e/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/day02/maven-project01/src/main/java/com/doub1e/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day02/maven-project01/src/main/java/com/doub1e/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/day02/maven-project01/src/main/java/com/doub1e/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day02/maven-project01/src/test/java/com/doub1e/Demo1Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/day02/maven-project01/src/test/java/com/doub1e/Demo1Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day02/maven-project01/src/test/java/com/doub1e/UserService2Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/day02/maven-project01/src/test/java/com/doub1e/UserService2Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day02/maven-project01/src/test/java/com/doub1e/UserServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/day02/maven-project01/src/test/java/com/doub1e/UserServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day03/springboot-mybatis-quickstart/src/main/java/com/doub1e/SpringbootMybatisQuickstartApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/day03/springboot-mybatis-quickstart/src/main/java/com/doub1e/SpringbootMybatisQuickstartApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day03/springboot-mybatis-quickstart/src/main/java/com/doub1e/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/day03/springboot-mybatis-quickstart/src/main/java/com/doub1e/entity/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day03/springboot-mybatis-quickstart/src/main/java/com/doub1e/mapper/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/day03/springboot-mybatis-quickstart/src/main/java/com/doub1e/mapper/UserMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day03/springboot-mybatis-quickstart/src/test/java/com/doub1e/SpringbootMybatisQuickstartApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/day03/springboot-mybatis-quickstart/src/test/java/com/doub1e/SpringbootMybatisQuickstartApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day03/springboot-mybatis-quickstart/src/test/java/com/doub1e/UserMapperTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/day03/springboot-mybatis-quickstart/src/test/java/com/doub1e/UserMapperTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day03/tlias-web-manager/src/main/java/com/doub1e/TliasWebManagerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/day03/tlias-web-manager/src/main/java/com/doub1e/TliasWebManagerApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day03/tlias-web-manager/src/main/java/com/doub1e/controller/DeptController.java" beforeDir="false" afterPath="$PROJECT_DIR$/day03/tlias-web-manager/src/main/java/com/doub1e/controller/DeptController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day03/tlias-web-manager/src/main/java/com/doub1e/entity/Dept.java" beforeDir="false" afterPath="$PROJECT_DIR$/day03/tlias-web-manager/src/main/java/com/doub1e/entity/Dept.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day03/tlias-web-manager/src/main/java/com/doub1e/entity/Result.java" beforeDir="false" afterPath="$PROJECT_DIR$/day03/tlias-web-manager/src/main/java/com/doub1e/entity/Result.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day03/tlias-web-manager/src/main/java/com/doub1e/mapper/DeptMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/day03/tlias-web-manager/src/main/java/com/doub1e/mapper/DeptMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day03/tlias-web-manager/src/main/java/com/doub1e/service/DeptService.java" beforeDir="false" afterPath="$PROJECT_DIR$/day03/tlias-web-manager/src/main/java/com/doub1e/service/DeptService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day03/tlias-web-manager/src/main/java/com/doub1e/service/Impl/DeptServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/day03/tlias-web-manager/src/main/java/com/doub1e/service/Impl/DeptServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day03/tlias-web-manager/src/test/java/com/doub1e/TliasWebManagerApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/day03/tlias-web-manager/src/test/java/com/doub1e/TliasWebManagerApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day04/tlias-web-manager/src/main/java/com/doub1e/TliasWebManagerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/day04/tlias-web-manager/src/main/java/com/doub1e/TliasWebManagerApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day04/tlias-web-manager/src/main/java/com/doub1e/controller/DeptController.java" beforeDir="false" afterPath="$PROJECT_DIR$/day04/tlias-web-manager/src/main/java/com/doub1e/controller/DeptController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day04/tlias-web-manager/src/main/java/com/doub1e/controller/EmpController.java" beforeDir="false" afterPath="$PROJECT_DIR$/day04/tlias-web-manager/src/main/java/com/doub1e/controller/EmpController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day04/tlias-web-manager/src/main/java/com/doub1e/entity/Dept.java" beforeDir="false" afterPath="$PROJECT_DIR$/day04/tlias-web-manager/src/main/java/com/doub1e/entity/Dept.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day04/tlias-web-manager/src/main/java/com/doub1e/entity/Emp.java" beforeDir="false" afterPath="$PROJECT_DIR$/day04/tlias-web-manager/src/main/java/com/doub1e/entity/Emp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day04/tlias-web-manager/src/main/java/com/doub1e/entity/EmpExpr.java" beforeDir="false" afterPath="$PROJECT_DIR$/day04/tlias-web-manager/src/main/java/com/doub1e/entity/EmpExpr.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day04/tlias-web-manager/src/main/java/com/doub1e/entity/EmpQueryParam.java" beforeDir="false" afterPath="$PROJECT_DIR$/day04/tlias-web-manager/src/main/java/com/doub1e/entity/EmpQueryParam.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day04/tlias-web-manager/src/main/java/com/doub1e/entity/PageBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/day04/tlias-web-manager/src/main/java/com/doub1e/entity/PageBean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day04/tlias-web-manager/src/main/java/com/doub1e/entity/Result.java" beforeDir="false" afterPath="$PROJECT_DIR$/day04/tlias-web-manager/src/main/java/com/doub1e/entity/Result.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day04/tlias-web-manager/src/main/java/com/doub1e/mapper/DeptMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/day04/tlias-web-manager/src/main/java/com/doub1e/mapper/DeptMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day04/tlias-web-manager/src/main/java/com/doub1e/mapper/EmpMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/day04/tlias-web-manager/src/main/java/com/doub1e/mapper/EmpMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day04/tlias-web-manager/src/main/java/com/doub1e/service/DeptService.java" beforeDir="false" afterPath="$PROJECT_DIR$/day04/tlias-web-manager/src/main/java/com/doub1e/service/DeptService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day04/tlias-web-manager/src/main/java/com/doub1e/service/EmpService.java" beforeDir="false" afterPath="$PROJECT_DIR$/day04/tlias-web-manager/src/main/java/com/doub1e/service/EmpService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day04/tlias-web-manager/src/main/java/com/doub1e/service/Impl/DeptServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/day04/tlias-web-manager/src/main/java/com/doub1e/service/Impl/DeptServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day04/tlias-web-manager/src/main/java/com/doub1e/service/Impl/EmpServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/day04/tlias-web-manager/src/main/java/com/doub1e/service/Impl/EmpServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day04/tlias-web-manager/src/test/java/com/doub1e/LogTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/day04/tlias-web-manager/src/test/java/com/doub1e/LogTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day04/tlias-web-manager/src/test/java/com/doub1e/TliasWebManagerApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/day04/tlias-web-manager/src/test/java/com/doub1e/TliasWebManagerApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-aop-quickstart/src/main/java/com/doub1e/SpringbootAopQuickstartApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-aop-quickstart/src/main/java/com/example/SpringbootAopQuickstartApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-aop-quickstart/src/main/java/com/doub1e/aop/DemoAspect.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-aop-quickstart/src/main/java/com/example/aop/DemoAspect.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-aop-quickstart/src/main/java/com/doub1e/aop/Log.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-aop-quickstart/src/main/java/com/example/aop/Log.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-aop-quickstart/src/main/java/com/doub1e/aop/MyAspect1.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-aop-quickstart/src/main/java/com/example/aop/MyAspect1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-aop-quickstart/src/main/java/com/doub1e/aop/MyAspect2.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-aop-quickstart/src/main/java/com/example/aop/MyAspect2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-aop-quickstart/src/main/java/com/doub1e/aop/MyAspect3.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-aop-quickstart/src/main/java/com/example/aop/MyAspect3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-aop-quickstart/src/main/java/com/doub1e/aop/MyAspect4.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-aop-quickstart/src/main/java/com/example/aop/MyAspect4.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-aop-quickstart/src/main/java/com/doub1e/aop/MyAspect5.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-aop-quickstart/src/main/java/com/example/aop/MyAspect5.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-aop-quickstart/src/main/java/com/doub1e/aop/MyAspect6.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-aop-quickstart/src/main/java/com/example/aop/MyAspect6.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-aop-quickstart/src/main/java/com/doub1e/controller/DeptController.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-aop-quickstart/src/main/java/com/example/controller/DeptController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-aop-quickstart/src/main/java/com/doub1e/mapper/DeptMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-aop-quickstart/src/main/java/com/example/mapper/DeptMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-aop-quickstart/src/main/java/com/doub1e/pojo/Dept.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-web-config/src/main/java/com/example/pojo/Dept.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-aop-quickstart/src/main/java/com/doub1e/pojo/Result.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-web-config/src/main/java/com/example/pojo/Result.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-aop-quickstart/src/main/java/com/doub1e/service/DeptService.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-aop-quickstart/src/main/java/com/example/service/DeptService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-aop-quickstart/src/main/java/com/doub1e/service/impl/DeptServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-aop-quickstart/src/main/java/com/example/service/impl/DeptServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-aop-quickstart/src/test/java/com/doub1e/SpringbootAopQuickstart1ApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-aop-quickstart/src/test/java/com/example/SpringbootAopQuickstart1ApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-web-config/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-web-config/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-web-config/src/main/java/com/doub1e/SpringbootWebConfigApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-web-config/src/main/java/com/example/SpringbootWebConfigApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-web-config/src/main/java/com/doub1e/config/CommonConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-web-config/src/main/java/com/example/config/CommonConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-web-config/src/main/java/com/doub1e/controller/DeptController.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-web-config/src/main/java/com/example/controller/DeptController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-web-config/src/main/java/com/doub1e/mapper/DeptMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-web-config/src/main/java/com/example/mapper/DeptMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-web-config/src/main/java/com/doub1e/pojo/Dept.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-aop-quickstart/src/main/java/com/example/pojo/Dept.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-web-config/src/main/java/com/doub1e/pojo/Result.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-aop-quickstart/src/main/java/com/example/pojo/Result.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-web-config/src/main/java/com/doub1e/service/DeptService.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-web-config/src/main/java/com/example/service/DeptService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-web-config/src/main/java/com/doub1e/service/ServiceA.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-web-config/src/main/java/com/example/service/ServiceA.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-web-config/src/main/java/com/doub1e/service/ServiceB.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-web-config/src/main/java/com/example/service/ServiceB.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-web-config/src/main/java/com/doub1e/service/impl/DeptServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-web-config/src/main/java/com/example/service/impl/DeptServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-web-config/src/test/java/com/doub1e/SpringbootWebConfig2ApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-web-config/src/test/java/com/example/SpringbootWebConfig2ApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-web-config/target/classes/com/doub1e/SpringbootWebConfigApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-web-config/target/classes/com/doub1e/config/CommonConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-web-config/target/classes/com/doub1e/controller/DeptController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-web-config/target/classes/com/doub1e/mapper/DeptMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-web-config/target/classes/com/doub1e/pojo/Dept.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-web-config/target/classes/com/doub1e/pojo/Result.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-web-config/target/classes/com/doub1e/service/DeptService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-web-config/target/classes/com/doub1e/service/ServiceA.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-web-config/target/classes/com/doub1e/service/ServiceB.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-web-config/target/classes/com/doub1e/service/impl/DeptServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-web-config/target/test-classes/com/doub1e/SpringbootWebConfig2ApplicationTests.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tlias-web-manager/src/main/java/com/doub1e/TliasWebManagerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/tlias-web-manager/src/main/java/com/example/TliasWebManagerApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tlias-web-manager/src/main/java/com/doub1e/WebConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/tlias-web-manager/src/main/java/com/example/WebConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tlias-web-manager/src/main/java/com/doub1e/controller/DeptController.java" beforeDir="false" afterPath="$PROJECT_DIR$/tlias-web-manager/src/main/java/com/example/controller/DeptController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tlias-web-manager/src/main/java/com/doub1e/controller/EmpController.java" beforeDir="false" afterPath="$PROJECT_DIR$/tlias-web-manager/src/main/java/com/example/controller/EmpController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tlias-web-manager/src/main/java/com/doub1e/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/tlias-web-manager/src/main/java/com/example/controller/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tlias-web-manager/src/main/java/com/doub1e/controller/SessionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/tlias-web-manager/src/main/java/com/example/controller/SessionController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tlias-web-manager/src/main/java/com/doub1e/controller/UploadController.java" beforeDir="false" afterPath="$PROJECT_DIR$/tlias-web-manager/src/main/java/com/example/controller/UploadController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tlias-web-manager/src/main/java/com/doub1e/entity/AilOSSProperties.java" beforeDir="false" afterPath="$PROJECT_DIR$/tlias-web-manager/src/main/java/com/example/entity/AilOSSProperties.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tlias-web-manager/src/main/java/com/doub1e/entity/Dept.java" beforeDir="false" afterPath="$PROJECT_DIR$/tlias-web-manager/src/main/java/com/example/entity/Dept.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tlias-web-manager/src/main/java/com/doub1e/entity/Emp.java" beforeDir="false" afterPath="$PROJECT_DIR$/tlias-web-manager/src/main/java/com/example/entity/Emp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tlias-web-manager/src/main/java/com/doub1e/entity/EmpExpr.java" beforeDir="false" afterPath="$PROJECT_DIR$/tlias-web-manager/src/main/java/com/example/entity/EmpExpr.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tlias-web-manager/src/main/java/com/doub1e/entity/EmpLog.java" beforeDir="false" afterPath="$PROJECT_DIR$/tlias-web-manager/src/main/java/com/example/entity/EmpLog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tlias-web-manager/src/main/java/com/doub1e/entity/EmpLoginInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/tlias-web-manager/src/main/java/com/example/entity/EmpLoginInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tlias-web-manager/src/main/java/com/doub1e/entity/EmpQueryParam.java" beforeDir="false" afterPath="$PROJECT_DIR$/tlias-web-manager/src/main/java/com/example/entity/EmpQueryParam.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tlias-web-manager/src/main/java/com/doub1e/entity/PageBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/tlias-web-manager/src/main/java/com/example/entity/PageBean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tlias-web-manager/src/main/java/com/doub1e/entity/Result.java" beforeDir="false" afterPath="$PROJECT_DIR$/tlias-web-manager/src/main/java/com/example/entity/Result.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tlias-web-manager/src/main/java/com/doub1e/exception/BusinessException.java" beforeDir="false" afterPath="$PROJECT_DIR$/tlias-web-manager/src/main/java/com/example/exception/BusinessException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tlias-web-manager/src/main/java/com/doub1e/exception/GlobalExceptionHander.java" beforeDir="false" afterPath="$PROJECT_DIR$/tlias-web-manager/src/main/java/com/example/exception/GlobalExceptionHander.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tlias-web-manager/src/main/java/com/doub1e/filter/Demo1Filter.java" beforeDir="false" afterPath="$PROJECT_DIR$/tlias-web-manager/src/main/java/com/example/filter/Demo1Filter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tlias-web-manager/src/main/java/com/doub1e/filter/Demo2Filter.java" beforeDir="false" afterPath="$PROJECT_DIR$/tlias-web-manager/src/main/java/com/example/filter/Demo2Filter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tlias-web-manager/src/main/java/com/doub1e/filter/DemoFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/tlias-web-manager/src/main/java/com/example/filter/DemoFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tlias-web-manager/src/main/java/com/doub1e/filter/LoginCheckFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/tlias-web-manager/src/main/java/com/example/filter/LoginCheckFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tlias-web-manager/src/main/java/com/doub1e/interceptor/DemoInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/tlias-web-manager/src/main/java/com/example/interceptor/DemoInterceptor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tlias-web-manager/src/main/java/com/doub1e/interceptor/LoginCheckInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/tlias-web-manager/src/main/java/com/example/interceptor/LoginCheckInterceptor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tlias-web-manager/src/main/java/com/doub1e/mapper/DeptMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/tlias-web-manager/src/main/java/com/example/mapper/DeptMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tlias-web-manager/src/main/java/com/doub1e/mapper/EmpExperMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/tlias-web-manager/src/main/java/com/example/mapper/EmpExperMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tlias-web-manager/src/main/java/com/doub1e/mapper/EmpLogMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/tlias-web-manager/src/main/java/com/example/mapper/EmpLogMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tlias-web-manager/src/main/java/com/doub1e/mapper/EmpMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/tlias-web-manager/src/main/java/com/example/mapper/EmpMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tlias-web-manager/src/main/java/com/doub1e/service/DeptService.java" beforeDir="false" afterPath="$PROJECT_DIR$/tlias-web-manager/src/main/java/com/example/service/DeptService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tlias-web-manager/src/main/java/com/doub1e/service/EmpLogService.java" beforeDir="false" afterPath="$PROJECT_DIR$/tlias-web-manager/src/main/java/com/example/service/EmpLogService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tlias-web-manager/src/main/java/com/doub1e/service/EmpService.java" beforeDir="false" afterPath="$PROJECT_DIR$/tlias-web-manager/src/main/java/com/example/service/EmpService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tlias-web-manager/src/main/java/com/doub1e/service/Impl/DeptServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/tlias-web-manager/src/main/java/com/example/service/Impl/DeptServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tlias-web-manager/src/main/java/com/doub1e/service/Impl/EmpLogServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/tlias-web-manager/src/main/java/com/example/service/Impl/EmpLogServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tlias-web-manager/src/main/java/com/doub1e/service/Impl/EmpServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/tlias-web-manager/src/main/java/com/example/service/Impl/EmpServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tlias-web-manager/src/main/java/com/doub1e/utils/AliyunOSSUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/tlias-web-manager/src/main/java/com/example/utils/AliyunOSSUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tlias-web-manager/src/main/java/com/doub1e/utils/JwtUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/tlias-web-manager/src/main/java/com/example/utils/JwtUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tlias-web-manager/src/main/resources/com/doub1e/mapper/DeptMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/tlias-web-manager/src/main/resources/com/example/mapper/DeptMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tlias-web-manager/src/main/resources/com/doub1e/mapper/EmpExperMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/tlias-web-manager/src/main/resources/com/example/mapper/EmpExperMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tlias-web-manager/src/main/resources/com/doub1e/mapper/EmpMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/tlias-web-manager/src/main/resources/com/example/mapper/EmpMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tlias-web-manager/src/test/java/com/doub1e/Demo.java" beforeDir="false" afterPath="$PROJECT_DIR$/tlias-web-manager/src/test/java/com/example/Demo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tlias-web-manager/src/test/java/com/doub1e/JWTTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/tlias-web-manager/src/test/java/com/example/JWTTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tlias-web-manager/src/test/java/com/doub1e/LogTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/tlias-web-manager/src/test/java/com/example/LogTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tlias-web-manager/src/test/java/com/doub1e/TliasWebManagerApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tlias-web-manager/src/test/java/com/example/TliasWebManagerApplicationTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -132,8 +216,14 @@
     "JUnit.LogTest.testLog.executor": "Run",
     "JUnit.LogTest.testLogLevel.executor": "Run",
     "JUnit.SpringbootWebConfig2ApplicationTests.testGetBean.executor": "Run",
+    "JUnit.SpringbootWebConfig2ApplicationTests.testGson.executor": "Debug",
     "JUnit.SpringbootWebConfig2ApplicationTests.testScope.executor": "Run",
     "JUnit.SpringbootWebConfig2ApplicationTests.testThirdBean.executor": "Run",
+    "JUnit.TestAutoConfig.executor": "Run",
+    "JUnit.TestAutoConfig.testGetHeaderGenerator.executor": "Run",
+    "JUnit.TestAutoConfig.testGetHeaderParser.executor": "Run",
+    "JUnit.TestAutoConfig.testGetTokenParam.executor": "Run",
+    "JUnit.TestAutoConfig.testGetTokenParser.executor": "Run",
     "JUnit.UserMapperTest.executor": "Run",
     "JUnit.UserMapperTest.testList.executor": "Run",
     "JUnit.UserService2Test.executor": "Run",
@@ -156,7 +246,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "Spring Boot.Main.executor": "Run",
     "Spring Boot.SpringbootAopQuickstartApplication.executor": "Run",
-    "Spring Boot.SpringbootWebConfigApplication.executor": "Run",
+    "Spring Boot.SpringbootWebConfigApplication.executor": "Debug",
     "Spring Boot.SpringbootWebQuickerstart01Application.executor": "Run",
     "Spring Boot.TliasWebManagerApplication.executor": "Run",
     "git-widget-placeholder": "master",
@@ -223,7 +313,7 @@
           <value>
             <map>
               <entry key="SpringbootAopQuickstartApplication" value="STOPPED" />
-              <entry key="SpringbootWebConfigApplication" value="FAILED" />
+              <entry key="SpringbootWebConfigApplication" value="STOPPED" />
               <entry key="TliasWebManagerApplication" value="STOPPED" />
             </map>
           </value>
@@ -231,82 +321,81 @@
       </map>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.SpringbootWebConfig2ApplicationTests.testThirdBean">
-    <configuration name="JWTTest.testGenerateJwt" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="tlias-web-manager" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.doub1e.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.doub1e" />
-      <option name="MAIN_CLASS_NAME" value="com.doub1e.JWTTest" />
-      <option name="METHOD_NAME" value="testGenerateJwt" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="JWTTest.testParseJwt" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="tlias-web-manager" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.doub1e.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.doub1e" />
-      <option name="MAIN_CLASS_NAME" value="com.doub1e.JWTTest" />
-      <option name="METHOD_NAME" value="testParseJwt" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SpringbootWebConfig2ApplicationTests.testGetBean" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Spring Boot.SpringbootWebConfigApplication">
+    <configuration name="TestAutoConfig" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="springboot-web-config" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.doub1e.*" />
+          <option name="PATTERN" value="com.example.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.doub1e" />
-      <option name="MAIN_CLASS_NAME" value="com.doub1e.SpringbootWebConfig2ApplicationTests" />
-      <option name="METHOD_NAME" value="testGetBean" />
+      <option name="PACKAGE_NAME" value="com.example" />
+      <option name="MAIN_CLASS_NAME" value="com.example.TestAutoConfig" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestAutoConfig.testGetHeaderGenerator" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="springboot-web-config" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example" />
+      <option name="MAIN_CLASS_NAME" value="com.example.TestAutoConfig" />
+      <option name="METHOD_NAME" value="testGetHeaderGenerator" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SpringbootWebConfig2ApplicationTests.testScope" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestAutoConfig.testGetHeaderParser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="springboot-web-config" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.doub1e.*" />
+          <option name="PATTERN" value="com.example.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.doub1e" />
-      <option name="MAIN_CLASS_NAME" value="com.doub1e.SpringbootWebConfig2ApplicationTests" />
-      <option name="METHOD_NAME" value="testScope" />
+      <option name="PACKAGE_NAME" value="com.example" />
+      <option name="MAIN_CLASS_NAME" value="com.example.TestAutoConfig" />
+      <option name="METHOD_NAME" value="testGetHeaderParser" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SpringbootWebConfig2ApplicationTests.testThirdBean" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestAutoConfig.testGetTokenParam" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="springboot-web-config" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.doub1e.*" />
+          <option name="PATTERN" value="com.example.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.doub1e" />
-      <option name="MAIN_CLASS_NAME" value="com.doub1e.SpringbootWebConfig2ApplicationTests" />
-      <option name="METHOD_NAME" value="testThirdBean" />
+      <option name="MAIN_CLASS_NAME" value="com.example.TestAutoConfig" />
+      <option name="METHOD_NAME" value="testGetTokenParam" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestAutoConfig.testGetTokenParser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="springboot-web-config" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example" />
+      <option name="MAIN_CLASS_NAME" value="com.example.TestAutoConfig" />
+      <option name="METHOD_NAME" value="testGetTokenParser" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -314,7 +403,7 @@
     </configuration>
     <configuration name="SpringbootAopQuickstartApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="springboot-aop-quickstart" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.doub1e.SpringbootAopQuickstartApplication" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.SpringbootAopQuickstartApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -328,7 +417,7 @@
     </configuration>
     <configuration name="SpringbootWebConfigApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="springboot-web-config" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.doub1e.SpringbootWebConfigApplication" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.SpringbootWebConfigApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -342,17 +431,17 @@
     </configuration>
     <configuration name="TliasWebManagerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="tlias-web-manager" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.doub1e.TliasWebManagerApplication" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.TliasWebManagerApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.SpringbootWebConfig2ApplicationTests.testThirdBean" />
-      <item itemvalue="JUnit.SpringbootWebConfig2ApplicationTests.testScope" />
-      <item itemvalue="JUnit.SpringbootWebConfig2ApplicationTests.testGetBean" />
-      <item itemvalue="JUnit.JWTTest.testGenerateJwt" />
-      <item itemvalue="JUnit.JWTTest.testParseJwt" />
+      <item itemvalue="JUnit.TestAutoConfig" />
+      <item itemvalue="JUnit.TestAutoConfig.testGetHeaderGenerator" />
+      <item itemvalue="JUnit.TestAutoConfig.testGetHeaderParser" />
+      <item itemvalue="JUnit.TestAutoConfig.testGetTokenParam" />
+      <item itemvalue="JUnit.TestAutoConfig.testGetTokenParser" />
       <item itemvalue="Spring Boot.SpringbootWebConfigApplication" />
       <item itemvalue="Spring Boot.SpringbootAopQuickstartApplication" />
       <item itemvalue="Spring Boot.SpringbootMybatisQuickstartApplication" />
@@ -361,19 +450,19 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.SpringbootWebConfig2ApplicationTests.testThirdBean" />
-        <item itemvalue="JUnit.SpringbootWebConfig2ApplicationTests.testScope" />
-        <item itemvalue="JUnit.SpringbootWebConfig2ApplicationTests.testGetBean" />
-        <item itemvalue="JUnit.JWTTest.testParseJwt" />
-        <item itemvalue="JUnit.JWTTest.testGenerateJwt" />
+        <item itemvalue="JUnit.TestAutoConfig.testGetTokenParser" />
+        <item itemvalue="JUnit.TestAutoConfig.testGetHeaderParser" />
+        <item itemvalue="JUnit.TestAutoConfig.testGetHeaderGenerator" />
+        <item itemvalue="JUnit.TestAutoConfig" />
+        <item itemvalue="JUnit.TestAutoConfig.testGetTokenParam" />
       </list>
     </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9823dce3aa75-bf35d07a577b-intellij.indexing.shared.core-IU-252.26199.169" />
-        <option value="bundled-js-predefined-d6986cc7102b-9c94529fcfe0-JavaScript-IU-252.26199.169" />
+        <option value="bundled-jdk-9823dce3aa75-bf35d07a577b-intellij.indexing.shared.core-IU-252.26830.84" />
+        <option value="bundled-js-predefined-d6986cc7102b-3aa1da707db6-JavaScript-IU-252.26830.84" />
       </set>
     </attachedChunks>
   </component>
@@ -418,7 +507,14 @@
       <workItem from="1759050046297" duration="859000" />
       <workItem from="1759052857133" duration="3512000" />
       <workItem from="1759113835143" duration="3937000" />
-      <workItem from="1759220393415" duration="2612000" />
+      <workItem from="1759220393415" duration="3763000" />
+      <workItem from="1759239753471" duration="152000" />
+      <workItem from="1759320203380" duration="4923000" />
+      <workItem from="1759367826909" duration="7857000" />
+      <workItem from="1759460730898" duration="884000" />
+      <workItem from="1759464325171" duration="1660000" />
+      <workItem from="1759502339988" duration="1702000" />
+      <workItem from="1759540023786" duration="2333000" />
     </task>
     <task id="LOCAL-00001" summary="maven init">
       <option name="closed" value="true" />
@@ -668,7 +764,15 @@
       <option name="project" value="LOCAL" />
       <updated>1758988560147</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="第三方Bean">
+      <option name="closed" value="true" />
+      <created>1759223043546</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1759223043546</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -686,7 +790,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="分层解耦" />
     <MESSAGE value="增强可扩展性，引入接口编程" />
     <MESSAGE value="IOC + DI" />
     <MESSAGE value="预编译sql 防止sql注入 提升效率" />
@@ -711,7 +814,8 @@
     <MESSAGE value="AOP编程" />
     <MESSAGE value="AOP切入点表达式" />
     <MESSAGE value="AOP连接点对象" />
-    <option name="LAST_COMMIT_MESSAGE" value="AOP连接点对象" />
+    <MESSAGE value="第三方Bean" />
+    <option name="LAST_COMMIT_MESSAGE" value="第三方Bean" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

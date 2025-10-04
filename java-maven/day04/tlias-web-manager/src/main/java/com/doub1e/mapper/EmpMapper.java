@@ -1,7 +1,7 @@
-package com.doub1e.mapper;
+package com.example.mapper;
 
-import com.doub1e.entity.Emp;
-import com.doub1e.entity.EmpQueryParam;
+import com.example.entity.Emp;
+import com.example.entity.EmpQueryParam;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Select;
 

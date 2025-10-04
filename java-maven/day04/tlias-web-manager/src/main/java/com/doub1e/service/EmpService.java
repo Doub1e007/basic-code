@@ -1,7 +1,7 @@
-package com.doub1e.service;
+package com.example.service;
 
-import com.doub1e.entity.EmpQueryParam;
-import com.doub1e.entity.PageBean;
+import com.example.entity.EmpQueryParam;
+import com.example.entity.PageBean;
 import org.springframework.format.annotation.DateTimeFormat;
 
 import java.time.LocalDate;

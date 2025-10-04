@@ -1,10 +1,10 @@
-package com.doub1e.service.Impl;
+package com.example.service.Impl;
 
-import com.doub1e.entity.Emp;
-import com.doub1e.entity.EmpQueryParam;
-import com.doub1e.entity.PageBean;
-import com.doub1e.mapper.EmpMapper;
-import com.doub1e.service.EmpService;
+import com.example.entity.Emp;
+import com.example.entity.EmpQueryParam;
+import com.example.entity.PageBean;
+import com.example.mapper.EmpMapper;
+import com.example.service.EmpService;
 import com.github.pagehelper.Page;
 import com.github.pagehelper.PageHelper;
 import org.springframework.beans.factory.annotation.Autowired;

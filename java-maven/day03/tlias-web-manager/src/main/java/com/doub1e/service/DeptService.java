@@ -1,6 +1,6 @@
-package com.doub1e.service;
+package com.example.service;
 
-import com.doub1e.entity.Dept;
+import com.example.entity.Dept;
 
 import java.util.List;
 

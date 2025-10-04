@@ -1,7 +1,7 @@
-package com.doub1e.service;
+package com.example.service;
 
-import com.doub1e.dao.DeptDao;
-import com.doub1e.entity.Dept;
+import com.example.dao.DeptDao;
+import com.example.entity.Dept;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;

@@ -1,6 +1,6 @@
-package com.doub1e.mapper;
+package com.example.mapper;
 
-import com.doub1e.entity.Dept;
+import com.example.entity.Dept;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Result;
 import org.apache.ibatis.annotations.Results;

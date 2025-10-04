@@ -1,8 +1,8 @@
-package com.doub1e.controller;
+package com.example.controller;
 
-import com.doub1e.entity.Dept;
-import com.doub1e.entity.Result;
-import com.doub1e.service.DeptService;
+import com.example.entity.Dept;
+import com.example.entity.Result;
+import com.example.service.DeptService;
 import jakarta.annotation.Resource;
 import org.springframework.web.bind.annotation.*;
 
