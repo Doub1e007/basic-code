@@ -9,6 +9,7 @@
         <groupId>com.doub1e</groupId>
         <artifactId>tlias-parent</artifactId>
         <version>1.0-SNAPSHOT</version>
+        <relativePath>../tlias-parent/pom.xml</relativePath>
     </parent>
 
     <artifactId>tlias-utils</artifactId>
@@ -24,7 +25,6 @@
         <dependency>
             <groupId>io.jsonwebtoken</groupId>
             <artifactId>jjwt</artifactId>
-            <version>0.9.1</version>
         </dependency>
 
         <!--阿里oss依赖-->

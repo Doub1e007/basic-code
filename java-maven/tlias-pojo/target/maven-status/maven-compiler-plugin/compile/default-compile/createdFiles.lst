@@ -1,0 +1,8 @@
+com\doub1e\entity\Dept.class
+com\doub1e\entity\EmpLog.class
+com\doub1e\entity\PageBean.class
+com\doub1e\entity\EmpExpr.class
+com\doub1e\entity\EmpLoginInfo.class
+com\doub1e\entity\Result.class
+com\doub1e\entity\EmpQueryParam.class
+com\doub1e\entity\Emp.class
