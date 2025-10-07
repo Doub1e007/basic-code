@@ -9,6 +9,8 @@
         <groupId>com.doub1e</groupId>
         <artifactId>tlias-parent</artifactId>
         <version>1.0-SNAPSHOT</version>
+        <!--配置父工程的pom路径-->
+        <relativePath>../tlias-parent/pom.xml </relativePath>
     </parent>
 
     <!--<groupId>com.doub1e</groupId>-->
